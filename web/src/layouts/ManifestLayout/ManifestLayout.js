@@ -7,16 +7,13 @@ import Footer from 'src/components/Footer'
 const SiteLayout = ({ children }) => {
   let [isShowing, setIsShowing] = useState(false)
 
-  const imageUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_571_0kF54-dUo.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651844829336"
-
   useEffect(() => {
   // Update the transition state after component mounting
       setIsShowing(true)
   });
 
   return <>
-    <Header/>
-    <div className="p-6 min-h-screen bg-gray-300 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
+    <div className="p-6 min-h-screen bg-green-900 bg-cover bg-no-repeat bg-center">
       <Transition
           appear={true}
           show={isShowing}
@@ -30,7 +27,6 @@ const SiteLayout = ({ children }) => {
           {children}
       </Transition>
     </div>
-    <Footer/>
   </>
 }
 

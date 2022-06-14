@@ -9,12 +9,16 @@
 
 import { Router, Route, Set } from '@redwoodjs/router'
 import SiteLayout from 'src/layouts/SiteLayout'
+import ManifestLayout from 'src/layouts/ManifestLayout'
 
 const Routes = () => {
   return (
     <Router>
+      <Set wrap={ManifestLayout}>
+        <Route path="/manifeste" page={ManifestPage} name="manifest" />
+      </Set>
       <Set wrap={SiteLayout}>
-        <Route path="/" page={HomePage} name="home" />
+        <Route path="/" page={HomePage} name="accueil" />
         <Route path="/qui-sommes-nous" page={QuiSommesNousPage} name="quiSommesNous" />
         <Route path="/nos-actions" page={NosActionsPage} name="nosActions" />
         <Route path="/devis" page={DevisPage} name="devis" />

@@ -1,16 +1,17 @@
 import { Link, routes } from '@redwoodjs/router'
-import QuiSommesNousPage from 'src/pages/QuiSommesNousPage/QuiSommesNousPage'
 
 const Header = () => {
+  const logoUrl = "https://ik.imagekit.io/dttv/logo_k7opAuX3K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652281391081"
+
   return (
-    <div>
-      <h2>{'Header'}</h2>
-      <ul>
-        <li><Link to={routes.quiSommesNous()}>Qui sommes-nous ?</Link></li>
-        <li><Link to={routes.nosActions()}>Nos actions</Link></li>
-        <li><Link to={routes.contact()}>Contact</Link></li>
-        <li><Link to={routes.devis()}>Devis</Link></li>
-      </ul>
+    <div className="bg-transparent">
+      <div className="flex flex-row">
+        <div class="basis-1/5 my-auto"><Link to={routes.manifest()}><img className="w-36 p-1" src={logoUrl} /></Link></div>
+        <div class="basis-1/5 my-auto"><Link to={routes.quiSommesNous()}>Coopérative</Link></div>
+        <div class="basis-1/5 my-auto"><Link to={routes.nosActions()}>Biodéchets</Link></div>
+        <div class="basis-1/5 my-auto"><Link to={routes.contact()}>Inclusion</Link></div>
+        <div class="basis-1/5 my-auto"><Link to={routes.devis()}>Services</Link></div>
+      </div>
       <hr/>
     </div>
   )
