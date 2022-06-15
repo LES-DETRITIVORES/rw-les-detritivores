@@ -18,7 +18,7 @@ const Routes = () => {
         <Route path="/manifeste" page={ManifestPage} name="manifest" />
       </Set>
       <Set wrap={SiteLayout}>
-        <Route path="/" page={HomePage} name="accueil" />
+        <Route path="/accueil" page={HomePage} name="accueil" />
         <Route path="/qui-sommes-nous" page={QuiSommesNousPage} name="quiSommesNous" />
         <Route path="/nos-actions" page={NosActionsPage} name="nosActions" />
         <Route path="/devis" page={DevisPage} name="devis" />

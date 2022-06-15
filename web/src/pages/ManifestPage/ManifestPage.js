@@ -1,4 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
+import NavLink from 'src/components/NavLink'
 import { MetaTags } from '@redwoodjs/web'
 
 const ManifestPage = () => {
@@ -7,32 +8,29 @@ const ManifestPage = () => {
   return (
     <>
       <MetaTags title="Manifest" description="Manifest page" />
-      <a href="https://les-detritivores.co"><img className="w-72 p-6 mx-auto" src={logoUrl} /></a>
-
-      <div className="font-sans text-white text-3xl md:text-6xl font-bold inline-block mx-12 md:mx-24 my-6 space-y-12 leading-tight">
+      <div className="font-sans text-white text-3xl md:text-6xl font-bold inline-block mx-12 md:mx-24 my-6 space-y-12 leading-tight md:leading-tight">
         <p>
-          Nous sommes <span className="bg-orange-600">LES&nbsp;DETRITIVORES</span>.
+          Nous sommes <img className="w-72 p-6 inline" src={logoUrl} alt="LES DETRITITVORES"/>.
+        </p>
+        <p>Coopérative inclusive de gestion des <NavLink to={routes.accueil()}>biodéchets</NavLink>, nous pouvons collecter, trier et valoriser vos restes alimentaires... 
+          pour en faire un <NavLink to="compost">compost</NavLink> nutritif et local.
         </p>
         <p>
-          La transformation des restes alimentaires est notre métier. 
-          Oui, nous pouvons trier, collecter, valoriser vos <span className="bg-orange-600">biodéchets</span>... 
-          pour en faire un <span className="bg-orange-600">compost</span> nutritif et local.
+          A travers la <NavLink>vie organique</NavLink>, nous voulons également prendre soin de la <NavLink>vie humaine</NavLink>.
+          C'est pourquoi nous portons des <NavLink>emplois</NavLink> formateurs, utiles et durables 
+          au coeur des <NavLink>territoires</NavLink> urbains ou ruraux.
         </p>
         <p>
-          Et au-delà de la <span className="bg-orange-600">vie organique</span>, nous voulons également prendre soin de la <span className="bg-orange-600">vie humaine</span>.
-          C'est pourquoi nous créons des <span className="bg-orange-600">emplois</span> formateurs, utiles et durables au coeur des <span className="bg-orange-600">territoires</span> urbains et ruraux.
+        <NavLink>Citoyens</NavLink>, <NavLink>professionnels</NavLink>, <NavLink>collectivités</NavLink>, nous pouvons tout changer ensemble. 
         </p>
         <p>
-        <span className="bg-orange-600">Citoyens</span>, <span className="bg-orange-600">professionnels</span>, <span className="bg-orange-600">collectivités</span>, nous pouvons tout changer ensemble. 
-        </p>
-        <p>
-          Face à l'épuisement, régénérons les <span className="bg-orange-600">sols</span>.
-          Face aux exclusions, accompagnons vers le <span className="bg-orange-600">respect</span>.
-          Face aux profits, cultivons des <span className="bg-orange-600">valeurs</span>.
-          Face aux monopoles, partageons nos <span className="bg-orange-600">ressources</span>.
+          Face à l'épuisement, régénérons les <NavLink>sols</NavLink>.
+          Face aux exclusions, accompagnons vers le <NavLink>respect</NavLink>.
+          Face aux profits, cultivons des <NavLink>valeurs</NavLink>.
+          Face aux monopoles, partageons nos <NavLink>ressources</NavLink>.
         </p>
         <p>          
-          Rejoignez notre mouvement pour des territoires <span className="bg-orange-600">organiques</span>, <span className="bg-orange-600">inclusifs</span> et <span className="bg-orange-600">coopératifs</span> !
+          Rejoignez notre mouvement pour des territoires <NavLink>organiques</NavLink>, <NavLink>inclusifs</NavLink> et <NavLink>coopératifs</NavLink> !
         </p>
       </div>
     </>
