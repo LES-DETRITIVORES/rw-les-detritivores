@@ -1,7 +1,6 @@
 ## Horizontal scrolling :
 https://momentomultimedia.com/en/
 
-
 ## Menu
 https://mcbridedesign.com/
 
