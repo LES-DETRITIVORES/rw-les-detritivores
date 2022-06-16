@@ -1,14 +1,19 @@
-import { Link, routes } from '@redwoodjs/router'
-import NavLink from 'src/components/NavLink'
-import { MetaTags } from '@redwoodjs/web'
+import { Link } from '@redwoodjs/router'
 
-const ManifestPage = () => {
+const NavLink = (props) => {
+  return (
+    <span className="bg-orange-600 hover:underline hover:cursor-pointer rotate-3">
+      <Link to={props.to}>{props.children}</Link>
+    </span>
+  )
+}
+
+const Manifesto = () => {
   const logoUrl = "https://ik.imagekit.io/dttv/DETRITIVORES_-_Logo_blanc_D9gS55ZaO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655210481453"
 
   return (
     <>
-      <MetaTags title="Manifest" description="Manifest page" />
-      <div className="font-sans min-h-screen bg-green-900 text-white font-semibold text-md md:text-lg inline-block p-3 md:p-6 space-y-6 leading-tight md:leading-tight">
+      <div className="font-sans text-white font-semibold inline-block p-6 space-y-6 leading-tight md:leading-tight">
         <p>
           Nous sommes<img className="w-36 lg:w-48 ml-3 inline" src={logoUrl} alt="LES DETRITITVORES"/>
         </p>
@@ -31,6 +36,7 @@ const ManifestPage = () => {
         </p>
       </div>
     </>
-  )}
+  )
+}
 
-export default ManifestPage
+export default Manifesto

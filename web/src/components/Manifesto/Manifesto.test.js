@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import ManifestPage from './ManifestPage'
+import Manifesto from './Manifesto'
 
 //   Improve this test with help from the Redwood Testing Doc:
-//   https://redwoodjs.com/docs/testing#testing-pages-layouts
+//    https://redwoodjs.com/docs/testing#testing-components
 
-describe('ManifestPage', () => {
+describe('Manifesto', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<ManifestPage />)
+      render(<Manifesto />)
     }).not.toThrow()
   })
 })

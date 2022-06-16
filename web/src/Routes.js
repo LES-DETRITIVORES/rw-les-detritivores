@@ -9,27 +9,13 @@
 
 import { Router, Route, Set } from '@redwoodjs/router'
 import SiteLayout from 'src/layouts/SiteLayout'
-import ManifestLayout from 'src/layouts/ManifestLayout'
-import HorizontalLayout from 'src/layouts/HorizontalLayout'
 
 const Routes = () => {
   return (
     <Router>
-      <Set wrap={ManifestLayout}>
-        <Route path="/manifeste" page={ManifestPage} name="manifest" />
-        <Route path="/" page={MainPage} name="main" />
-        <Route path="/organic" page={OrganicPage} name="organic" />
-
-      </Set>
-      <Set wrap={HorizontalLayout}>
-        <Route path="/horizontal" page={ManifestPage} name="horizontal" />
-      </Set>
       <Set wrap={SiteLayout}>
-        <Route path="/accueil" page={HomePage} name="accueil" />
-        <Route path="/qui-sommes-nous" page={QuiSommesNousPage} name="quiSommesNous" />
-        <Route path="/nos-actions" page={NosActionsPage} name="nosActions" />
-        <Route path="/devis" page={DevisPage} name="devis" />
-        <Route path="/contact" page={ContactPage} name="contact" />
+        <Route path="/" page={OrganicPage} name="organique" />
+        <Route path="/organique" page={OrganicPage} name="organique" />
       </Set>
       <Route notfound page={NotFoundPage} />
     </Router>
