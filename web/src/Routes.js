@@ -18,6 +18,8 @@ const Routes = () => {
       <Set wrap={ManifestLayout}>
         <Route path="/manifeste" page={ManifestPage} name="manifest" />
         <Route path="/" page={MainPage} name="main" />
+        <Route path="/organic" page={OrganicPage} name="organic" />
+
       </Set>
       <Set wrap={HorizontalLayout}>
         <Route path="/horizontal" page={ManifestPage} name="horizontal" />

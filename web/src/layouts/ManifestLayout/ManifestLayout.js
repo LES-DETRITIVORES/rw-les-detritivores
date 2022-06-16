@@ -13,7 +13,7 @@ const ManifestLayout = ({ children }) => {
   });
 
   return <>
-    <div className="p-6">
+    <div>
       <Transition
           appear={true}
           show={isShowing}

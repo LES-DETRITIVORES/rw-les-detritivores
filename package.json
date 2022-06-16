@@ -24,6 +24,7 @@
   "packageManager": "yarn@3.2.1",
   "dependencies": {
     "@headlessui/react": "latest",
+    "@heroicons/react": "^1.0.6",
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest"
