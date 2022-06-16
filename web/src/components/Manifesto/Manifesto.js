@@ -1,9 +1,7 @@
-import { Link } from '@redwoodjs/router'
-
-const NavLink = (props) => {
+const Link = (props) => {
   return (
     <span className="bg-orange-600 hover:underline hover:cursor-pointer rotate-3">
-      <Link to={props.to}>{props.children}</Link>
+      <a href={props.to}>{props.children}</a>
     </span>
   )
 }
@@ -17,22 +15,22 @@ const Manifesto = () => {
         <p>
           Nous sommes<a href="/"><img className="w-36 lg:w-48 ml-3 inline" src={logoUrl} alt="LES DETRITITVORES"/></a>
         </p>
-        <p>Coopérative inclusive de gestion des <NavLink to="organique">biodéchets</NavLink>, nous collectons, trions et valorisons vos restes alimentaires... 
-          pour en faire un <NavLink to="organique">compost</NavLink> nutritif et local.
+        <p>Coopérative inclusive de gestion des <Link to="organique">biodéchets</Link>, nous collectons, trions et valorisons vos restes alimentaires... 
+          pour en faire un <Link to="organique">compost</Link> nutritif et local.
         </p>
         <p>
-          A travers la vie <NavLink to="organique">organique</NavLink>, nous aimons surtout prendre soin de la vie <NavLink to="inclusif">humaine</NavLink>.
-          C'est pourquoi nous portons des <NavLink to="inclusif">emplois</NavLink> accessibles, utiles et durables 
-          au coeur des <NavLink to="cooperatif">territoires</NavLink> urbains ou ruraux.
+          A travers la vie <Link to="organique">organique</Link>, nous aimons surtout prendre soin de la vie <Link to="inclusif">humaine</Link>.
+          C'est pourquoi nous portons des <Link to="inclusif">emplois</Link> accessibles, utiles et durables 
+          au coeur des <Link to="cooperatif">territoires</Link> urbains ou ruraux.
         </p>
         <p>
-          Face à l'épuisement, nous régénérons les <NavLink to="organique">sols</NavLink>. 
-          Face aux exclusions, nous cultivons le <NavLink to="inclusif">respect</NavLink>.
-          Face à l'appropriation, nous partageons des <NavLink to="cooperatif">valeurs</NavLink>.
+          Face à l'épuisement, nous régénérons les <Link to="organique">sols</Link>. 
+          Face aux exclusions, nous cultivons le <Link to="inclusif">respect</Link>.
+          Face à l'appropriation, nous partageons des <Link to="cooperatif">valeurs</Link>.
         </p>
         <p>          
-        <NavLink to="particuliers">Citoyens</NavLink>, <NavLink to="professionnels">professionnels</NavLink>, <NavLink to="collectivites">collectivités</NavLink>, 
-          rejoignez notre mouvement pour des territoires <NavLink to="organique">organiques</NavLink>, <NavLink to="inclusif">inclusifs</NavLink> et <NavLink to="cooperatif">coopératifs</NavLink>&nbsp;!
+        <Link to="particuliers">Citoyens</Link>, <Link to="professionnels">professionnels</Link>, <Link to="collectivites">collectivités</Link>, 
+          rejoignez notre mouvement pour des territoires <Link to="organique">organiques</Link>, <Link to="inclusif">inclusifs</Link> et <Link to="cooperatif">coopératifs</Link>&nbsp;!
         </p>
       </div>
     </>

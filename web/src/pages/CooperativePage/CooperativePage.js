@@ -2,7 +2,7 @@ import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 
 const CooperativePage = () => {
-  const imageUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211007_164_hH_nFZjxX.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843613446"
+  const imageUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211007_557_AHqbPk0KPD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843627053"
 
   return (
     <>
