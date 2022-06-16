@@ -14,8 +14,10 @@ const Routes = () => {
   return (
     <Router>
       <Set wrap={SiteLayout}>
-        <Route path="/" page={OrganicPage} name="organique" />
-        <Route path="/organique" page={OrganicPage} name="organique" />
+        <Route path="/" page={HomePage} name="home" />
+        <Route path="/organique" page={OrganicPage} name="organic" />
+        <Route path="/inclusif" page={InclusivePage} name="inclusive" />
+        <Route path="/cooperatif" page={CooperativePage} name="cooperative" />
       </Set>
       <Route notfound page={NotFoundPage} />
     </Router>
