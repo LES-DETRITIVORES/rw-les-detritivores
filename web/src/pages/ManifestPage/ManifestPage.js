@@ -8,33 +8,31 @@ const ManifestPage = () => {
   return (
     <>
       <MetaTags title="Manifest" description="Manifest page" />
-      <div className="font-sans text-white text-3xl md:text-6xl font-bold inline-block mx-12 md:mx-24 my-6 space-y-12 leading-tight md:leading-tight">
+      <div className="font-sans text-white text-xl md:text-3xl font-bold inline-block p-6 md:p-12 space-y-12 leading-tight md:leading-tight">
         <p>
-          Nous sommes <img className="w-72 p-6 inline" src={logoUrl} alt="LES DETRITITVORES"/>.
+          Nous sommes <img className="w-48 lg:w-64 p-6 inline" src={logoUrl} alt="LES DETRITITVORES"/>
         </p>
-        <p>Coopérative inclusive de gestion des <NavLink to={routes.accueil()}>biodéchets</NavLink>, nous pouvons collecter, trier et valoriser vos restes alimentaires... 
-          pour en faire un <NavLink to="compost">compost</NavLink> nutritif et local.
-        </p>
-        <p>
-          A travers la <NavLink>vie organique</NavLink>, nous voulons également prendre soin de la <NavLink>vie humaine</NavLink>.
-          C'est pourquoi nous portons des <NavLink>emplois</NavLink> formateurs, utiles et durables 
-          au coeur des <NavLink>territoires</NavLink> urbains ou ruraux.
+        <p>Coopérative inclusive de gestion des <NavLink to="organique">biodéchets</NavLink>, nous pouvons collecter, trier et valoriser vos restes alimentaires... 
+          pour en faire un <NavLink to="organique">compost</NavLink> nutritif et local.
         </p>
         <p>
-        <NavLink>Citoyens</NavLink>, <NavLink>professionnels</NavLink>, <NavLink>collectivités</NavLink>, nous pouvons tout changer ensemble. 
+          A travers la vie <NavLink to="organique">organique</NavLink>, nous voulons également prendre soin de la vie <NavLink to="inclusion">humaine</NavLink>.
+          C'est pourquoi nous portons des <NavLink to="inclusif">emplois</NavLink> formateurs, utiles et durables 
+          au coeur des <NavLink to="cooperatif">territoires</NavLink> urbains ou ruraux.
         </p>
         <p>
-          Face à l'épuisement, régénérons les <NavLink>sols</NavLink>.
-          Face aux exclusions, accompagnons vers le <NavLink>respect</NavLink>.
-          Face aux profits, cultivons des <NavLink>valeurs</NavLink>.
-          Face aux monopoles, partageons nos <NavLink>ressources</NavLink>.
+        <NavLink to="particuliers">Citoyens</NavLink>, <NavLink to="professionnels">professionnels</NavLink>, <NavLink to="collectivites">collectivités</NavLink>, nous pouvons tout changer ensemble. 
+        </p>
+        <p>
+          Face à l'épuisement, nous régénérons les <NavLink to="organique">sols</NavLink>. 
+          Face aux exclusions, nous cultivons le <NavLink to="inclusif">respect</NavLink>.
+          Face à l'appropriation, nous partageons des <NavLink to="cooperatif">valeurs</NavLink>.
         </p>
         <p>          
-          Rejoignez notre mouvement pour des territoires <NavLink>organiques</NavLink>, <NavLink>inclusifs</NavLink> et <NavLink>coopératifs</NavLink> !
+          Rejoignez notre mouvement pour des territoires <NavLink to="organique">organiques</NavLink>, <NavLink to="inclusif">inclusifs</NavLink> et <NavLink to="cooperatif">coopératifs</NavLink> !
         </p>
       </div>
     </>
-  )
-}
+  )}
 
 export default ManifestPage

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Header from 'src/components/Header'
 import Footer from 'src/components/Footer'
 
-const SiteLayout = ({ children }) => {
+const ManifestLayout = ({ children }) => {
   let [isShowing, setIsShowing] = useState(false)
 
   useEffect(() => {
@@ -13,21 +13,21 @@ const SiteLayout = ({ children }) => {
   });
 
   return <>
-    <div className="p-6 min-h-screen bg-green-900 bg-cover bg-no-repeat bg-center">
+    <div className="p-6">
       <Transition
           appear={true}
           show={isShowing}
-          enter="transition-opacity duration-[1500ms] ease-in-out"
+          enter="transition-opacity duration-[3000ms] ease-in-out"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave=" transition-opacity duration-[1500ms] ease-in-out"
+          leave=" transition-opacity duration-[3000ms] ease-in-out"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
       >
-          {children}
+        {children}
       </Transition>
     </div>
   </>
 }
 
-export default SiteLayout
+export default ManifestLayout

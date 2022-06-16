@@ -17,12 +17,13 @@ const Routes = () => {
     <Router>
       <Set wrap={ManifestLayout}>
         <Route path="/manifeste" page={ManifestPage} name="manifest" />
+        <Route path="/" page={MainPage} name="main" />
       </Set>
       <Set wrap={HorizontalLayout}>
         <Route path="/horizontal" page={ManifestPage} name="horizontal" />
       </Set>
       <Set wrap={SiteLayout}>
-        <Route path="/" page={HomePage} name="accueil" />
+        <Route path="/accueil" page={HomePage} name="accueil" />
         <Route path="/qui-sommes-nous" page={QuiSommesNousPage} name="quiSommesNous" />
         <Route path="/nos-actions" page={NosActionsPage} name="nosActions" />
         <Route path="/devis" page={DevisPage} name="devis" />
