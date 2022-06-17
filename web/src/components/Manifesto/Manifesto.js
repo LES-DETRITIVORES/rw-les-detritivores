@@ -13,7 +13,7 @@ const Manifesto = () => {
     <>
       <div className="font-sans text-white font-semibold inline-block p-6 space-y-6 leading-tight md:leading-tight">
         <p>
-          Nous sommes <Link to="/">LES DETRITIVORES</Link>
+          Nous sommes <Link to="/">LES&nbsp;DETRITIVORES</Link>
           <a href="/" className="hidden"><img className="w-36 lg:w-48 ml-3 inline" src={logoUrl} alt="LES DETRITIVORES"/></a>
         </p>
         <p>Coopérative inclusive de gestion des <Link to="organique">biodéchets</Link>, nous collectons, trions et valorisons vos restes alimentaires... 

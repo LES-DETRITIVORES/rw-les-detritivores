@@ -10,10 +10,10 @@ const Menu = () => {
   return (
     <>
       <div className="grid grid-cols-4 lg:grid-cols-1 p-3 w-screen lg:h-screen lg:w-auto">
-        <a href="/"><img className="w-36 mx-auto" src={logoUrl} alt="LES DETRITIVORES"/></a>
-        <a href="/organique" className="mx-auto text-orange-600 font-bold hover:underline -rotate-6 uppercase"><img src={organicIcon} className="w-12 h-12 md:w-16 md:h-16 m-auto"></img><span className="bg-orange-600 text-white">Organique</span></a>
-        <a href="/inclusif" className="mx-auto text-orange-600 font-bold hover:underline -rotate-6 uppercase"><img src={inclusiveIcon} className="w-12 h-12 md:w-16 md:h-16 m-auto"></img><span className="bg-orange-600 text-white">Inclusif</span></a>
-        <a href="/cooperatif" className="mx-auto text-orange-600 font-bold hover:underline -rotate-6 uppercase"><img src={cooperativeIcon} className="w-12 h-12 md:w-16 md:h-16 m-auto"></img><span className="bg-orange-600 text-white">Coopératif</span></a>
+        <a href="/"><img className="w-28 md:w-36 mx-auto hover:scale-105 hover:drop-shadow-md" src={logoUrl} alt="LES DETRITIVORES"/></a>
+        <a href="/organique" className="mx-auto text-white font-bold uppercase -rotate-6 hover:scale-105 hover:drop-shadow-md"><img src={organicIcon} className="w-12 h-12 md:w-16 md:h-16 m-auto"></img><span className="bg-orange-600">Organique</span></a>
+        <a href="/inclusif" className="mx-auto text-white font-bold  uppercase -rotate-6 hover:scale-105 hover:drop-shadow-md"><img src={inclusiveIcon} className="w-12 h-12 md:w-16 md:h-16 m-auto"></img><span className="bg-orange-600">Inclusif</span></a>
+        <a href="/cooperatif" className="mx-auto text-white font-bold uppercase -rotate-6 hover:scale-105 hover:drop-shadow-md"><img src={cooperativeIcon} className="w-12 h-12 md:w-16 md:h-16 m-auto"></img><span className="bg-orange-600">Coopératif</span></a>
       </div>
     </>
   )
