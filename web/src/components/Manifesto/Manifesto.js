@@ -1,6 +1,6 @@
 const Link = (props) => {
   return (
-    <span className="bg-orange-600 hover:underline hover:cursor-pointer rotate-3">
+    <span className="bg-orange-600 hover:underline hover:cursor-pointer font-semibold">
       <a href={props.to}>{props.children}</a>
     </span>
   )
@@ -11,12 +11,12 @@ const Manifesto = () => {
 
   return (
     <>
-      <div className="font-sans font-semibold inline-block space-y-6 leading-tight md:leading-tight">
+      <div className="inline-block space-y-6 leading-tight md:leading-tight">
         <p>
-          Nous sommes <Link to="/">LES&nbsp;DETRITIVORES</Link>
+          Nous sommes <Link to="/">LES&nbsp;DETRITIVORES</Link>.
           <a href="/" className="hidden"><img className="w-36 lg:w-48 ml-3 inline" src={logoUrl} alt="LES DETRITIVORES"/></a>
         </p>
-        <p>Coopérative inclusive de gestion des <Link to="organique">biodéchets</Link>, nous collectons, trions et valorisons vos restes alimentaires... 
+        <p>Coopérative inclusive de gestion des <Link to="organique">biodéchets</Link>, nous trions, collectons et valorisons les restes alimentaires... 
           pour en faire un <Link to="organique">compost</Link> nutritif et local.
         </p>
         <p>

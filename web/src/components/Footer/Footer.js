@@ -3,7 +3,6 @@ import { Link, routes } from '@redwoodjs/router'
 const Footer = () => {
   return (
     <div className="bg-transparent">
-      <hr></hr>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 p-3">
         <div class="">
           <a href="/organique" className="uppercase font-bold underline">Mission organique</a>

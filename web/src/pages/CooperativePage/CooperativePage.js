@@ -7,8 +7,7 @@ const CooperativePage = () => {
   return (
     <>
       <MetaTags title="Inclusif" description="Inclusive page" />
-      <div className="rounded-lg min-h-screen h-full bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
-      </div>
+      <img className="h-full object-cover object-center" src={imageUrl}></img>
     </>
   )
 }

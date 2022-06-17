@@ -28,8 +28,8 @@ const SiteLayout = ({ children }) => {
       <div className="flex flex-col lg:flex-row">
         <div className="w-screen lg:h-screen lg:max-w-[128px]"><Navigation /></div>
         <div className="flex flex-col md:flex-row">
-          <div className="flex-1 p-3 m-3 md:w-2/3">{children}</div>
-          <div className="flex-1 p-3 m-3 bg-green-900 text-white text-lg md:rounded-tr-3xl md:rounded-bl-3xl md:drop-shadow-lg md:p-6 md:w-1/3 md:text-xl"><Manifesto /></div>
+          <div className="flex-1 md:w-2/3">{children}</div>
+          <div className="flex-1 p-3 bg-green-900 text-white text-lg md:p-6 md:w-1/3 md:text-xl"><Manifesto /></div>
         </div>
       </div>
       <div className="w-screen bg-yellow-500 text-black"><Footer /></div>
