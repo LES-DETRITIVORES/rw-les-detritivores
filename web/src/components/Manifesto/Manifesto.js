@@ -33,6 +33,7 @@ const Manifesto = () => {
         <Link to="particuliers">Citoyens</Link>, <Link to="professionnels">professionnels</Link>, <Link to="collectivites">collectivités</Link>, 
           rejoignez notre mouvement pour des territoires <Link to="organique">organiques</Link>, <Link to="inclusif">inclusifs</Link> et <Link to="cooperatif">coopératifs</Link>&nbsp;!
         </p>
+        <a href="/"><img className="w-36 lg:w-48 mt-6 block mx-auto" src={logoUrl} alt="LES DETRITIVORES"/></a>
       </div>
     </>
   )
