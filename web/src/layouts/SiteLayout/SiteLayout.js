@@ -32,7 +32,7 @@ const SiteLayout = ({ children }) => {
           <div className="rounded-lg drop-shadow-lg m-3 p-3 bg-green-900 text-white text-lg md:p-6 md:-rotate-1 md:h-full md:w-1/3 md:text-xl"><Manifesto /></div>
         </div>
       </div>
-      <div className="mt-6 w-screen bg-green-900 text-white"><Footer /></div>
+      <div className="mt-6 w-screen bg-yellow-500 text-black"><Footer /></div>
     </Transition>
   </>
 }
