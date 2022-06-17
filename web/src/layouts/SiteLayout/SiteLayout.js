@@ -28,11 +28,11 @@ const SiteLayout = ({ children }) => {
       <div className="flex flex-col lg:flex-row">
         <div className="w-screen lg:h-screen lg:max-w-[128px]"><Menu /></div>
         <div className="flex flex-col md:flex-row">
-          <div className="rounded-lg drop-shadow-lg p-3 md:p-6 md:rotate-1 md:w-2/3">{children}</div>
-          <div className="rounded-lg drop-shadow-lg m-3 p-3 bg-green-900 text-white text-lg md:p-6 md:-rotate-1 md:h-full md:w-1/3 md:text-xl"><Manifesto /></div>
+          <div className="rounded-lg drop-shadow-lg p-3 pb-0 md:pb-3 md:rotate-0 md:w-2/3">{children}</div>
+          <div className="rounded-lg drop-shadow-lg m-3 p-3 bg-green-900 text-white text-lg md:p-6 md:-rotate-2 md:h-full md:w-1/3 md:text-xl"><Manifesto /></div>
         </div>
       </div>
-      <div className="mt-6 w-screen bg-yellow-500 text-black"><Footer /></div>
+      <div className="w-screen bg-yellow-500 text-black lg:mt-6"><Footer /></div>
     </Transition>
   </>
 }
