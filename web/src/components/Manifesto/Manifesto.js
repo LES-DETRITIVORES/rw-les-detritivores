@@ -11,7 +11,7 @@ const Manifesto = () => {
 
   return (
     <>
-      <div className="inline-block space-y-6 leading-tight md:leading-tight">
+      <div className="inline-block space-y-6 leading-tight md:leading-tight md:-rotate-3 md:pl-3">
         <p>
           Nous sommes <Link to="/">LES&nbsp;DETRITIVORES</Link>.
           <a href="/" className="hidden"><img className="w-36 lg:w-48 ml-3 inline" src={logoUrl} alt="LES DETRITIVORES"/></a>
