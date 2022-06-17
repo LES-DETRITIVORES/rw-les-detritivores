@@ -7,7 +7,7 @@ const OrganicPage = () => {
   return (
     <>
       <MetaTags title="Organic" description="Organic page" />
-      <div className="min-h-screen h-full bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
+      <div className="rounded-lg min-h-screen h-full bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${imageUrl})` }}>
       </div>
     </>
   )

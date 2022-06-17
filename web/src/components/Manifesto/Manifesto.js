@@ -11,7 +11,7 @@ const Manifesto = () => {
 
   return (
     <>
-      <div className="font-sans text-white font-semibold inline-block p-6 space-y-6 leading-tight md:leading-tight">
+      <div className="font-sans font-semibold inline-block space-y-6 leading-tight md:leading-tight">
         <p>
           Nous sommes <Link to="/">LES&nbsp;DETRITIVORES</Link>
           <a href="/" className="hidden"><img className="w-36 lg:w-48 ml-3 inline" src={logoUrl} alt="LES DETRITIVORES"/></a>
@@ -33,7 +33,7 @@ const Manifesto = () => {
         <Link to="particuliers">Citoyens</Link>, <Link to="professionnels">professionnels</Link>, <Link to="collectivites">collectivités</Link>, 
           rejoignez notre mouvement pour des territoires <Link to="organique">organiques</Link>, <Link to="inclusif">inclusifs</Link> et <Link to="cooperatif">coopératifs</Link>&nbsp;!
         </p>
-        <a href="/"><img className="w-36 lg:w-48 mt-6 block mx-auto" src={logoUrl} alt="LES DETRITIVORES"/></a>
+        <a href="/"><img className="w-36 lg:w-48 mt-6 block mx-auto hover:scale-105 hover:drop-shadow-md" src={logoUrl} alt="LES DETRITIVORES"/></a>
       </div>
     </>
   )
