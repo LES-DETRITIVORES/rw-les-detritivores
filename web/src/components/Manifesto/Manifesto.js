@@ -7,14 +7,12 @@ const Link = (props) => {
 }
 
 const Manifesto = () => {
-  const logoUrl = "https://ik.imagekit.io/dttv/DETRITIVORES_-_Logo_blanc_D9gS55ZaO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655210481453"
 
   return (
     <>
       <div className="inline-block space-y-6 leading-tight md:leading-tight md:-rotate-3 md:pl-3">
         <p>
           Nous sommes <Link to="/">LES&nbsp;DETRITIVORES</Link>.
-          <a href="/" className="hidden"><img className="w-36 lg:w-48 ml-3 inline" src={logoUrl} alt="LES DETRITIVORES"/></a>
         </p>
         <p>Coopérative inclusive de gestion des <Link to="organique">biodéchets</Link>, nous trions, collectons et valorisons les restes alimentaires... 
           pour en faire un <Link to="organique">compost</Link> nutritif et local.
@@ -33,7 +31,6 @@ const Manifesto = () => {
         <Link to="particuliers">Citoyens</Link>, <Link to="professionnels">professionnels</Link>, <Link to="collectivites">collectivités</Link>, 
           rejoignez notre mouvement pour des territoires <Link to="organique">organiques</Link>, <Link to="inclusif">inclusifs</Link> et <Link to="cooperatif">coopératifs</Link>&nbsp;!
         </p>
-        <a href="/"><img className="w-36 lg:w-48 mt-6 block mx-auto hover:scale-105 hover:drop-shadow-md" src={logoUrl} alt="LES DETRITIVORES"/></a>
       </div>
     </>
   )
