@@ -1,6 +1,6 @@
 const Link = (props) => {
   return (
-    <span className="bg-orange-600 hover:underline hover:cursor-pointer font-semibold">
+    <span className="underline hover:cursor-pointer font-semibold">
       <a href={props.to}>{props.children}</a>
     </span>
   )
