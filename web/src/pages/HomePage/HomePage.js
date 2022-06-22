@@ -18,27 +18,39 @@ const HomePage = () => {
           </div>
         </div>
         <div className="bg-green-900 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
-          <p className="text-justify">
-          Coopérative inclusive de gestion des biodéchets, nous trions, collectons et valorisons les restes alimentaires... pour en faire un compost nutritif et local.
+          <p className="text-center font-semibold italic">
+          Expert de la gestion des biodéchets, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
           </p>
-          <a href="/collecte" className="my-3 block text-xl text-white font-extrabold underline hover:cursor-pointer">
+          <hr className="my-6"/>
+          <div className="mb-3 block text-xl text-white font-extrabold uppercase">
             Collecte des restes alimentaires
-          </a>
-          <p>
-            En camion ou à vélos, nos équipes passent régulièrement collecter vos bacs de biodéchets.
+          </div>
+          <p className="mb-3">
+            En camion ou à vélos, nos équipes passent régulièrement collecter vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez.
           </p>
-          <a href="/traitement" className="my-3 block text-xl text-white font-extrabold underline hover:cursor-pointer">
-            Traitement des biodéchets
+          <a href="/collecte" className="rounded-sm inline-block p-3 mt-3 font-semi-bold border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            Adhérer à la collecte
           </a>
+
+          <div className="my-3 block text-xl text-white font-extrabold uppercase mt-12">
+            Traitement local des biodéchets
+          </div>
           <p>
-          Nous évitons l’enfouissement ou l’incinération des biodéchets en les traitant sur nos plateformes locales de compostage.
+            En traitant les biodéchets sur nos plateformes locales de compostage, nous évitons le gaspillage d'une ressource précieuse pour la planète.
           </p>
-          <a href="/compost" className="my-3 block text-xl text-white font-extrabold underline hover:cursor-pointer">
-            Vente de compost
+          <a href="/traitement" className="rounded-sm inline-block p-3 mt-3 font-semi-bold border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            Découvrir nos plateformes
           </a>
+
+          <div className="my-3 block text-xl text-white font-extrabold uppercase mt-12">
+            Vente de compost naturel
+          </div>
           <p>
-            100% local, coopératif et solidaire, le compost que nous vous proposons à décidément tout pour vous plaire.
+            Fini les produits chimiques, notre compost 100% naturel et normé (NF U 44-051 amendements organiques) nourrit aussi bien les grandes terres agricoles, les petits potagers ou les jolies fleurs sur le balcon.
           </p>
+          <a href="/compost" className="rounded-sm inline-block p-3 mt-3 font-semi-bold border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            Acheter du compost
+          </a>
         </div>
       </div>
       <div className="flex flex-col-reverse rounded-l-xl overflow-hidden md:flex-row m-3 md:m-6">

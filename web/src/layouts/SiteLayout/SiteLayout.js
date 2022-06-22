@@ -27,21 +27,21 @@ const SiteLayout = ({ children }) => {
           leaveTo="opacity-0"
       >
       <div className="flex flex-col">
-          {/*<div className="basis-full fixed top-0 left-0 right-0 bg-white/95 backdrop-grayscale z-50">*/}
-          <div className="basis-full">
-            <Navigation />
-          </div>
-          {/*<div className="basis-full mt-[100px] md:mt-[180px]">*/}
-          <div className="basis-full">
-            {children}
-          </div>
-          <div className="bg-green-900 text-white text-lg md:text-xl">
-            <div className="p-6 max-w-lg mx-auto">
-              <Manifesto />        
-              <a href="/"><img className="w-36 lg:w-48 mt-6 block mx-auto hover:scale-105 hover:drop-shadow-md" src={logoUrl} alt="LES DETRITIVORES"/></a>
-            </div>
+        {/*<div className="basis-full fixed top-0 left-0 right-0 bg-white/95 backdrop-grayscale z-50">*/}
+        <div className="basis-full">
+          <Navigation />
+        </div>
+        {/*<div className="basis-full mt-[100px] md:mt-[180px]">*/}
+        <div className="basis-full max-w-6xl mx-auto">
+          {children}
+        </div>
+        <div className="bg-green-900 text-white text-lg md:text-xl">
+          <div className="p-6 max-w-lg mx-auto">
+            <Manifesto />        
+            <a href="/"><img className="w-36 lg:w-48 mt-6 block mx-auto hover:scale-105 hover:drop-shadow-md" src={logoUrl} alt="LES DETRITIVORES"/></a>
           </div>
         </div>
+      </div>
       <div className="basis-full bg-green-900 text-white">
         <Footer />
       </div>
