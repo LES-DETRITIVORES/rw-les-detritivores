@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <>
       <MetaTags title="Accueil" description="Home page" />
-      <div className="flex flex-col rounded-r-xl overflow-hidden md:flex-row m-3 md:m-6">
+      <div className="flex flex-col rounded-r-2xl overflow-hidden md:flex-row m-3 md:m-6">
         <div className="w-full p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${organicUrl})` }}>
           <div className="-rotate-6 mt-16">
             <span className="bg-green-900 font-extrabold uppercase text-3xl text-white lg:text-5xl">
@@ -24,14 +24,15 @@ const HomePage = () => {
             Expert de la gestion des biodéchets, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
           </p>
           <hr className="my-6"/>
-          <div className="mb-3 block text-xl text-white font-extrabold uppercase">
+          <div className="block text-xl text-white font-extrabold uppercase">
             Tri des restes alimentaires
           </div>
-          <p>
+          <p className="my-3">
             En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez.
           </p>
-          <a href="/collecte" className="rounded-sm inline-block p-3 mt-3 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
-            <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>Organiser le tri
+          <a href="/collecte" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>
+            Organiser le tri
           </a>
 
           <div className="block text-xl text-white font-extrabold uppercase mt-12">
@@ -40,22 +41,24 @@ const HomePage = () => {
           <p className="my-3">
             En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète.
           </p>
-          <a href="/traitement" className="rounded-sm inline-block p-3 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
-            <IoSync className="inline mr-2 align-middle h-6 w-6"/>Installer une plateforme
+          <a href="/traitement" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            <IoSync className="inline mr-2 align-middle h-6 w-6"/>
+            Installer une plateforme
           </a>
 
-          <div className="my-3 block text-xl text-white font-extrabold uppercase mt-12">
+          <div className="block text-xl text-white font-extrabold uppercase mt-12">
             Fabrication de compost
           </div>
-          <p>
+          <p className="my-3" >
             Fini les produits chimiques, le compost 100% naturel et normé (NF U 44-051 amendements organiques) nourrit aussi bien les grandes terres agricoles, les petits potagers ou les jolies fleurs sur le balcon.
           </p>
-          <a href="/compost" className="rounded-sm inline-block p-3 mt-3 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
-            <IoBag className="inline mr-2 align-middle h-6 w-6"/>Acheter du compost
+          <a href="/compost" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            <IoBag className="inline mr-2 align-middle h-6 w-6"/>
+            Acheter du compost
           </a>
         </div>
       </div>
-      <div className="flex flex-col-reverse rounded-l-xl overflow-hidden md:flex-row m-3 md:m-6">
+      <div className="flex flex-col-reverse rounded-l-2xl overflow-hidden md:flex-row m-3 md:m-6">
         <div className="bg-orange-600 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
           <p className="text-justify">
             A travers la vie organique, nous aimons surtout prendre soin de la vie humaine. C'est pourquoi nous portons des emplois accessibles, utiles et durables au coeur des territoires urbains ou ruraux.
@@ -87,7 +90,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col rounded-r-xl overflow-hidden md:flex-row m-3 md:m-6">
+      <div className="flex flex-col rounded-r-2xl overflow-hidden md:flex-row m-3 md:m-6">
         <div className="w-full p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${cooperativeUrl})` }}>
           <div className="-rotate-6 mt-16">
             <span className="bg-yellow-500 font-extrabold uppercase text-3xl text-black lg:text-5xl">

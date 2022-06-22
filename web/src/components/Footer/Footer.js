@@ -7,9 +7,9 @@ const Footer = () => {
         <div class="">
           <a href="/organique" className="uppercase font-bold underline">Mission organique</a>
           <p class="text-xs italic mb-2">Vivifier durablement la Terre et les Humains en récoltant la matière organique.</p>
-          <a href="/collecte" className="hover:underline block">Collecte des restes alimentaires</a>
-          <a href="/traitement" className="hover:underline block">Traitement des biodéchets</a>
-          <a href="/compost" className="hover:underline block">Vente de compost</a>
+          <a href="/collecte" className="hover:underline block">Tri des restes alimentaires</a>
+          <a href="/traitement" className="hover:underline block">Compostage des biodéchets</a>
+          <a href="/compost" className="hover:underline block">Fabrication de compost</a>
         </div>
         <div class="">
           <a href="/inclusif" className="uppercase font-bold underline">Mission inclusive</a>
