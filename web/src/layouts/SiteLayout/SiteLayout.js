@@ -32,7 +32,7 @@ const SiteLayout = ({ children }) => {
           <Navigation />
         </div>
         {/*<div className="basis-full mt-[100px] md:mt-[180px]">*/}
-        <div className="basis-full max-w-6xl mx-auto">
+        <div className="basis-full max-w-7xl mx-auto">
           {children}
         </div>
         <div className="bg-green-900 text-white text-lg md:text-xl">

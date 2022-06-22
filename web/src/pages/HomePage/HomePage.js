@@ -1,5 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
+import { IoLeaf, IoTrailSign, IoSync, IoBag } from "react-icons/io5"
 
 const HomePage = () => {
   const organicUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_223_qNNb-iKOBh.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843524959"
@@ -18,38 +19,39 @@ const HomePage = () => {
           </div>
         </div>
         <div className="bg-green-900 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
-          <p className="text-center font-semibold italic">
-          Expert de la gestion des biodéchets, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
+          <IoLeaf className="rounded-full text-green-900 bg-white p-3 w-14 h-14 mx-auto mb-3"/>
+          <p className="text-center font-semibold italic">  
+            Expert de la gestion des biodéchets, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
           </p>
           <hr className="my-6"/>
           <div className="mb-3 block text-xl text-white font-extrabold uppercase">
-            Collecte des restes alimentaires
+            Tri des restes alimentaires
           </div>
-          <p className="mb-3">
-            En camion ou à vélos, nos équipes passent régulièrement collecter vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez.
+          <p>
+            En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez.
           </p>
-          <a href="/collecte" className="rounded-sm inline-block p-3 mt-3 font-semi-bold border-solid border-2 border-white hover:bg-white hover:text-green-900">
-            Adhérer à la collecte
+          <a href="/collecte" className="rounded-sm inline-block p-3 mt-3 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>Organiser le tri
+          </a>
+
+          <div className="block text-xl text-white font-extrabold uppercase mt-12">
+            Compostage des biodéchets
+          </div>
+          <p className="my-3">
+            En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète.
+          </p>
+          <a href="/traitement" className="rounded-sm inline-block p-3 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            <IoSync className="inline mr-2 align-middle h-6 w-6"/>Installer une plateforme
           </a>
 
           <div className="my-3 block text-xl text-white font-extrabold uppercase mt-12">
-            Traitement local des biodéchets
+            Fabrication de compost
           </div>
           <p>
-            En traitant les biodéchets sur nos plateformes locales de compostage, nous évitons le gaspillage d'une ressource précieuse pour la planète.
+            Fini les produits chimiques, le compost 100% naturel et normé (NF U 44-051 amendements organiques) nourrit aussi bien les grandes terres agricoles, les petits potagers ou les jolies fleurs sur le balcon.
           </p>
-          <a href="/traitement" className="rounded-sm inline-block p-3 mt-3 font-semi-bold border-solid border-2 border-white hover:bg-white hover:text-green-900">
-            Découvrir nos plateformes
-          </a>
-
-          <div className="my-3 block text-xl text-white font-extrabold uppercase mt-12">
-            Vente de compost naturel
-          </div>
-          <p>
-            Fini les produits chimiques, notre compost 100% naturel et normé (NF U 44-051 amendements organiques) nourrit aussi bien les grandes terres agricoles, les petits potagers ou les jolies fleurs sur le balcon.
-          </p>
-          <a href="/compost" className="rounded-sm inline-block p-3 mt-3 font-semi-bold border-solid border-2 border-white hover:bg-white hover:text-green-900">
-            Acheter du compost
+          <a href="/compost" className="rounded-sm inline-block p-3 mt-3 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
+            <IoBag className="inline mr-2 align-middle h-6 w-6"/>Acheter du compost
           </a>
         </div>
       </div>
