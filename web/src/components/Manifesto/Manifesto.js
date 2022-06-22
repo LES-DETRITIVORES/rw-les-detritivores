@@ -24,7 +24,7 @@ const Manifesto = () => {
         </p>
         <p>
           Face à l'épuisement, nous régénérons les <Link to="organique">sols</Link>. 
-          Face aux exclusions, nous cultivons le <Link to="inclusif">respect</Link>.
+          Face à la fragilité, nous cultivons les <Link to="inclusif">relations</Link>.
           Face à l'appropriation, nous partageons des <Link to="cooperatif">valeurs</Link>.
         </p>
         <p>          
