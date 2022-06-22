@@ -82,7 +82,7 @@ const Navigation = () => {
         ))}
          <div className="hidden md:inline text-center leading-none my-auto border-orange-600 p-3 border-l-2">
           <span className="text-green-90 text-xs font-light italic">
-            Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités #TousDETRITIVORES<br/>
+            Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités <span className="font-bold">#TousDETRITIVORES</span><br/>
           </span>
           <br/>
           <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-600"/></a>

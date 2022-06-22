@@ -1,6 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
-import { IoLeaf, IoTrailSign, IoSync, IoBag, IoPeople } from "react-icons/io5"
+import { IoLeaf, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet } from "react-icons/io5"
 
 const HomePage = () => {
   const organicUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_223_qNNb-iKOBh.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843524959"
@@ -21,7 +21,7 @@ const HomePage = () => {
         <div className="bg-green-900 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
           <IoLeaf className="rounded-full text-green-900 bg-white p-3 w-14 h-14 mx-auto mb-3"/>
           <p className="text-center font-semibold italic">  
-            Expert de la gestion des biodéchets, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
+            Pionnier de la gestion des biodéchets depuis 2015, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
           </p>
           <hr className="my-6"/>
           <div className="block text-xl text-white font-extrabold uppercase">
@@ -32,18 +32,18 @@ const HomePage = () => {
           </p>
           <a href="/collecte" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
             <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>
-            Organiser le tri
+            Organiser le tri des biodéchets
           </a>
 
           <div className="block text-xl text-white font-extrabold uppercase mt-12">
             Compostage des biodéchets
           </div>
           <p className="my-3">
-            En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète.
+            En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète tout en limitant les nuisances du transport.
           </p>
           <a href="/traitement" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-green-900">
             <IoSync className="inline mr-2 align-middle h-6 w-6"/>
-            Installer une plateforme
+            Installer un site de compostage
           </a>
 
           <div className="block text-xl text-white font-extrabold uppercase mt-12">
@@ -62,7 +62,7 @@ const HomePage = () => {
         <div className="bg-orange-600 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
           <IoPeople className="rounded-full text-orange-600 bg-white p-3 w-14 h-14 mx-auto mb-3"/>
           <p className="text-center font-semibold italic">
-            A travers la vie organique, nous prenons également soin de la vie humaine. C'est pourquoi nous portons des emplois accessibles, utiles et durables au coeur des territoires urbains ou ruraux.
+            Entreprise d'insertion reconnue par l'Etat, nous accompagnons des parcours professionnels accessibles, utiles et durables au coeur des territoires urbains et ruraux.
           </p>
           <hr className="my-6"/>
           <div className="block text-xl text-white font-extrabold uppercase">
@@ -71,18 +71,18 @@ const HomePage = () => {
           <p className="my-3">
             Nous recrutons en priorité des personnes éloignées de l'emploi qui bénéficient tout au long de leur parcours d'un accompagnement professionnel sur mesure.
           </p>
-          <a href="/collecte" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-orange-600">
-            <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>
-            Voir les offres d'emploi
+          <a href="/insertion" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-orange-600">
+            <IoFootsteps className="inline mr-2 align-middle h-6 w-6"/>
+            Postuler à une offre d'emploi
           </a>
           <div className="block text-xl text-white font-extrabold uppercase mt-12">
             Formation professionnelle
           </div>
           <p className="my-3">
-            Conducteur de camion, logisticien à vélo, agent de plateforme, etc. Nos équipes développent de nombreuses compétences techniques et humaines pour la société et l'économie locale.
+            Conducteur de camion, logisticien à vélo, technicien de plateforme, agent de compostage, etc... nos équipes développent de nombreuses compétences techniques et humaines pour la société et l'économie locale de demain.
           </p>
-          <a href="/collecte" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-orange-600">
-            <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>
+          <a href="/formation" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-white hover:bg-white hover:text-orange-600">
+            <IoSchool className="inline mr-2 align-middle h-6 w-6"/>
             Recruter un futur talent
           </a>
         </div>
@@ -98,32 +98,36 @@ const HomePage = () => {
         <div className="w-full p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${cooperativeUrl})` }}>
           <div className="-rotate-6 mt-16">
             <span className="bg-yellow-500 font-extrabold uppercase text-3xl text-black lg:text-5xl">
-              Face à l'appropriation,<br/>partageons des valeurs.
+              Face à la démesure,<br/>partageons des valeurs.
             </span>
           </div>
         </div>
         <div className="bg-yellow-500 text-black basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
-          <p className="text-justify">
-            Tous engagés sur le territoire vers la construction d’une économie locale, durable et inclusive, nous sommes rassemblés au sein d'une Société Coopérative d'Intérêt Collectif (SCIC).
+          <IoChatbubbles className="rounded-full text-yellow-500 bg-black p-3 w-14 h-14 mx-auto mb-3"/>
+          <p className="text-center font-semibold italic">
+            Citoyens, professionnels, collectivités, rejoignez notre mouvement pour des territoires organiques, inclusifs et coopératifs !
           </p>
-          <a href="/societaires" className="my-3 block text-xl font-extrabold underline hover:cursor-pointer">
-            Projet coopératif
+          <hr className="my-6 border-black"/>
+          <div className="block text-xl font-extrabold uppercase">
+            Société Coopérative d'Intérêt Collectif
+          </div>
+          <p className="my-3">
+            Notre projet coopératif vise à rassembler toutes les parties prenantes de la gestion des biodéchets autour d'une même ambition organique, inclusive et coopérative. Devenez sociétaire et prenez part à cette formidable aventure collective !
+          </p>
+          <a href="/cooperation" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-black hover:bg-black hover:text-yellow-500">
+            <IoHandLeft className="inline mr-2 align-middle h-6 w-6"/>
+            Participer à la vie coopérative
           </a>
-          <p>
-            Notre projet coopératif vise à rassembler toutes les parties prenantes de la gestion des biodéchets autour d'une même ambition organique, inclusive et coopérative.
+          <div className="block text-xl font-extrabold uppercase mt-12">
+            Investissement responsable
+          </div>
+          <p className="my-3">
+             Que vous soyez plutôt part sociale, compte courant d'associé ou encore titres participatifs, notre coopérative vous proposent des opportunités d'investissement social et responsable adapté à votre besoin.
           </p>
-          <a href="/traitement" className="my-3 block text-xl font-extrabold underline hover:cursor-pointer">
-            Sociétaires
+          <a href="/investissement" className="rounded-sm inline-block p-2 font-semi-bold text-lg border-solid border-2 border-black hover:bg-black hover:text-yellow-500">
+            <IoWallet className="inline mr-2 align-middle h-6 w-6"/>
+            Investir dans la coopérative
           </a>
-          <p>
-            Pour que la collecte et la valorisation des biodéchets génère une réelle plus-value sociale et économique pour les territoire et ses acteurs, nous vous invitons à participer à la vie de notre coopérative en devenant sociétaire.
-          </p>
-          <a href="/compost" className="my-3 block text-xl font-extrabold underline hover:cursor-pointer">
-            Titres participatifs
-          </a>
-          <p>
-             Les titres participatifs LES DETRITIVORES permettent de renforcer l'indépendance financière de la coopérative au service de la transition organique, inclusive et coopérative de nos territoires.
-          </p>
         </div>
       </div>
     </>
