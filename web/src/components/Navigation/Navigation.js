@@ -81,13 +81,13 @@ const Navigation = () => {
           </>
         ))}
          <div className="hidden md:inline text-center leading-none my-auto border-orange-600 p-3 border-l-2">
-          <span className="text-green-90 text-xs font-light italic">
+          <span className="text-black text-sm font-light">
             Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités <span className="font-bold">#TousDETRITIVORES</span><br/>
           </span>
           <br/>
-          <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-600"/></a>
-          <a href="/linkedin"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-600"/></a>
-          <a href="/instagram"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-600"/></a>
+          <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
+          <a href="/linkedin"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
+          <a href="/instagram"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
         </div>  
       </div>
     </>
