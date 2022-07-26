@@ -7,7 +7,7 @@ function Footer(props) {
         <div class="mb-3">
           <div className="uppercase font-bold">{nav.title}</div>
             {nav.links.map((link) => (
-              <a href={link.to} className="hover:underline block"><span className="inline-block mr-1">{link.icon}</span>{link.label}</a>
+              <a href={link.to} className="hover:underline hover:text-green-900 block"><span className="inline-block mr-1">{link.icon}</span>{link.label}</a>
             ))}
         </div>
       ))}
