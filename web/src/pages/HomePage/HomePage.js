@@ -73,7 +73,7 @@ const HomePage = () => {
             </p>
             <hr className="my-6"/>
             <p className="text-center">
-              Entreprise d'insertion reconnue par l'Etat, nous accompagnons des parcours professionnels accessibles, utiles et durables au coeur des territoires urbains et ruraux.
+              Coopérative d'insertion reconnue par l'Etat, nous accompagnons des parcours professionnels accessibles, utiles et durables au coeur des territoires urbains et ruraux.
             </p>
           </p>
           <hr className="my-6 rotate-1"/>
