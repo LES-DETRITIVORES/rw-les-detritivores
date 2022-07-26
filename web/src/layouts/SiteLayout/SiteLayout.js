@@ -1,18 +1,18 @@
 import { Transition } from '@headlessui/react'
 import { useState, useEffect } from 'react'
-import { IoLeaf, IoLink, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet, IoHome, IoRestaurant, IoBusiness } from "react-icons/io5"
+import { IoLeaf, IoGlobe, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet, IoHome, IoRestaurant, IoBusiness, IoBicycle } from "react-icons/io5"
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 import { IoLocation, IoMail, IoCall } from "react-icons/io5";
 
 import Header from 'src/components/Header'
-import Navigation from 'src/components/Navigation/Navigation'
 import Manifesto from 'src/components/Manifesto/Manifesto'
 import Footer from 'src/components/Footer'
 
+const defaultStyle = "bg-orange-700 text-white rounded-full p-3 w-12 h-12 mx-auto mb-1"
 const navList = [
   {
-    icon: <IoTrailSign/>,
-    title: 'Actions organiques',
+    icon: <IoLeaf className={defaultStyle}/>,
+    title: 'Services organiques',
     links: [
       {
         icon: <IoTrailSign/>,
@@ -32,7 +32,8 @@ const navList = [
     ]
   },
   {
-    title: 'Actions inclusives',
+    icon: <IoPeople className={defaultStyle}/>,
+    title: 'Engagements inclusifs',
     links: [
       {
         icon: <IoFootsteps/>,
@@ -47,7 +48,8 @@ const navList = [
     ]
   },
   {
-    title: 'Actions coopératives',
+    icon: <IoChatbubbles className={defaultStyle}/>,
+    title: 'Vie coopérative',
     links: [
       {
         icon: <IoHandLeft/>,
@@ -85,8 +87,8 @@ const navList = [
     title: 'Nous suivre',
     links: [
       {
-        icon: <IoLink/>,
-        label: "Internet",
+        icon: <IoGlobe/>,
+        label: "Web",
         to: "/"
       },
       {
@@ -150,11 +152,11 @@ const SiteLayout = ({ children }) => {
       >
       <div className="flex flex-col">
         {/*<div className="basis-full fixed top-0 left-0 right-0 bg-white/95 backdrop-grayscale z-50">*/}
-        <div className="basis-full">
-          <Navigation />
+        <div className="basis-full p-3 text-center w-screen mx-auto">
+          <Header navList={navList}/>
         </div>
         {/*<div className="basis-full mt-[100px] md:mt-[180px]">*/}
-        <div className="basis-full max-w-7xl mx-auto">
+        <div className="basis-full w-screen max-w-7xl mx-auto">
           {children}
         </div>
         <div className="bg-green-900 text-white text-lg md:text-xl">
@@ -164,7 +166,7 @@ const SiteLayout = ({ children }) => {
           </div>
         </div>
       </div>
-      <div className="basis-full p-6 max-w-7xl mx-auto bg-white text-black">
+      <div className="basis-full p-6 w-screen mx-auto bg-white text-black">
         <Footer navList={navList} />
       </div>
     </Transition>

@@ -10,10 +10,10 @@ const HomePage = () => {
   return (
     <>
       <MetaTags title="Accueil" description="Home page" />
-      <div className="flex flex-col rounded-r-2xl overflow-hidden md:flex-row m-3 md:m-6">
-        <div className="w-full p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${organicUrl})` }}>
+      <div className="flex flex-col rounded-r-2xl overflow-hidden m-3 md:flex-row md:m-6">
+        <div className="basis-full p-8 sm:p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${organicUrl})` }}>
           <div className="-rotate-6 mt-16">
-            <span className="bg-green-900 font-extrabold uppercase text-3xl text-white lg:text-5xl py-1">
+            <span className="bg-green-900 font-extrabold uppercase text-xl sm:text-2xl md:text-3xl text-white lg:text-5xl py-1">
               <span className="p-2 inline-block mb-1 lg:mb-4">Face&nbsp;à&nbsp;leur&nbsp;épuisement,</span><br/><span className="p-2">régénérons&nbsp;les&nbsp;sols.</span>
             </span>
           </div>
@@ -21,8 +21,10 @@ const HomePage = () => {
         <div className="bg-green-900 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
           <p className="-rotate-1">
             <p className="mb-3 text-3xl font-semibold text-center">
-              <IoLeaf className="rounded-full text-green-900 bg-white p-3 w-14 h-14 inline mr-2"/>Actions organiques
+              <IoLeaf className="rounded-full text-green-900 bg-white p-2 w-14 h-14 mx-auto mb-2"/>
+              Services organiques
             </p>
+            <hr className="my-6"/>
             <p className="text-center">  
               Pionnier de la gestion des biodéchets depuis 2015, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
             </p>
@@ -66,8 +68,10 @@ const HomePage = () => {
         <div className="bg-orange-700 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
           <p className="-rotate-1">
             <p className="mb-3 text-3xl font-semibold text-center">
-              <IoPeople className="rounded-full text-orange-700 bg-white p-3 w-14 h-14 mr-2 inline"/>Actions inclusives
+              <IoPeople className="rounded-full text-orange-700 bg-white p-2 w-14 h-14 mx-auto mb-2"/>
+              Engagements inclusifs
             </p>
+            <hr className="my-6"/>
             <p className="text-center">
               Entreprise d'insertion agrée par l'Etat, nous accompagnons des parcours professionnels accessibles, utiles et durables au coeur des territoires urbains et ruraux.
             </p>
@@ -95,18 +99,18 @@ const HomePage = () => {
             Recruter un futur talent
           </a>
         </div>
-        <div className="basis-full p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${inclusiveUrl})` }}>
+        <div className="basis-full p-8 sm:p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${inclusiveUrl})` }}>
           <div className="-rotate-6 mt-24">
-            <span className="bg-orange-700 font-extrabold uppercase text-3xl text-white lg:text-5xl py-1">
+            <span className="bg-orange-700 font-extrabold uppercase text-xl sm:text-2xl md:text-3xl text-white lg:text-5xl py-1">
               <span className="p-2 inline-block mb-1 lg:mb-4">Face&nbsp;aux&nbsp;fragilités,</span><br/><span className="p-2">cultivons&nbsp;les&nbsp;relations.</span>
             </span>
           </div>
         </div>
       </div>
       <div className="flex flex-col rounded-r-2xl overflow-hidden md:flex-row m-3 md:m-6">
-        <div className="w-full p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${cooperativeUrl})` }}>
+        <div className="basis-full p-8 sm:p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${cooperativeUrl})` }}>
           <div className="-rotate-6 mt-16">
-            <span className="bg-yellow-500 font-extrabold uppercase text-3xl text-black lg:text-5xl py-1">
+            <span className="bg-yellow-500 font-extrabold uppercase text-xl sm:text-2xl md:text-3xl text-black lg:text-5xl py-1">
               <span className="p-2 inline-block mb-1 lg:mb-4">Face&nbsp;à&nbsp;la&nbsp;démesure,</span><br/><span className="p-2">partageons&nbsp;des&nbsp;valeurs.</span>
             </span>
           </div>
@@ -114,8 +118,9 @@ const HomePage = () => {
         <div className="bg-yellow-500 text-black basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
           <p className="-rotate-1">
             <p className="mb-3 text-3xl font-semibold text-center">
-              <IoChatbubbles className="rounded-full text-yellow-500 bg-black p-3 w-14 h-14 mx-auto mr-2 inline"/>Actions coopératives
+              <IoChatbubbles className="rounded-full text-yellow-500 bg-black p-2 w-14 h-14 mx-auto mb-2"/>Vie coopérative
             </p>
+            <hr className="my-6 border-black"/>
             <p className="text-center">
               Citoyens, professionnels, collectivités, rejoignez notre mouvement pour des territoires organiques, inclusifs et coopératifs !
             </p>
@@ -129,7 +134,7 @@ const HomePage = () => {
           </p>
           <a href="/cooperation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-yellow-700 hover:bg-yellow-100">
             <IoHandLeft className="inline mr-2 align-middle h-6 w-6"/>
-            Participer à la vie coopérative
+            Rejoindre la coopérative
           </a>
           <hr className="my-6 border-black -rotate-1"/>
           <div className="block text-xl font-bold uppercase mt-6">

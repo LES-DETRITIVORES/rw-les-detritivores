@@ -1,5 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
-import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
+import { IoGlobe, IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 
 const Navigation = () => {    
   const navList = [
@@ -85,6 +85,7 @@ const Navigation = () => {
             Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités <span className="font-bold">#TousDETRITIVORES</span><br/>
           </span>
           <br/>
+          <a href="/"><IoGlobe size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
           <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
           <a href="/linkedin"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
           <a href="/instagram"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>

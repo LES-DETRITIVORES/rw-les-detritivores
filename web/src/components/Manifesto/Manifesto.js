@@ -12,7 +12,7 @@ const Manifesto = () => {
     <>
       <div className="inline-block space-y-6 leading-tight md:leading-tight md:-rotate-3 md:pl-3">
         <p>
-          Nous sommes <span className="p-1 bg-orange-600 font-bold">LES&nbsp;DETRITIVORES</span>.
+          Nous sommes <span className="p-1 bg-orange-700 font-bold">LES&nbsp;DETRITIVORES</span>.
         </p>
         <p>
           Pionnier de la gestion des biodéchets depuis 2015, 
