@@ -1,10 +1,132 @@
 import { Transition } from '@headlessui/react'
 import { useState, useEffect } from 'react'
+import { IoLeaf, IoLink, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet, IoHome, IoRestaurant, IoBusiness } from "react-icons/io5"
+import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
+import { IoLocation, IoMail, IoCall } from "react-icons/io5";
 
 import Header from 'src/components/Header'
 import Navigation from 'src/components/Navigation/Navigation'
 import Manifesto from 'src/components/Manifesto/Manifesto'
 import Footer from 'src/components/Footer'
+
+const navList = [
+  {
+    icon: <IoTrailSign/>,
+    title: 'Actions organiques',
+    links: [
+      {
+        icon: <IoTrailSign/>,
+        label: "Tri des restes alimentaires",
+        to: "/collecte"
+      },
+      {
+        icon: <IoSync/>,
+        label: "Compostage des biodéchets",
+        to: "/traitement"
+      },
+      {
+        icon: <IoBag/>,
+        label: "Fabrication de compost",
+        to: "/compost"
+      },
+    ]
+  },
+  {
+    title: 'Actions inclusives',
+    links: [
+      {
+        icon: <IoFootsteps/>,
+        label: "Entreprise d'insertion",
+        to: "/insertion"
+      },
+      {
+        icon: <IoSchool/>,
+        label: "Formation professionnelle",
+        to: "/formation"
+      }
+    ]
+  },
+  {
+    title: 'Actions coopératives',
+    links: [
+      {
+        icon: <IoHandLeft/>,
+        label: "Société Coopérative d'Intérêt Collectif (SCIC)",
+        to: "/cooperative"
+      },
+      {
+        icon: <IoWallet/>,
+        label: "Investissement Responsable (IR)",
+        to: "/investissement"
+      }
+    ]
+  },
+  {
+    title: 'Nos solutions',
+    links: [
+      {
+        icon: <IoHome/>,
+        label: "Pour les particuliers",
+        to: "/particulier"
+      },
+      {
+        icon: <IoRestaurant/>,
+        label: "Pour les professionnels",
+        to: "/professionnels"
+      },
+      {
+        icon: <IoBusiness/>,
+        label: "Pour les collectivites",
+        to: "/collectivités"
+      }
+    ]
+  },
+  {
+    title: 'Nous suivre',
+    links: [
+      {
+        icon: <IoLink/>,
+        label: "Internet",
+        to: "/"
+      },
+      {
+        icon: <IoLogoFacebook/>,
+        label: "Facebook",
+        to: "/facebook"
+      },
+      {
+        icon: <IoLogoLinkedin/>,
+        label: "LinkedIn",
+        to: "/linkedin"
+      },
+      {
+        icon: <IoLogoInstagram/>,
+        label: "Instagram",
+        to: "/instagram"
+      }
+    ]
+  },
+  {
+    title: 'Nous contacter',
+    links: [
+      {
+        icon: <IoLocation/>,
+        label: "65 quai de Brazza 33100 Bordeaux",
+        to: "/"
+      },
+      {
+        icon: <IoMail/>,
+        label: "bonjour@les-detritivores.co",
+        to: "/mail"
+      },
+      {
+        icon: <IoCall/>,
+        label: "05 56 67 14 47",
+        to: "/call"
+      }
+    ]
+  },
+]
 
 const SiteLayout = ({ children }) => {
   const logoUrl = "https://ik.imagekit.io/dttv/DETRITIVORES_-_Logo_blanc_D9gS55ZaO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655210481453"
@@ -22,7 +144,7 @@ const SiteLayout = ({ children }) => {
           enter="transition-opacity duration-[2000ms] ease-in-out"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave=" transition-opacity duration-[2000ms] ease-in-out"
+          leave="transition-opacity duration-[2000ms] ease-in-out"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
       >
@@ -43,7 +165,7 @@ const SiteLayout = ({ children }) => {
         </div>
       </div>
       <div className="basis-full p-6 max-w-7xl mx-auto bg-white text-black">
-        <Footer />
+        <Footer navList={navList} />
       </div>
     </Transition>
   </>

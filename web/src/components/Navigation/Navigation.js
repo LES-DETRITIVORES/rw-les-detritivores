@@ -75,12 +75,12 @@ const Navigation = () => {
                   className="w-12 h-12 md:w-16 md:h-16 m-auto"
                   alt={nav.alt}
                 />
-                <span className="bg-orange-600">{nav.title}</span>
+                <span className="bg-orange-700">{nav.title}</span>
               </Link>
             )}
           </>
         ))}
-         <div className="hidden md:inline text-center leading-none my-auto border-orange-600 p-3 border-l-2">
+         <div className="hidden md:inline text-center leading-none my-auto border-orange-700 p-3 border-l-2 rotate-1">
           <span className="text-black text-sm font-light">
             Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités <span className="font-bold">#TousDETRITIVORES</span><br/>
           </span>

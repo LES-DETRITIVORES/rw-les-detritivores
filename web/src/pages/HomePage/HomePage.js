@@ -34,7 +34,7 @@ const HomePage = () => {
           <p className="my-3">
             En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez.
           </p>
-          <a href="/collecte" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100 ">
+          <a href="/collecte" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100">
             <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>
             Organiser le tri des biodéchets
           </a>
