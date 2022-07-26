@@ -20,12 +20,12 @@ const Manifesto = () => {
           pour en faire un compost nutritif et local.
         </p>
         <p>
-          Entreprise d'insertion reconnue par l'Etat, 
+          Entreprise d'insertion agrée par l'Etat, 
           nous accompagnons des parcours professionnels accessibles, 
           utiles et durables au coeur des territoires urbains et ruraux.
         </p>
         <p>
-          Face à l'épuisement, nous régénérons les sols.<br/> 
+          Face à leur épuisement, nous régénérons les sols.<br/> 
           Face à la fragilité, nous cultivons les relations.<br/>
           Face à la démesure, nous partageons des valeurs.
         </p>

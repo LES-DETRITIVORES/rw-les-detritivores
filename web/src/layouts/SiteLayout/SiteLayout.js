@@ -42,7 +42,7 @@ const SiteLayout = ({ children }) => {
           </div>
         </div>
       </div>
-      <div className="basis-full bg-green-800 text-white">
+      <div className="basis-full p-6 max-w-7xl mx-auto bg-white text-black">
         <Footer />
       </div>
     </Transition>
