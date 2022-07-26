@@ -131,7 +131,6 @@ const navList = [
 ]
 
 const SiteLayout = ({ children }) => {
-  const logoUrl = "https://ik.imagekit.io/dttv/DETRITIVORES_-_Logo_blanc_D9gS55ZaO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655210481453"
   let [isShowing, setIsShowing] = useState(false)
 
   useEffect(() => {
@@ -160,9 +159,8 @@ const SiteLayout = ({ children }) => {
           {children}
         </div>
         <div className="bg-green-900 text-white text-lg md:text-xl">
-          <div className="p-6 max-w-lg mx-auto">
+          <div className="p-6 max-w-5xl mx-auto">
             <Manifesto />        
-            <a href="/"><img className="w-36 lg:w-48 mt-6 block mx-auto hover:scale-105 hover:drop-shadow-md" src={logoUrl} alt="LES DETRITIVORES"/></a>
           </div>
         </div>
       </div>
