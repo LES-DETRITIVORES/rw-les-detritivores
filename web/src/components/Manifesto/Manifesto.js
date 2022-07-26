@@ -6,7 +6,7 @@ const Manifesto = () => {
         <p className="inline-block text-left text-2xl font-semibold md:mx-auto md:col-span-2 md:-rotate-3 md:pl-3">
           Nous sommes <span className="p-1 bg-orange-700 font-bold">LES&nbsp;DETRITIVORES</span>.
         </p>
-        <div className="mt-6 inline-block space-y-6 leading-tight md:leading-tight md:-rotate-3 md:pl-3">
+        <div className="md:mt-6 inline-block space-y-6 leading-tight md:leading-tight md:-rotate-3 md:pl-3">
           <p>
             Pionnier.e.s de la gestion des biodéchets depuis 2015, 
             nous trions, collectons et valorisons les restes alimentaires... 

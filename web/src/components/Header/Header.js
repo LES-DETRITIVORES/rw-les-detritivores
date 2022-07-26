@@ -61,7 +61,7 @@ const Header = (props) => {
           </Menu.Items>
         </Menu>
         <div className="p-2 m-3 col-span-2 text-center leading-none my-auto rotate-1 border-orange-700 border-y-2 md:border-2 md:rounded-lg">
-          <div className="text-black text-sm font-light">
+          <div className="text-black text-sm">
             Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. <span className="font-bold">#TousDETRITIVORES</span><br/>
           </div>
           <div className="my-3 inline-block">
