@@ -25,7 +25,7 @@ const HomePage = () => {
               Services organiques
             </p>
             <hr className="my-6"/>
-            <p className="text-center">  
+            <p className="text-center">
               Pionnier de la gestion des biodéchets depuis 2015, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
             </p>
           </p>
@@ -53,7 +53,7 @@ const HomePage = () => {
           </a>
           <hr className="my-6 rotate-1"/>
           <div className="block text-xl text-white font-bold uppercase mt-6">
-            Fabrication de compost
+            Vente de compost
           </div>
           <p className="my-3" >
             Fini les produits chimiques, le compost 100% naturel et normé (NF U 44-051 amendements organiques) nourrit aussi bien les grandes terres agricoles, les petits potagers ou les jolies fleurs sur le balcon.

@@ -26,7 +26,7 @@ const navList = [
       },
       {
         icon: <IoBag/>,
-        label: "Fabrication de compost",
+        label: "Vente de compost",
         to: "/compost"
       },
     ]
@@ -54,7 +54,7 @@ const navList = [
       {
         icon: <IoHandLeft/>,
         label: "Société Coopérative d'Intérêt Collectif (SCIC)",
-        to: "/cooperative"
+        to: "/cooperation"
       },
       {
         icon: <IoWallet/>,
@@ -142,10 +142,10 @@ const SiteLayout = ({ children }) => {
     <Transition
           appear={true}
           show={isShowing}
-          enter="transition-opacity duration-[2000ms] ease-in-out"
+          enter="transition-opacity duration-[1000ms] ease-in-out"
           enterFrom="opacity-0"
           enterTo="opacity-100"
-          leave="transition-opacity duration-[2000ms] ease-in-out"
+          leave="transition-opacity duration-[1000ms] ease-in-out"
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
       >
@@ -160,7 +160,7 @@ const SiteLayout = ({ children }) => {
         </div>
         <div className="bg-green-900 text-white text-lg md:text-xl">
           <div className="p-6 max-w-5xl mx-auto">
-            <Manifesto />        
+            <Manifesto />
           </div>
         </div>
       </div>

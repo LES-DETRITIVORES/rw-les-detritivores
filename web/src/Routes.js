@@ -9,6 +9,7 @@
 
 import { Router, Route, Set } from '@redwoodjs/router'
 import SiteLayout from 'src/layouts/SiteLayout'
+import PageLayout from 'src/layouts/PageLayout'
 
 const Routes = () => {
   return (
@@ -18,6 +19,15 @@ const Routes = () => {
         <Route path="/organique" page={OrganicPage} name="organic" />
         <Route path="/inclusif" page={InclusivePage} name="inclusive" />
         <Route path="/cooperatif" page={CooperativePage} name="cooperative" />
+        <Set wrap={PageLayout}>
+          <Route path="/collecte" page={CollectPage} name="collect" />
+          <Route path="/traitement" page={TreatmentPage} name="treatment" />
+          <Route path="/compost" page={CompostPage} name="compost" />
+          <Route path="/insertion" page={IntegrationPage} name="integration" />
+          <Route path="/formation" page={TrainingPage} name="training" />
+          <Route path="/cooperation" page={CooperationPage} name="cooperation" />
+          <Route path="/investissement" page={InvestmentPage} name="investment" />
+        </Set>
       </Set>
       <Route notfound page={NotFoundPage} />
     </Router>
