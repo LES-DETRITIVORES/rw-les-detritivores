@@ -44,8 +44,8 @@ const CollectPage = () => {
           <h2 className="text-xl md:text-3xl text-black font-bold">Respecter la loi n'a jamais été aussi facile : nous nous occupons de tout.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              Au 1er janvier 2024, la loi sur la Transition Ecologique pour la Croissance Verte s’appliquera à l’ensemble des écocitoyens.
-              2024, c’est demain finalement. Heureusement, chez Les DETRITIVORES on y travaille déjà : n’attendez plus et rejoignez le mouvement !
+              Au 1er janvier 2024, la loi sur la Transition Ecologique pour la Croissance Verte s’appliquera à l’ensemble du territoire national du professionnel au particulier.
+              2024, c’est demain finalement. Heureusement, chez Les DETRITIVORES on a déjà la solution : n’attendez plus et rejoignez le mouvement !
             </p>
             <ol className="space-y-3">
               <li>
