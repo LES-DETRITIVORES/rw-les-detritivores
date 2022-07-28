@@ -1,7 +1,7 @@
 -- CreateTable
 CREATE TABLE "Form" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "id" SERIAL NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "company" TEXT,
     "firstname" TEXT NOT NULL,
     "lastname" TEXT NOT NULL,
@@ -9,5 +9,7 @@ CREATE TABLE "Form" (
     "email" TEXT NOT NULL,
     "phone" TEXT NOT NULL,
     "subject" TEXT NOT NULL,
-    "message" TEXT
+    "message" TEXT,
+
+    CONSTRAINT "Form_pkey" PRIMARY KEY ("id")
 );
