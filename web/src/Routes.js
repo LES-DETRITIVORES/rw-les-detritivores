@@ -16,9 +16,6 @@ const Routes = () => {
     <Router>
       <Set wrap={SiteLayout}>
         <Route path="/" page={HomePage} name="home" />
-        <Route path="/organique" page={OrganicPage} name="organic" />
-        <Route path="/inclusif" page={InclusivePage} name="inclusive" />
-        <Route path="/cooperatif" page={CooperativePage} name="cooperative" />
         <Set wrap={PageLayout}>
           <Route path="/collecte" page={CollectPage} name="collect" />
           <Route path="/traitement" page={TreatmentPage} name="treatment" />

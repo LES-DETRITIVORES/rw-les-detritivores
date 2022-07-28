@@ -1,6 +1,7 @@
 import { Form, FormError, Label, TextField, EmailField, TelField, SelectField, TextAreaField, Submit } from '@redwoodjs/forms'
+import { useState } from 'react'
 import { useMutation } from '@redwoodjs/web'
-import { toast, Toaster } from '@redwoodjs/web/toast'
+import { Dialog } from '@headlessui/react'
 
 const options = [
   { label: 'Choisir un sujet...' },
@@ -29,21 +30,20 @@ const EMAIL_FORM = gql`
 `
 
 const SiteForm = () => {
-  const [createForm, { loading, error }] = useMutation(CREATE_FORM, {
-    onCompleted: (result) => {
-      //console.log(JSON.stringify(result.form))
-      toast.success('Demande enregistrée.')
-    },
-  })
+  const [submit, setSubmit] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+
+  const [createForm, { loading, error }] = useMutation(CREATE_FORM)
 
   const [emailForm] = useMutation(EMAIL_FORM, {
     onCompleted: (result) => {
       //console.log(JSON.stringify(result.email))
-      toast.success('Message envoyé.')
+      setIsOpen(true)
     },
   })
 
   const formSubmit = async (data) => {
+    setSubmit(true)
     console.log(JSON.stringify(data))
     /* Save form */
     const form = await createForm({ variables: { input: data } })
@@ -52,11 +52,34 @@ const SiteForm = () => {
     /* Send email form */
     const email = await emailForm({ variables: { id: form.data.form.id } })
     console.log(JSON.stringify(email))
+    setSubmit(false)
   }
 
   return (
     <div>
-      <Toaster />
+      <Dialog as="div" className="relative z-10" open={isOpen} onClose={() => setIsOpen(false)}>
+        <div className="fixed inset-0 bg-black bg-opacity-50" />
+        <div className="fixed inset-0 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+              <Dialog.Title as="h3"
+                className="text-lg font-medium leading-6 text-gray-900">Demande enregistrée</Dialog.Title>
+              <div className="mt-2">
+                <p className="text-sm text-gray-500">
+                  Un courriel de confirmation vient de vous être envoyé.
+                </p>
+              </div>
+              <div className="mt-4">
+                <button onClick={() => setIsOpen(false)}
+                  className="inline-flex justify-center rounded-md border border-transparent bg-green-100 px-4 py-2 text-sm font-medium text-green-900 hover:bg-green-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2">
+                    Valider
+                </button>
+              </div>
+            </Dialog.Panel>
+          </div>
+        </div>
+      </Dialog>
+
       <Form onSubmit={formSubmit} className="max-w-lg mx-auto text-md font-normal">
         <FormError error={error}/>
         <div className="border-2 border-b-0 border-white rounded-t-lg p-8 mt-3 space-y-3">
@@ -179,7 +202,7 @@ const SiteForm = () => {
         </div>
         <div>
             <Submit
-              disabled={loading}
+              disabled={submit}
               className="sm:text-sm md:text-lg uppercase border-2 border-white font-bold bg-white text-green-900 rounded-b-md p-4 w-full shadow-lg hover:bg-orange-700 hover:text-white">
                 Envoyer une demande
             </Submit>
