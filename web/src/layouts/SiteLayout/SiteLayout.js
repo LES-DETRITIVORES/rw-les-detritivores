@@ -7,7 +7,7 @@ import { IoLocation, IoMail, IoCall } from "react-icons/io5";
 import Header from 'src/components/Header'
 import Manifesto from 'src/components/Manifesto/Manifesto'
 import Footer from 'src/components/Footer'
-import ContactForm from 'src/components/ContactForm/ContactForm';
+import SiteForm from 'src/components/SiteForm/SiteForm';
 
 const defaultStyle = "bg-orange-700 text-white rounded-full p-3 w-12 h-12 mx-auto mb-1"
 const navList = [
@@ -165,7 +165,7 @@ const SiteLayout = ({ children }) => {
               <Manifesto/>
             </div>
             <div className="basis-full md:basis-1/2">
-              <ContactForm/>
+              <SiteForm/>
             </div>
           </div>
         </div>

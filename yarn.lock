@@ -17790,6 +17790,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nodemailer@npm:^6.7.7":
+  version: 6.7.7
+  resolution: "nodemailer@npm:6.7.7"
+  checksum: 4dedb9e436f8cdbb7435ad5e86a08370d6e854d3685e5b628c4f8a3093a245bce0221e745e3641aaaeb905cd23e1105d71b64bc7b5931f34c10e9015315516e9
+  languageName: node
+  linkType: hard
+
 "nodemon@npm:2.0.16":
   version: 2.0.16
   resolution: "nodemon@npm:2.0.16"
@@ -20939,6 +20946,7 @@ __metadata:
     "@heroicons/react": ^1.0.6
     "@redwoodjs/core": 1.5.1
     autoprefixer: latest
+    nodemailer: ^6.7.7
     postcss: latest
     react-icons: ^4.4.0
     tailwindcss: latest
