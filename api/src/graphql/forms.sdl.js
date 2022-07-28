@@ -13,8 +13,8 @@ export const schema = gql`
   }
 
   type Query {
-    forms: [Form!]! @requireAuth
-    form(id: Int!): Form @requireAuth
+    forms: [Form!]! @skipAuth
+    form(id: Int!): Form @skipAuth
   }
 
   input CreateFormInput {
@@ -41,8 +41,8 @@ export const schema = gql`
 
   type Mutation {
     createForm(input: CreateFormInput!): Form! @skipAuth
-    updateForm(id: Int!, input: UpdateFormInput!): Form! @requireAuth
-    deleteForm(id: Int!): Form! @requireAuth
+    updateForm(id: Int!, input: UpdateFormInput!): Form! @skipAuth
+    deleteForm(id: Int!): Form! @skipAuth
     emailForm(id: Int!): String! @skipAuth
   }
 `
