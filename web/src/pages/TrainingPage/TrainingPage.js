@@ -1,6 +1,6 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
-import { IoTrailSign } from "react-icons/io5"
+import { IoSchool } from "react-icons/io5"
 
 const TrainingPage = () => {
   const rulesUrl = "https://ik.imagekit.io/dttv/CONSIGNES_TRI_BIODECHETS_A4_OhrCcMbK1.png?updatedAt=1658956423391&tr=w-563,h-632,fo-custom,cm-extract"
@@ -10,7 +10,7 @@ const TrainingPage = () => {
   return (
     <>
       <MetaTags title="Collect" description="Collect page" />
-      <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>Engagements inclusifs > Formation professionnelle</h1>
+      <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoSchool className="inline mr-2 align-middle h-6 w-6"/>Engagements inclusifs > Formation professionnelle</h1>
       <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="basis-full md:basis-1/2">
           <h2 className="text-xl md:text-3xl text-black font-bold">Plus besoin d'abandonner les déchets alimentaires : nous les valorisons localement.</h2>

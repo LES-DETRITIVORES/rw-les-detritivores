@@ -85,6 +85,46 @@ const SiteForm = () => {
         <div className="border-2 border-b-0 border-white rounded-t-lg p-8 mt-3 space-y-3">
           <div>
             <Label 
+              name="subject"
+              className="block">
+              Demande
+            </Label>
+            <SelectField 
+              name="subject"
+              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+              validation={{
+                required: true,
+                validate: {
+                  matchesInitialValue: (value) => {
+                    return (
+                      value !== options[0].label
+                    )
+                  },
+                },
+              }}              
+            >
+              {options.map((option, optionIdx) => (
+                <option
+                key={optionIdx}
+                className={({ active }) =>
+                  `relative cursor-default select-none py-2 pl-10 pr-4 ${
+                    active ? 'bg-orange-100 text-orange-900' : 'text-gray-900'
+                  }`
+                }>{option.label}</option>
+              ))}
+            </SelectField>
+          </div>
+          <div>
+            <Label className="block">
+              Message (facultatif)
+            </Label>
+            <TextAreaField
+              name="message"
+              className="block w-full h-24 bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"/>
+          </div>
+          <div>
+            <Label 
               name="company"
               className="block">
               Société (facultatif)
@@ -158,46 +198,6 @@ const SiteForm = () => {
               errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
               validation={{ required: true }}
             />
-          </div>
-          <div>
-            <Label 
-              name="subject"
-              className="block">
-              Demande
-            </Label>
-            <SelectField 
-              name="subject"
-              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-              validation={{
-                required: true,
-                validate: {
-                  matchesInitialValue: (value) => {
-                    return (
-                      value !== options[0].label
-                    )
-                  },
-                },
-              }}              
-            >
-              {options.map((option, optionIdx) => (
-                <option
-                key={optionIdx}
-                className={({ active }) =>
-                  `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                    active ? 'bg-orange-100 text-orange-900' : 'text-gray-900'
-                  }`
-                }>{option.label}</option>
-              ))}
-            </SelectField>
-          </div>
-          <div>
-            <Label className="block">
-              Message (facultatif)
-            </Label>
-            <TextAreaField
-              name="message"
-              className="block w-full h-24 bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"/>
           </div>
         </div>
         <div>

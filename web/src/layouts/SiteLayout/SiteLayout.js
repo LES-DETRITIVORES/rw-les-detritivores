@@ -159,12 +159,12 @@ const SiteLayout = ({ children }) => {
         <div className="basis-full w-screen max-w-7xl mx-auto">
           {children}
         </div>
-        <div id="contact" className="bg-green-900 text-white text-lg md:text-xl">
+        <div className="bg-green-900 text-white text-lg md:text-xl">
           <div className="p-6 mx-auto flex flex-col gap-6 md:flex-row">
             <div className="basis-full md:basis-1/2">
               <Manifesto/>
             </div>
-            <div className="basis-full md:basis-1/2">
+            <div id="contact" className="basis-full md:basis-1/2">
               <SiteForm/>
             </div>
           </div>
