@@ -8,19 +8,12 @@
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 
 import { Router, Route, Set } from '@redwoodjs/router'
-import FormsLayout from 'src/layouts/FormsLayout'
 import SiteLayout from 'src/layouts/SiteLayout'
 import PageLayout from 'src/layouts/PageLayout'
 
 const Routes = () => {
   return (
     <Router>
-      <Set wrap={FormsLayout}>
-        <Route path="/forms/new" page={FormNewFormPage} name="newForm" />
-        <Route path="/forms/{id:Int}/edit" page={FormEditFormPage} name="editForm" />
-        <Route path="/forms/{id:Int}" page={FormFormPage} name="form" />
-        <Route path="/forms" page={FormFormsPage} name="forms" />
-      </Set>
       <Set wrap={SiteLayout}>
         <Route path="/" page={HomePage} name="home" />
         <Route path="/organique" page={OrganicPage} name="organic" />
