@@ -7,6 +7,7 @@ import { IoLocation, IoMail, IoCall } from "react-icons/io5";
 import Header from 'src/components/Header'
 import Manifesto from 'src/components/Manifesto/Manifesto'
 import Footer from 'src/components/Footer'
+import ContactForm from 'src/components/ContactForm/ContactForm';
 
 const defaultStyle = "bg-orange-700 text-white rounded-full p-3 w-12 h-12 mx-auto mb-1"
 const navList = [
@@ -109,7 +110,7 @@ const navList = [
     ]
   },
   {
-    title: 'Nous contacter',
+    title: 'Nous rencontrer',
     links: [
       {
         icon: <IoLocation/>,
@@ -158,9 +159,14 @@ const SiteLayout = ({ children }) => {
         <div className="basis-full w-screen max-w-7xl mx-auto">
           {children}
         </div>
-        <div className="bg-green-900 text-white text-lg md:text-xl">
-          <div className="p-6 max-w-5xl mx-auto">
-            <Manifesto />
+        <div id="contact" className="bg-green-900 text-white text-lg md:text-xl">
+          <div className="p-6 mx-auto flex flex-col gap-6 md:flex-row">
+            <div className="basis-full md:basis-1/2">
+              <Manifesto/>
+            </div>
+            <div className="basis-full md:basis-1/2">
+              <ContactForm/>
+            </div>
           </div>
         </div>
       </div>
