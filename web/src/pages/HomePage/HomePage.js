@@ -19,15 +19,13 @@ const HomePage = () => {
           </div>
         </div>
         <div className="bg-green-900 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
-          <p className="-rotate-1">
-            <p className="mb-3 text-3xl font-semibold text-center">
-              <IoLeaf className="rounded-full text-green-900 bg-white p-2 w-14 h-14 mx-auto mb-2"/>
-              Services organiques
-            </p>
-            <hr className="my-6"/>
-            <p className="text-center">
-              Pionnier de la gestion des biodéchets depuis 2015, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
-            </p>
+          <p className="mb-3 text-3xl font-semibold text-center">
+            <IoLeaf className="rounded-full text-green-900 bg-white p-2 w-14 h-14 mx-auto mb-2"/>
+            Services organiques
+          </p>
+          <hr className="my-6 -rotate-1"/>
+          <p className="text-center">
+            Pionnier de la gestion des biodéchets depuis 2015, nous vous aidons à trier, collecter et valoriser tous vos restes alimentaires... pour en faire un compost nutritif et local.
           </p>
           <hr className="my-6 rotate-1"/>
           <div className="block text-xl text-white font-bold uppercase">
@@ -66,15 +64,13 @@ const HomePage = () => {
       </div>
       <div className="flex flex-col-reverse rounded-l-2xl overflow-hidden md:flex-row m-3 md:m-6">
         <div className="bg-orange-700 text-white basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
-          <p className="-rotate-1">
-            <p className="mb-3 text-3xl font-semibold text-center">
-              <IoPeople className="rounded-full text-orange-700 bg-white p-2 w-14 h-14 mx-auto mb-2"/>
-              Engagements inclusifs
-            </p>
-            <hr className="my-6"/>
-            <p className="text-center">
-              Coopérative d'insertion reconnue par l'Etat, nous accompagnons des parcours professionnels accessibles, utiles et durables au coeur des territoires urbains et ruraux.
-            </p>
+          <p className="mb-3 text-3xl font-semibold text-center">
+            <IoPeople className="rounded-full text-orange-700 bg-white p-2 w-14 h-14 mx-auto mb-2"/>
+            Engagements inclusifs
+          </p>
+          <hr className="my-6 -rotate-1"/>
+          <p className="text-center">
+            Coopérative d'insertion reconnue par l'Etat, nous accompagnons des parcours professionnels accessibles, utiles et durables au coeur des territoires urbains et ruraux.
           </p>
           <hr className="my-6 rotate-1"/>
           <div className="block text-xl text-white font-bold uppercase">
@@ -96,7 +92,7 @@ const HomePage = () => {
           </p>
           <a href="/formation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-orange-700 hover:bg-orange-100">
             <IoSchool className="inline mr-2 align-middle h-6 w-6"/>
-            Recruter un futur talent
+            Recruter nos talents
           </a>
         </div>
         <div className="basis-full p-8 sm:p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${inclusiveUrl})` }}>
@@ -116,14 +112,12 @@ const HomePage = () => {
           </div>
         </div>
         <div className="bg-yellow-500 text-black basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
-          <p className="-rotate-1">
-            <p className="mb-3 text-3xl font-semibold text-center">
-              <IoChatbubbles className="rounded-full text-yellow-500 bg-black p-2 w-14 h-14 mx-auto mb-2"/>Vie coopérative
-            </p>
-            <hr className="my-6 border-black"/>
-            <p className="text-center">
-              Citoyens, professionnels, collectivités, rejoignez notre mouvement pour des territoires organiques, inclusifs et coopératifs !
-            </p>
+          <p className="mb-3 text-3xl font-semibold text-center">
+            <IoChatbubbles className="rounded-full text-yellow-500 bg-black p-2 w-14 h-14 mx-auto mb-2"/>Vie coopérative
+          </p>
+          <hr className="my-6 border-black -rotate-1"/>
+          <p className="text-center ">
+            Citoyens, professionnels, collectivités, rejoignez notre mouvement pour des territoires organiques, inclusifs et coopératifs !
           </p>
           <hr className="my-6 border-black rotate-1"/>
           <div className="block text-xl font-bold uppercase">
@@ -132,7 +126,7 @@ const HomePage = () => {
           <p className="my-3">
             Notre projet coopératif rassemble les particuliers, les professionnels, les financeurs, les institutions, les collectivités autour d'un projet commun de transition organique, inclusive et coopérative des territoires.
           </p>
-          <a href="/cooperation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-yellow-700 hover:bg-yellow-100">
+          <a href="/cooperation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-black hover:bg-yellow-100">
             <IoHandLeft className="inline mr-2 align-middle h-6 w-6"/>
             Rejoindre la coopérative
           </a>
@@ -143,7 +137,7 @@ const HomePage = () => {
           <p className="my-3">
              Que vous soyez plutôt part sociale, compte courant d'associé ou encore titres participatifs, notre coopérative vous propose des opportunités d'investissement social, écologique et responsable adapté à vos capacités.
           </p>
-          <a href="/investissement" className="rounded-md inline-block p-3 font-semi-bold text-lg  bg-white shadow-xl text-yellow-700 hover:bg-yellow-100">
+          <a href="/investissement" className="rounded-md inline-block p-3 font-semi-bold text-lg  bg-white shadow-xl text-black hover:bg-yellow-100">
             <IoWallet className="inline mr-2 align-middle h-6 w-6"/>
             Investir dans la transition
           </a>
