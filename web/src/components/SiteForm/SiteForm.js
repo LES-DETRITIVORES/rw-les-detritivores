@@ -32,6 +32,7 @@ const EMAIL_FORM = gql`
 const SiteForm = () => {
   const [submit, setSubmit] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [isSubject, setSubject] = useState(false)
 
   const [createForm, { loading, error }] = useMutation(CREATE_FORM)
 
@@ -56,7 +57,7 @@ const SiteForm = () => {
   }
 
   return (
-    <div>
+    <div className="md:pt-3 lg:pt-12">
       <Dialog as="div" className="relative z-10" open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="fixed inset-0 bg-black bg-opacity-50" />
         <div className="fixed inset-0 overflow-y-auto">
@@ -80,19 +81,24 @@ const SiteForm = () => {
         </div>
       </Dialog>
 
-      <Form onSubmit={formSubmit} className="max-w-lg mx-auto text-md font-normal">
+      <h1 className="mb-3 text-3xl font-semibold text-center">Contactez-nous</h1>
+      <p className="text-center max-w-lg mx-auto mb-3">
+        Partagez-nous votre projet via ce formulaire : nous avons hâte d'en savoir plus !
+      </p>
+      <Form onSubmit={formSubmit} className="max-w-lg mx-auto text-md font-normal mt-3">
         <FormError error={error}/>
-        <div className="border-2 border-b-0 border-white rounded-t-lg p-8 mt-3 space-y-3">
+        <div className="border border-b-0 border-white rounded-t-lg p-8 mt-3 space-y-3">
           <div>
             <Label 
               name="subject"
               className="block">
-              Demande
+              Votre projet
             </Label>
             <SelectField 
               name="subject"
               className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
               errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+              onChange={(e) => {setSubject(e.target.value != options[0].label ? true : false)}}
               validation={{
                 required: true,
                 validate: {
@@ -115,95 +121,99 @@ const SiteForm = () => {
               ))}
             </SelectField>
           </div>
-          <div>
-            <Label className="block">
-              Message (facultatif)
-            </Label>
-            <TextAreaField
-              name="message"
-              className="block w-full h-24 bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"/>
+          {isSubject &&
+            <div>
+              <div>
+                <Label className="block">
+                  Message (facultatif)
+                </Label>
+                <TextAreaField
+                  name="message"
+                  className="block w-full h-24 bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"/>
+              </div>
+              <div>
+                <Label 
+                  name="company"
+                  className="block">
+                  Société (facultatif)
+                </Label>
+                <TextField 
+                  name="company" 
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                />
+              </div>
+              <div>
+                <Label 
+                  name="firstname" 
+                  className="block">
+                    Prénom
+                </Label>
+                <TextField 
+                  name="firstname" 
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+                  validation={{ required: true }}
+                />
+              </div>
+              <div>
+                <Label 
+                  name="lastname"
+                  className="block">
+                  Nom
+                </Label>
+                <TextField 
+                  name="lastname" 
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+                  validation={{ required: true }}  
+                />
+              </div>
+              <div>
+                <Label 
+                  name="location"
+                  className="block">
+                  Adresse
+                </Label>
+                <TextField 
+                  name="location" 
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+                  validation={{ required: true }}  
+                />
+              </div>                    
+              <div>
+                <Label 
+                  name="email"
+                  className="block">
+                  Email
+                </Label>
+                <EmailField 
+                  name="email" 
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+                  validation={{ required: true }}
+                />
+              </div>
+              <div>
+                <Label 
+                  name="phone"
+                  className="block">
+                  Téléphone
+                </Label>
+                <TelField 
+                  name="phone" 
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+                  validation={{ required: true }}
+                />
+              </div>
           </div>
-          <div>
-            <Label 
-              name="company"
-              className="block">
-              Société (facultatif)
-            </Label>
-            <TextField 
-              name="company" 
-              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-            />
-          </div>
-          <div>
-            <Label 
-              name="firstname" 
-              className="block">
-                Prénom
-            </Label>
-            <TextField 
-              name="firstname" 
-              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-              validation={{ required: true }}
-            />
-          </div>
-          <div>
-            <Label 
-              name="lastname"
-              className="block">
-              Nom
-            </Label>
-            <TextField 
-              name="lastname" 
-              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-              validation={{ required: true }}  
-            />
-          </div>
-          <div>
-            <Label 
-              name="location"
-              className="block">
-              Adresse
-            </Label>
-            <TextField 
-              name="location" 
-              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-              validation={{ required: true }}  
-            />
-          </div>                    
-          <div>
-            <Label 
-              name="email"
-              className="block">
-              Mél
-            </Label>
-            <EmailField 
-              name="email" 
-              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-              validation={{ required: true }}
-            />
-          </div>
-          <div>
-            <Label 
-              name="phone"
-              className="block">
-              Téléphone
-            </Label>
-            <TelField 
-              name="phone" 
-              className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-              validation={{ required: true }}
-            />
-          </div>
+        }
         </div>
         <div>
             <Submit
               disabled={submit}
-              className="sm:text-sm md:text-lg uppercase border-2 border-white font-bold bg-white text-green-900 rounded-b-md p-4 w-full shadow-lg hover:bg-orange-700 hover:text-white">
+              className="sm:text-sm md:text-lg uppercase border border-white font-bold bg-white text-green-900 rounded-b-md p-4 w-full shadow-lg hover:bg-orange-700 hover:text-white">
                 Envoyer une demande
             </Submit>
         </div>
