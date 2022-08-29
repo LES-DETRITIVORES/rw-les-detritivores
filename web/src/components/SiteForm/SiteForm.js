@@ -205,11 +205,11 @@ const SiteForm = () => {
               </div>
               <div className="leading-none">
                 <CheckboxField 
-                  name="consent" 
-                  className="inline bg-green-900 border-2 default:border-white required:border-red-600 rounded-md mr-1 outline-none"
-                  errorClassName="inline bg-green-900 border-2 border-red-600 rounded-md mr-1 outline-none"
-                  validation={{ required: true }}
-                />
+                  name="rgpd"
+                  className="bg-green-900 border-white rounded-sm mr-1 outline-none"
+                  errorClassName="bg-green-900 border border-red-600 rounded-sm mr-1 outline-none"
+                  validation={{ required: true }}>
+                </CheckboxField>
                 <p className="inline text-xs">J'autorise LES DETRITIVORES à me contacter de façon personnalisée à propos de ses services pour répondre à ma demande. Vos données personnelles ne seront <b>jamais</b> communiquées à des tiers.* <a className="underline bold hover:pointer">En savoir plus</a></p>
               </div>
           </div>
