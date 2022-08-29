@@ -84,11 +84,11 @@ const SiteForm = () => {
       </p>
       <Form onSubmit={formSubmit} className="max-w-lg mx-auto text-md font-normal mt-3">
         <FormError error={error}/>
-        <div className="border border-b-0 border-white rounded-t-lg p-8 mt-3 space-y-3">
+        <div className={`border border-white p-8 mt-3 space-y-3 ${isSubject ? "rounded-t-lg border-b-0" : "rounded-lg"}`}>
           <div>
             <Label 
               name="subject"
-              className="block">
+              className="block"> 
               Votre projet
             </Label>
             <SelectField 
@@ -215,7 +215,7 @@ const SiteForm = () => {
           </div>
         }
         </div>
-        <div>
+        {isSubject && <div>
             <Submit
               disabled={submit}
               className="sm:text-sm md:text-lg uppercase border border-white font-bold bg-white text-green-900 rounded-b-md p-4 w-full shadow-lg hover:bg-orange-700 hover:text-white">
@@ -223,8 +223,9 @@ const SiteForm = () => {
             </Submit>
             <div className="text-xs text-right mt-3">
                 * = champ requis
-              </div>
-        </div>
+            </div>
+          </div>
+        }
       </Form>
     </div>
   )
