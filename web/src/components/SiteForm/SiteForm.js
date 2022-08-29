@@ -1,17 +1,14 @@
-import { Form, FormError, Label, TextField, EmailField, TelField, SelectField, TextAreaField, Submit } from '@redwoodjs/forms'
+import { Form, FormError, Label, TextField, EmailField, TelField, SelectField, TextAreaField, CheckboxField, Submit } from '@redwoodjs/forms'
 import { useState } from 'react'
 import { useMutation } from '@redwoodjs/web'
 import { Dialog } from '@headlessui/react'
 
 const options = [
   { label: 'Choisir un sujet...' },
-  { label: 'Organiser le tri des biodéchets' },
-  { label: 'Installer un site de compostage' },
-  { label: 'Acheter du compost' },
-  { label: "Postuler à une offre d'emploi" },
-  { label: 'Recruter un futur talent' },
-  { label: 'Rejoindre la coopérative' },
-  { label: 'Investir dans la transition' },
+  { label: 'Tri et traitement des biodéchets' },
+  { label: 'Achat de compost' },
+  { label: 'Emploi et formation' },
+  { label: 'Soutien à la coopérative' },
   { label: 'Autre demande' },
 ]
 
@@ -122,10 +119,10 @@ const SiteForm = () => {
             </SelectField>
           </div>
           {isSubject &&
-            <div>
+            <div className="space-y-3">
               <div>
                 <Label className="block">
-                  Message (facultatif)
+                  Message
                 </Label>
                 <TextAreaField
                   name="message"
@@ -135,7 +132,7 @@ const SiteForm = () => {
                 <Label 
                   name="company"
                   className="block">
-                  Société (facultatif)
+                  Société
                 </Label>
                 <TextField 
                   name="company" 
@@ -146,7 +143,7 @@ const SiteForm = () => {
                 <Label 
                   name="firstname" 
                   className="block">
-                    Prénom
+                    Prénom*
                 </Label>
                 <TextField 
                   name="firstname" 
@@ -159,7 +156,7 @@ const SiteForm = () => {
                 <Label 
                   name="lastname"
                   className="block">
-                  Nom
+                  Nom*
                 </Label>
                 <TextField 
                   name="lastname" 
@@ -178,14 +175,13 @@ const SiteForm = () => {
                   name="location" 
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
                   errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-                  validation={{ required: true }}  
                 />
               </div>                    
               <div>
                 <Label 
                   name="email"
                   className="block">
-                  Email
+                  Email*
                 </Label>
                 <EmailField 
                   name="email" 
@@ -198,7 +194,7 @@ const SiteForm = () => {
                 <Label 
                   name="phone"
                   className="block">
-                  Téléphone
+                  Téléphone*
                 </Label>
                 <TelField 
                   name="phone" 
@@ -206,6 +202,15 @@ const SiteForm = () => {
                   errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
                   validation={{ required: true }}
                 />
+              </div>
+              <div className="leading-none">
+                <CheckboxField 
+                  name="consent" 
+                  className="inline bg-green-900 border-2 default:border-white required:border-red-600 rounded-md mr-1 outline-none"
+                  errorClassName="inline bg-green-900 border-2 border-red-600 rounded-md mr-1 outline-none"
+                  validation={{ required: true }}
+                />
+                <p className="inline text-xs">J'autorise LES DETRITIVORES à me contacter de façon personnalisée à propos de ses services pour répondre à ma demande. Vos données personnelles ne seront <b>jamais</b> communiquées à des tiers.* <a className="underline bold hover:pointer">En savoir plus</a></p>
               </div>
           </div>
         }
@@ -216,6 +221,9 @@ const SiteForm = () => {
               className="sm:text-sm md:text-lg uppercase border border-white font-bold bg-white text-green-900 rounded-b-md p-4 w-full shadow-lg hover:bg-orange-700 hover:text-white">
                 Envoyer une demande
             </Submit>
+            <div className="text-xs text-right mt-3">
+                * = champ requis
+              </div>
         </div>
       </Form>
     </div>
