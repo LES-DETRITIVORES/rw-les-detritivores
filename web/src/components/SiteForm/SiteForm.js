@@ -210,7 +210,7 @@ const SiteForm = () => {
                   errorClassName="bg-green-900 border border-red-600 rounded-sm mr-1 outline-none"
                   validation={{ required: true }}>
                 </CheckboxField>
-                <p className="inline text-xs">J'autorise LES DETRITIVORES à me contacter de façon personnalisée à propos de ses services pour répondre à ma demande. Vos données personnelles ne seront <b>jamais</b> communiquées à des tiers.* <a className="underline bold hover:pointer">En savoir plus</a></p>
+                <p className="inline text-xs">J'autorise LES DETRITIVORES à me contacter de façon personnalisée à propos de ses services pour répondre à ma demande. Vos données personnelles ne seront <b>jamais</b> communiquées à des tiers.* <a href="https://www.inoxia.com/donnees-personnelles" className="underline bold hover:cursor-pointer">En savoir plus</a></p>
               </div>
           </div>
         }

@@ -1,6 +1,6 @@
 import { Transition } from '@headlessui/react'
 import { useState, useEffect } from 'react'
-import { IoLeaf, IoGlobe, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet, IoHome, IoRestaurant, IoBusiness, IoBicycle } from "react-icons/io5"
+import { IoLeaf, IoGlobe, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet, IoHome, IoRestaurant, IoBusiness } from "react-icons/io5"
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 import { IoLocation, IoMail, IoCall } from "react-icons/io5";
 
@@ -115,7 +115,7 @@ const navList = [
       {
         icon: <IoLocation/>,
         label: "65 quai de Brazza 33100 Bordeaux",
-        to: "/"
+        to: "/map"
       },
       {
         icon: <IoMail/>,
@@ -126,7 +126,7 @@ const navList = [
         icon: <IoCall/>,
         label: "05 56 67 14 47",
         to: "/call"
-      }
+      },
     ]
   },
 ]

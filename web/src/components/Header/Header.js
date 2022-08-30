@@ -15,6 +15,45 @@ const Header = (props) => {
             alt="LES DETRITIVORES"
           />
         </Link>
+        <div className="z-0 p-2 m-3 col-span-2 text-center leading-none my-auto rotate-1 border-orange-700 border-y-2 md:border-2 md:rounded-lg">
+          <div className="text-black text-sm">
+            Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. <span className="font-bold">#TousDETRITIVORES</span><br/>
+          </div>
+          <div className="my-3 inline-block">
+            <a href="/"><IoGlobe size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
+            <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
+            <a href="/linkedin"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
+            <a href="/instagram"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
+          </div>
+          <a href="#contact" className="rounded-md inline-block ml-3 px-2 py-1 -rotate-1 font-semi-bold text-lg shadow-xl bg-orange-700 text-white hover:scale-105">
+            <IoChatbox className="inline mr-2 align-middle h-6 w-6"/>
+            Nous contacter
+          </a>
+        </div>
+        <Menu as="div" className="fixed inline-block right-0 mr-3 md:hidden">
+          <Menu.Button className="mx-auto my-4 leading-3 md:hidden text-white rotate-3 font-bold uppercase hover:scale-105 hover:cursor-pointer">
+            <IoMenu className="bg-orange-700 text-white rounded-full p-3 w-12 h-12 mx-auto mb-1"/>
+            <span className="text-orange-700 bg-white rounded-lg p-1 text-sm md:text-md">Menu</span>
+          </Menu.Button>
+          <Menu.Items className="absolute w-screen z-10 right-0 -mr-3 bg-white drop-shadow-lg rounded-lg text-orange-700 divide-y divide-orange-700">
+            {props.navList.map((nav) => (
+            <>    
+              {nav.icon && 
+                <div className="p-3">
+                  <div className="uppercase font-bold text-left">{nav.title}</div>
+                  {nav.links.map((link) => (
+                    <Menu.Item>
+                    {({ active }) => (
+                      <a href={link.to} className="rounded-md hover:bg-orange-700 hover:text-white block p-2 text-left"><span className="inline-block mr-1">{link.icon}</span>{link.label}</a>
+                    )}
+                    </Menu.Item>
+                  ))}
+                </div>    
+              }        
+            </>
+            ))}
+          </Menu.Items>
+        </Menu>
         {props.navList.map((nav) => (
         <>
           {nav.icon && 
@@ -35,46 +74,7 @@ const Header = (props) => {
             </Menu>
           }
         </>
-        ))}
-        <Menu as="div" className="relative inline-block md:hidden">
-          <Menu.Button className="mx-auto my-4 leading-3 md:hidden text-white rotate-3 font-bold uppercase hover:scale-105 hover:cursor-pointer">
-            <IoMenu className="bg-orange-700 text-white rounded-full p-3 w-12 h-12 mx-auto mb-1"/>
-            <span className="text-orange-700 p-1 text-sm md:text-md">Menu</span>
-          </Menu.Button>
-          <Menu.Items className="absolute w-screen z-10 right-0 -mr-3 bg-white drop-shadow-lg rounded-lg text-orange-700 divide-y divide-orange-700">
-            {props.navList.map((nav) => (
-            <>    
-              {nav.icon && 
-                <div class="p-3">
-                  <div className="uppercase font-bold text-left">{nav.title}</div>
-                  {nav.links.map((link) => (
-                    <Menu.Item>
-                    {({ active }) => (
-                      <a href={link.to} className="rounded-md hover:bg-orange-700 hover:text-white block p-2 text-left"><span className="inline-block mr-1">{link.icon}</span>{link.label}</a>
-                    )}
-                    </Menu.Item>
-                  ))}
-                </div>    
-              }        
-            </>
-            ))}
-          </Menu.Items>
-        </Menu>
-        <div className="p-2 m-3 col-span-2 text-center leading-none my-auto rotate-1 border-orange-700 border-y-2 md:border-2 md:rounded-lg">
-          <div className="text-black text-sm">
-            Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. <span className="font-bold">#TousDETRITIVORES</span><br/>
-          </div>
-          <div className="my-3 inline-block">
-            <a href="/"><IoGlobe size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
-            <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
-            <a href="/linkedin"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
-            <a href="/instagram"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
-          </div>
-          <a href="#contact" className="rounded-md inline-block ml-3 px-2 py-1 -rotate-1 font-semi-bold text-lg shadow-xl bg-orange-700 text-white hover:scale-105">
-            <IoChatbox className="inline mr-2 align-middle h-6 w-6"/>
-            Nous contacter
-          </a>
-        </div>  
+        ))}  
       </div>
     </>
   )
