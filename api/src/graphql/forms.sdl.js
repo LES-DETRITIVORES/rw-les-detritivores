@@ -10,6 +10,7 @@ export const schema = gql`
     phone: String!
     subject: String!
     message: String
+    rgpd: Boolean!
   }
 
   type Query {
@@ -26,6 +27,7 @@ export const schema = gql`
     phone: String!
     subject: String!
     message: String
+    rgpd: Boolean!
   }
 
   input UpdateFormInput {
@@ -37,6 +39,7 @@ export const schema = gql`
     phone: String
     subject: String
     message: String
+    rgpd: Boolean
   }
 
   type Mutation {

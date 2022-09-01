@@ -22,4 +22,5 @@ model Form {
   phone     String
   subject   String
   message   String?
+  rgpd      Boolean @default(false)
 }

@@ -15,6 +15,27 @@ const Header = (props) => {
             alt="LES DETRITIVORES"
           />
         </Link>
+        {props.navList.map((nav, menuIdx) => (
+        <>
+          {nav.icon && 
+            <Menu as="div" key={menuIdx} className="relative hidden md:inline-block">
+              <Menu.Button className="mx-auto my-4 leading-6 text-white font-bold uppercase -rotate-6 hover:scale-105 hover:cursor-pointer">
+                {nav.icon}  
+                <span className="bg-orange-700 leading-6 p-1 text-sm md:text-md">{nav.title}</span>
+              </Menu.Button>
+              <Menu.Items className="absolute w-96 z-10 p-2 bg-white drop-shadow-lg rounded-lg text-orange-700">
+                {nav.links.map((link, itemIdx) => (
+                  <Menu.Item key={itemIdx}>
+                    {({ active }) => (
+                      <a href={link.to} className="rounded-md hover:bg-orange-700 hover:text-white block p-2 text-left"><span className="inline-block my-auto mr-1">{link.icon}</span>{link.label}</a>
+                    )}
+                  </Menu.Item>
+                ))}
+              </Menu.Items>
+            </Menu>
+          }
+        </>
+        ))}
         <div className="z-0 p-2 m-3 col-span-2 text-center leading-none my-auto rotate-1 border-orange-700 border-y-2 md:border-2 md:rounded-lg">
           <div className="text-black text-sm">
             Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. <span className="font-bold">#TousDETRITIVORES</span><br/>
@@ -36,13 +57,13 @@ const Header = (props) => {
             <span className="text-orange-700 bg-white rounded-lg p-1 text-sm md:text-md">Menu</span>
           </Menu.Button>
           <Menu.Items className="absolute w-screen z-10 right-0 -mr-3 bg-white drop-shadow-lg rounded-lg text-orange-700 divide-y divide-orange-700">
-            {props.navList.map((nav) => (
+            {props.navList.map((nav, idx) => (
             <>    
               {nav.icon && 
-                <div className="p-3">
+                <div className="p-3" key={idx}>
                   <div className="uppercase font-bold text-left">{nav.title}</div>
-                  {nav.links.map((link) => (
-                    <Menu.Item>
+                  {nav.links.map((link, idx) => (
+                    <Menu.Item key={idx}>
                     {({ active }) => (
                       <a href={link.to} className="rounded-md hover:bg-orange-700 hover:text-white block p-2 text-left"><span className="inline-block mr-1">{link.icon}</span>{link.label}</a>
                     )}
@@ -54,27 +75,6 @@ const Header = (props) => {
             ))}
           </Menu.Items>
         </Menu>
-        {props.navList.map((nav) => (
-        <>
-          {nav.icon && 
-            <Menu as="div" className="relative hidden md:inline-block">
-              <Menu.Button className="mx-auto my-4 leading-6 text-white font-bold uppercase -rotate-6 hover:scale-105 hover:cursor-pointer">
-                {nav.icon}  
-                <span className="bg-orange-700 leading-6 p-1 text-sm md:text-md">{nav.title}</span>
-              </Menu.Button>
-              <Menu.Items className="absolute w-96 z-10 p-2 bg-white drop-shadow-lg rounded-lg text-orange-700">
-                {nav.links.map((link) => (
-                  <Menu.Item>
-                    {({ active }) => (
-                      <a href={link.to} className="rounded-md hover:bg-orange-700 hover:text-white block p-2 text-left"><span className="inline-block my-auto mr-1">{link.icon}</span>{link.label}</a>
-                    )}
-                  </Menu.Item>
-                ))}
-              </Menu.Items>
-            </Menu>
-          }
-        </>
-        ))}  
       </div>
     </>
   )
