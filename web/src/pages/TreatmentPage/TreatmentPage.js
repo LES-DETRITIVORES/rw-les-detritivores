@@ -9,44 +9,48 @@ const TreatmentPage = () => {
   return (
     <>
       <MetaTags title="Compostage des biodéchets" description="En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète tout en limitant les nuisances du transport." />
-      <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoSync className="inline mr-2 align-middle h-6 w-6"/>Services organiques > Compostage des biodéchets</h1>
-      <div className="flex flex-col md:flex-row gap-6 mb-6">
+      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
+        <div>
+        <IoSync className="inline mr-2 align-middle h-6 w-6"/>Compostage des biodéchets
+        </div>
+      </h1>
+      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Le compostage, c'est simple et naturel !</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Simplement naturel.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               Les biodéchets sont compostés à proximité de leurs lieux de collecte, afin de limiter la pollution liée aux transports. 
-              Une fois acheminés sur nos plateformes de compostage, ils sont bichonnés et choyés par nos équipes. 
-              Afin de donner un produit fini de qualité, compatible avec l’agriculture biologique et normé NF U 44-051, le processus dure entre 6 et 8 mois.
+              Une fois acheminés sur nos <span className="font-bold">plateformes de compostage</span>, ils sont bichonnés et choyés par nos équipes. 
+              Afin de donner un produit fini de qualité, <span className="font-bold">compatible avec l’agriculture biologique</span> et normé NF U 44-051, le processus dure entre 6 et 8 mois.
             </p>
             <p>
               Dans le cas des biodéchets avec des indésirables (emballages), ils sont orientés vers des filières de valorisation énergétique par méthanisation.
-              Conformément aux recommandations nationales, nous privilégierons la valorisation matière plus vertueuse que la valorisation énergétique. 
+              Conformément aux <span className="font-bold">recommandations nationales</span>, nous privilégierons toujours la valorisation matière plus vertueuse que la valorisation énergétique. 
             </p>
           </div>
         </div>
-        <div className="my-auto basis-full md:basis-1/2">
-          <img className="w-full md:w-96 md:m-auto" src={truckUrl}></img>
+        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${truckUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
       </div>
       <div className="flex flex-col md:flex-row-reverse gap-6 mb-6">
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Le compostage, c'est facile à comprendre !</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Etonnamment évident.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              Menées par LES DETRITIVORES et ses partenaires, nos sensibilisations ont pour objectif de vous inclure dans notre démarche environnementale. 
-              Elles encouragent aussi à la construction d’une Ville organique, soucieuse de guider ses citoyens dans leur engagement en faveur de l’environnement 
-              et de favoriser le retour à la terre de l’ensemble des biodéchets. 
+              A travers des <span className="font-bold">ateliers ou des visites guidées</span>, 
+              nos équipes vont font découvrir les coulisses du tri et du compostage des biodéchets.
             </p>
             <p>
-              A travers ces actions de sensibilisation à la réduction du gaspillage alimentaire, 
-              notre équipe d'Animavores vous fait découvrir notre fonctionnement 
-              ainsi que la façon dont LES DETRITIVORES collectent et valorisent vos restes alimentaires en les transformant en compost.
+              Nos sensibilisations ont pour objectif de vous inclure dans notre <span className="font-bold">démarche environnementale</span>. 
+              Elles encouragent aussi à la construction d’une ville organique, soucieuse de guider ses citoyens dans leur engagement en faveur de l’environnement 
+              et de favoriser le retour à la terre de l’ensemble des biodéchets. 
             </p>
           </div>
         </div>
-        <div className="my-auto basis-full md:basis-1/2">
-          <img className="w-full md:w-96 md:m-auto" src={animationUrl}></img>
+        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${animationUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
       </div>
     </>
