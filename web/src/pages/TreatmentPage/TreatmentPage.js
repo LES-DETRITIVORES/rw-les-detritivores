@@ -36,7 +36,7 @@ const TreatmentPage = () => {
       </div>
       <div className="flex flex-col md:flex-row-reverse gap-6 mb-6">
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Etonnamment évident.</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Passionnément évident.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               A travers des <span className="font-bold">ateliers ou des visites guidées</span>, 
