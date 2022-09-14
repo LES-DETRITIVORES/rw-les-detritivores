@@ -5,9 +5,10 @@ import { IoSync } from "react-icons/io5"
 const TreatmentPage = () => {
   const truckUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_220516_0817_rsp9hgyd7.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655423314890"
   const animationUrl = "https://ik.imagekit.io/dttv/P1940170_mJFrfb3S3E.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1658993495660"
+  
   return (
     <>
-      <MetaTags title="Traitement" description="Compostage des biodéchets" />
+      <MetaTags title="Compostage des biodéchets" description="En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète tout en limitant les nuisances du transport." />
       <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoSync className="inline mr-2 align-middle h-6 w-6"/>Services organiques > Compostage des biodéchets</h1>
       <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="basis-full md:basis-1/2">

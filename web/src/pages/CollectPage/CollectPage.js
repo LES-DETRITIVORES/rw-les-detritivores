@@ -10,7 +10,7 @@ const CollectPage = () => {
 
   return (
     <>
-      <MetaTags title="Tri des restes alimentaires" description="Collect page" />
+      <MetaTags title="Tri des restes alimentaires" description="En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez." />
       <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>

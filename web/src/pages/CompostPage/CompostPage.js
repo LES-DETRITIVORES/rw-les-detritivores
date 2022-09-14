@@ -7,7 +7,7 @@ const CompostPage = () => {
 
   return (
     <>
-      <MetaTags title="Collect" description="Collect page" />
+      <MetaTags title="Compost" description="Collect page" />
       <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoBag className="inline mr-2 align-middle h-6 w-6"/>Services organiques > Vente de compost</h1>
       <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="basis-full md:basis-1/2">
