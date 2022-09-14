@@ -10,17 +10,17 @@ const CollectPage = () => {
 
   return (
     <>
-      <MetaTags title="Collect" description="Collect page" />
+      <MetaTags title="Tri des restes alimentaires" description="Collect page" />
       <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>
           <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>Tri des restes alimentaires
         </div>
       </h1>
-      <div className="flex flex-col md:flex-row gap-16 mb-16">
+      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Ne jetez plus vos déchets alimentaires&nbsp;:<br/>ils se valorisent localement.</h2>
-          <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
+          <h2 className="text-xl md:text-3xl text-black font-bold">Plus besoin de jeter ses déchets alimentaires.</h2>
+          <div className="mt-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               Bien que nos habitudes de consommation évoluent, le gaspillage alimentaire reste très présent dans notre quotidien.
               En France, ce sont 10 millions de tonnes de nourriture consommables qui sont gaspillés chaque année !
@@ -28,7 +28,7 @@ const CollectPage = () => {
             <p>
               Vous avez encore des doutes sur ce qu’il est possible de traiter comme biodéchets ? Chez les DETRITIVORES, c’est simple : <span className="font-bold">nous collectons et traitons tous les matières organiques animales et végétales.</span>
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
               <div>
                 <h3 className="font-bold">Compostables :</h3>
                 <ul className="list-disc list-inside">
@@ -67,15 +67,17 @@ const CollectPage = () => {
             </div>
           </div>
         </div>
-        <div className="basis-full p-8 rounded-2xl md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${rulesUrl})` }}>
+        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${rulesUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
       </div>
-      <div className="flex flex-col-reverse md:flex-row gap-16 mb-16">
-        <div className="basis-full p-8 rounded-2xl md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${userUrl})` }}>
+      <div className="flex flex-col-reverse gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
+        <div className="basis-full rounded-2xl md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${userUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Respecter la loi n'a jamais été aussi facile&nbsp;:<br/> nous nous occupons de tout.</h2>
-          <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
+          <h2 className="text-xl md:text-3xl text-black font-bold">Respecter la loi n'a jamais été aussi simple.</h2>
+          <div className="mt-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               Au 1er janvier 2024, la loi sur la Transition Ecologique pour la Croissance Verte s’appliquera à l’ensemble du territoire national du professionnel au particulier.
               2024, c’est demain finalement. Heureusement, chez Les DETRITIVORES on a déjà la solution : n’attendez plus et rejoignez le mouvement !
@@ -97,12 +99,12 @@ const CollectPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row gap-16 mb-16">
+      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
         <div className="space-y-3 basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">La logistique des biodéchets&nbsp;:<br/> notre expertise depuis 2015.</h2>
-          <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
+          <h2 className="text-xl md:text-3xl text-black font-bold">Vous êtes entre de bonnes roues.</h2>
+          <div className="mt-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              Ils s’appellent Maud, Alien, Christophe, Ziarmal, Salih, Izak, Zine-Eddine et ils parcourent les rues de Bordeaux et ses alentours en camions, à vélos ou grâce à l'installation de Bornes d'Apport Volontaire, pour collecter l'ensemble de vos restes alimentaires !
+              Pour collecter l'ensemble de vos restes alimentaires, nos équipes parcourent les rues de Bordeaux et ses alentours en camions, à vélos ou grâce à l'installation de points d'apport volontaire.
             </p>
             <ul className="space-y-3 my-auto">
               <li>
@@ -115,12 +117,13 @@ const CollectPage = () => {
               </li>
               <li>
                 <h3 className="font-bold block">Bornes d’Apport Volontaire :</h3>
-                <p>Déployées au sein de quartiers de la ville, la collecte mise en place permet de fluidifier le retrait de vos restes alimentaires de façon régulière. Actuellement, vous pouvez retrouver des Bornes d’Apport Volontaire à Eysines, Bouliac et Mérignac.</p>
+                <p>Déployées au sein de quartiers de la ville, la collecte mise en place permet de fluidifier le retrait de vos restes alimentaires de façon régulière. Actuellement, vous pouvez retrouver des Points d’Apport Volontaire à Eysines, Bouliac et Mérignac.</p>
               </li>
             </ul>
           </div>
         </div>
-        <div className="basis-full p-8 rounded-2xl md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${logisticUrl})` }}>
+        <div className="basis-full rounded-2xl md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${logisticUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
       </div>
     </>
