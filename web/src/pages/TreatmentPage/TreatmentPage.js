@@ -34,7 +34,10 @@ const TreatmentPage = () => {
           <div className="h-64 md:h-full"></div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
+      <div className="flex flex-col-reverse gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
+        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${animationUrl})` }}>
+          <div className="h-64 md:h-full"></div>
+        </div>
         <div className="basis-full md:basis-1/2">
           <h2 className="text-xl md:text-3xl text-black font-bold">Passionnément évident.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
@@ -48,9 +51,6 @@ const TreatmentPage = () => {
               et de favoriser le retour à la terre de l’ensemble des biodéchets. 
             </p>
           </div>
-        </div>
-        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${animationUrl})` }}>
-          <div className="h-64 md:h-full"></div>
         </div>
       </div>
     </>
