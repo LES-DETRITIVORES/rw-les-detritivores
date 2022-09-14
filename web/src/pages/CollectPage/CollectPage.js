@@ -10,10 +10,15 @@ const CollectPage = () => {
   return (
     <>
       <MetaTags title="Collect" description="Collect page" />
-      <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>Services organiques > Tri des restes alimentaires</h1>
+      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
+        <div>
+          <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>Tri des restes alimentaires
+        </div>
+      </h1>
       <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Plus besoin d'abandonner les déchets alimentaires : nous les valorisons localement.</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Ne jetez plus vos déchets alimentaires :<br/>ils se valorisent localement.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               Bien que nos habitudes de consommation évoluent, le gaspillage alimentaire reste très présent dans notre quotidien.
@@ -22,14 +27,43 @@ const CollectPage = () => {
             <p>
               Vous avez encore des doutes sur ce qu’il est possible de traiter comme biodéchets ? Chez les DETRITIVORES, c’est simple : <span className="font-bold">nous collectons et traitons tous les matières organiques animales et végétales.</span>
             </p>
-            <ul className="space-y-3">
-              <li>
-                <span className="font-bold">Compostables :</span> Aliments crus ou cuits ~ Fruits de mer ~ Dessert ~ Fromage ~ Poisson (dont arêtes) ~ Coquillages et crustacés ~ Viande (dont os) ~ Féculents ~ Coquilles d’œuf ~ Pain ~ Fruits (dont agrumes et bananes) ~ Légumes ~ Marc de café
-              </li>
-              <li>
-                <span className="font-bold">Non compostables :</span> Emballages ~ Pots de yaourt ~ Opercules ~ Serviettes ~ Canettes ~ Bouchons ~ Plastique ~ Déchets verts ~ Bois ~ Journaux ~ Huile de friture
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div>
+                <h3 className="font-bold">Compostables :</h3>
+                <ul className="list-disc list-inside">
+                  <li>Aliments crus ou cuits</li>
+                  <li>Fruits de mer</li>
+                  <li>Dessert</li>
+                  <li>Fromage</li>
+                  <li>Poisson (dont arêtes)</li>
+                  <li>Coquillages et crustacés</li>
+                  <li>Viande (dont os)</li>
+                  <li>Féculents</li>
+                  <li>Coquilles d’œuf</li>
+                  <li>Pain</li>
+                  <li>Fruits (dont agrumes et bananes)</li>
+                  <li>Légumes</li>
+                  <li>Marc de café</li>
+                  <li>Emballages "OK COMPOST"</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-bold">Non compostables :</h3>
+                <ul className="list-disc list-inside">
+                  <li>Emballages non compostables</li>
+                  <li>Pots de yaourt</li>
+                  <li>Opercules</li>
+                  <li>Serviettes</li> 
+                  <li>Canettes</li> 
+                  <li>Bouchons</li> 
+                  <li>Plastique</li> 
+                  <li>Déchets verts</li> 
+                  <li>Bois</li>
+                  <li>Journaux</li>
+                  <li>Huile de friture</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         <div className="my-auto basis-full md:basis-1/2">
@@ -41,7 +75,7 @@ const CollectPage = () => {
           <img className="w-full md:w-96 md:m-auto" src={userUrl}></img>
         </div>
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Respecter la loi n'a jamais été aussi facile : nous nous occupons de tout.</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Respecter la loi n'a jamais été aussi facile :<br/> nous nous occupons de tout.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               Au 1er janvier 2024, la loi sur la Transition Ecologique pour la Croissance Verte s’appliquera à l’ensemble du territoire national du professionnel au particulier.
@@ -63,7 +97,7 @@ const CollectPage = () => {
       </div>
       <div className="flex flex-col md:flex-row gap-6 mb-6">
         <div className="space-y-3 basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">La logistique des biodéchets : notre expertise depuis 2015.</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">La logistique des biodéchets :<br/> notre expertise depuis 2015.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               Ils s’appellent Maud, Alien, Christophe, Ziarmal, Salih, Izak, Zine-Eddine et ils parcourent les rues de Bordeaux et ses alentours en camions, à vélos ou grâce à l'installation de Bornes d'Apport Volontaire, pour collecter l'ensemble de vos restes alimentaires !
