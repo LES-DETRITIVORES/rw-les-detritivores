@@ -34,7 +34,7 @@ const TreatmentPage = () => {
           <div className="h-64 md:h-full"></div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row-reverse gap-6 mb-6">
+      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
         <div className="basis-full md:basis-1/2">
           <h2 className="text-xl md:text-3xl text-black font-bold">Passionnément évident.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">

@@ -8,42 +8,51 @@ const CompostPage = () => {
   return (
     <>
       <MetaTags title="Compost" description="Collect page" />
-      <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoBag className="inline mr-2 align-middle h-6 w-6"/>Services organiques > Vente de compost</h1>
-      <div className="flex flex-col md:flex-row gap-6 mb-6">
+      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
+        <div>
+          <IoBag className="inline mr-2 align-middle h-6 w-6"/>Vente de compost
+        </div>
+      </h1>
+      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Mais que faisons-nous de notre compost ?</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Un compost solidaire et coopératif.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
               L’ensemble du compost est redistribué sur le territoire auprès de nos agriculteurs et de nos partenaires. 
               Il est aussi conditionné pour des particuliers dans des formats de 1 à 15 kilos et en gros volumes pour les projets plus conséquents. 
             </p>
+            <p>
+              En achetant notre compost, vous contribuez directement à la création d'emplois locaux solidaires, 
+              encouragez le développement de l'économie circulaire 
+              et concrétisez votre engagement en faveur de la sauvegarde de notre belle planète.
+            </p>
           </div>
         </div>
-        <div className="my-auto basis-full md:basis-1/2">
-          <iframe className="w-full md:w-96 md:m-auto" height="216" src="https://www.youtube.com/embed/_X-pd2E-AxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div className="basis-full md:basis-1/2">
+          <iframe className="h-64 w-full rounded-2xl md:h-full" src="https://www.youtube.com/embed/_X-pd2E-AxA" title="Maître Compost" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-      <div className="flex flex-col-reverse md:flex-row gap-6 mb-6">
-        <div className="my-auto basis-full md:basis-1/2">
-          <img className="w-full md:w-96 md:m-auto" src={compostUrl}></img>
+      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
+        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${compostUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Comment utiliser notre compost ?</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Pour tous, ici et maintenant.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>            
-              Le compost vous permet de participer à la végétalisation de notre territoire et l’épanouissement de vos plantations en :
+              Le compost participe à la végétalisation de notre territoire et l’épanouissement de vos plantations en <span className="font-bold">fertilisant les sols</span> et en <span className="font-bold">structurant la terre</span>.
             </p>  
-            <ol>
-              <li><span className="font-bold">Fertilisant les sols</span></li>
-              <li><span className="font-bold">Structurant la terre</span></li>
-            </ol>
             <p>
-              Il s’utilise de plusieurs manières :
+              Il s’utilise pour :
             </p>
-            <ul>
-              <li><span className="font-bold">Pour rempoter vos plantes :</span> mélangez votre compost à du terreau en respectant les quantités suivantes (2/3 de terreau et 1/3 de compost)</li>
-              <li><span className="font-bold">Pour nourrir vos plantes :</span> pour cela, il vous suffit d’ajouter 2 à 3 centimètres de compost sur la surface.</li>
-              <li><span className="font-bold">Pour l’agriculture biologique :</span> rythmée par les saisons, l’utilisation de notre compost se fait tout au long de l’année.</li>
+            <ul className="list-disc list-inside space-y-2">
+              <li className="font-bold">Rempoter vos plantes</li>
+              <p className="block">Mélangez votre compost à du terreau en respectant les quantités suivantes (2/3 de terreau et 1/3 de compost)</p>
+              <li className="font-bold">Nourrir vos plantes</li>
+              <p className="block">Ajoutez 2 à 3 centimètres de compost sur la surface.</p>
+              <li className="font-bold">Cultiver en agriculture biologique</li>
+              <p className="block">Rythmée par les saisons, l’utilisation de notre compost se fait tout au long de l’année.</p>
             </ul>
           </div>
         </div>
