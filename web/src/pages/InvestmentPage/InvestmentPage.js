@@ -16,20 +16,15 @@ const InvestmentPage = () => {
           <h2 className="text-xl md:text-3xl text-black font-bold">Plus besoin d'abandonner les déchets alimentaires : nous les valorisons localement.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              Bien que nos habitudes de consommation évoluent, le gaspillage alimentaire reste très présent dans notre quotidien.
-              En France, ce sont 10 millions de tonnes de nourriture consommables qui sont gaspillés chaque année !
+              LES DETRITIVORES développent des plateformes locales de compostage d’une capacité de traitement de 650 tonnes par an sur une surface de 1000 m2. 
+              S’appuyant sur le processus bas-carbone de l’andain, ces plateformes déploient des activités de formation, collecte, tri, lavage des bacs et 
+              compostage des biodéchets des particuliers, des professionnels et des collectivités locales.
+              Sur un rayon d’action optimal de 20 km, la collecte des biodéchets peut s’effectuer avec l’ensemble des mobilités plurielles et douces 
+              les plus adaptées au territoire : camion biogaz pour la massification, cyclo-cargo électrique pour les zones urbaines denses, 
+              points d’apports volontaires connectés sur les espaces publics, fret fluvial sur les voies navigables.
+              Chaque plateforme permet ainsi de créer 5 postes à temps plein dédiés à des emplois inclusifs et locaux 
+              sur l’ensemble des métiers de la logistique et traitement des biodéchets des particuliers et professionnels.
             </p>
-            <p>
-              Vous avez encore des doutes sur ce qu’il est possible de traiter comme biodéchets ? Chez les DETRITIVORES, c’est simple : <span className="font-bold">nous collectons et traitons tous les matières organiques animales et végétales.</span>
-            </p>
-            <ul className="space-y-3">
-              <li>
-                <span className="font-bold">Compostables :</span> Aliments crus ou cuits ~ Fruits de mer ~ Dessert ~ Fromage ~ Poisson (dont arêtes) ~ Coquillages et crustacés ~ Viande (dont os) ~ Féculents ~ Coquilles d’œuf ~ Pain ~ Fruits (dont agrumes et bananes) ~ Légumes ~ Marc de café
-              </li>
-              <li>
-                <span className="font-bold">Non compostables :</span> Emballages ~ Pots de yaourt ~ Opercules ~ Serviettes ~ Canettes ~ Bouchons ~ Plastique ~ Déchets verts ~ Bois ~ Journaux ~ Huile de friture
-              </li>
-            </ul>
           </div>
         </div>
         <div className="my-auto basis-full md:basis-1/2">

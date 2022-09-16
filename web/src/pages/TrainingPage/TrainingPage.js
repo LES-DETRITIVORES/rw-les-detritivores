@@ -8,7 +8,7 @@ const TrainingPage = () => {
 
   return (
     <>
-      <MetaTags title="Collect" description="Collect page" />
+      <MetaTags title="Formation professionnelle" description="Conducteur de camion, logisticien à vélo, technicien de plateforme, agent de compostage, etc... nos équipes développent de nombreuses compétences techniques et humaines pour la société et l'économie locale de demain." />
       <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>
