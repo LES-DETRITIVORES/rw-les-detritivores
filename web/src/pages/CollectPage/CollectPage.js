@@ -6,8 +6,7 @@ const CollectPage = () => {
   //const rulesUrl = "https://ik.imagekit.io/dttv/CONSIGNES_TRI_BIODECHETS_A4_OhrCcMbK1.png?updatedAt=1658956423391&tr=w-563,h-632,fo-custom,cm-extract"
   const rulesUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_220516_0434_qCjL95E8A.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655423310248"
   const userUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_506_ZtSlv6ubQ.jpg?updatedAt=1658958887856&tr=w-1646,h-1700,fo-custom,cm-extract"
-  const logisticUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211007_236_mMiLZ5zy1r.jpg?updatedAt=1658961373505&tr=w-1654,h-1958,fo-custom,cm-extract"
-
+  
   return (
     <>
       <MetaTags title="Tri des restes alimentaires" description="En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez." />
@@ -97,33 +96,6 @@ const CollectPage = () => {
               </li>
             </ol>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
-        <div className="space-y-3 basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Vous êtes entre de bonnes roues.</h2>
-          <div className="mt-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
-            <p>
-              Pour collecter l'ensemble de vos restes alimentaires, nos équipes parcourent les rues de Bordeaux et ses alentours en camions, à vélos ou grâce à l'installation de points d'apport volontaire.
-            </p>
-            <ul className="space-y-3 my-auto">
-              <li>
-                <h3 className="font-bold block">Camions :</h3> 
-                <p>Utilisés pour les collectes en périphérie, nos camions roulent au biogaz afin de limiter leur impact environnemental.</p>
-              </li>
-              <li>
-                <h3 className="font-bold block">Vélos-cargos :</h3> 
-                <p>Rapides et légers pour l’environnement, leur utilisation permet de fluidifier et de faciliter le retrait des restes alimentaires de façon régulière au cœur des centres piétons. Nos vélos participent aussi à la diminution de la présence de nos camions de collecte en centre-ville.</p>
-              </li>
-              <li>
-                <h3 className="font-bold block">Bornes d’Apport Volontaire :</h3>
-                <p>Déployées au sein de quartiers de la ville, la collecte mise en place permet de fluidifier le retrait de vos restes alimentaires de façon régulière. Actuellement, vous pouvez retrouver des Points d’Apport Volontaire à Eysines, Bouliac et Mérignac.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="basis-full rounded-2xl md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${logisticUrl})` }}>
-          <div className="h-64 md:h-full"></div>
         </div>
       </div>
     </>
