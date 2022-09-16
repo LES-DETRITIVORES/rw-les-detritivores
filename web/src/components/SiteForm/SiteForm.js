@@ -80,7 +80,7 @@ const SiteForm = () => {
 
       <h1 className="mb-3 text-3xl font-semibold text-center">Contactez-nous</h1>
       <p className="text-center max-w-lg mx-auto mb-3">
-        Partagez-nous votre projet via ce formulaire : nous avons hâte d'en savoir plus !
+        Partagez votre projet via ce formulaire :
       </p>
       <Form onSubmit={formSubmit} className="max-w-lg mx-auto text-md font-normal mt-3">
         <FormError error={error}/>

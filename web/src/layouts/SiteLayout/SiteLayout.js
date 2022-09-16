@@ -64,6 +64,7 @@ const navList = [
       }
     ]
   },
+  /*
   {
     title: 'Nos solutions',
     links: [
@@ -84,6 +85,7 @@ const navList = [
       }
     ]
   },
+  */
   {
     title: 'Nous suivre',
     links: [
