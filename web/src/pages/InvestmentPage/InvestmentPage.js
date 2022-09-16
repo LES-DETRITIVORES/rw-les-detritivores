@@ -3,75 +3,62 @@ import { MetaTags } from '@redwoodjs/web'
 import { IoWallet } from "react-icons/io5"
 
 const InvestmentPage = () => {
-  const rulesUrl = "https://ik.imagekit.io/dttv/CONSIGNES_TRI_BIODECHETS_A4_OhrCcMbK1.png?updatedAt=1658956423391&tr=w-563,h-632,fo-custom,cm-extract"
-  const userUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_506_ZtSlv6ubQ.jpg?updatedAt=1658958887856&tr=w-1646,h-1700,fo-custom,cm-extract"
-  const logisticUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211007_236_mMiLZ5zy1r.jpg?updatedAt=1658961373505&tr=w-1654,h-1958,fo-custom,cm-extract"
+  const platformUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211007_027_awZY2DqRm.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843609915"
+  const dialogUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_619_5Ku1I5UcPu.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843537900"
 
   return (
     <>
-      <MetaTags title="Collect" description="Collect page" />
-      <h1 className="text-md md:text-lg text-green-900 font-semibold mb-6"><IoWallet className="inline mr-2 align-middle h-6 w-6"/>Vie coopérative > Investissement Responsable (IR)</h1>
-      <div className="flex flex-col md:flex-row gap-6 mb-6">
+      <MetaTags title="Investissement Responsable (IR)" description="Que vous soyez plutôt part sociale, compte courant d'associé ou encore titres participatifs, notre coopérative vous propose des opportunités d'investissement social, écologique et responsable adapté à vos capacités." />
+      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
+        <div>
+          <IoWallet className="inline mr-2 align-middle h-6 w-6"/>Investissement Responsable (IR)
+        </div>
+      </h1>
+      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Plus besoin d'abandonner les déchets alimentaires : nous les valorisons localement.</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Des solutions réplicables,<br/>ici et maintenant.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              LES DETRITIVORES développent des plateformes locales de compostage d’une capacité de traitement de 650 tonnes par an sur une surface de 1000 m2. 
+              LES DETRITIVORES développent des <span className="font-bold">plateformes locales de compostage</span> d’une capacité de traitement de 650 tonnes par an sur une surface de 1000 m2. 
               S’appuyant sur le processus bas-carbone de l’andain, ces plateformes déploient des activités de formation, collecte, tri, lavage des bacs et 
-              compostage des biodéchets des particuliers, des professionnels et des collectivités locales.
-              Sur un rayon d’action optimal de 20 km, la collecte des biodéchets peut s’effectuer avec l’ensemble des mobilités plurielles et douces 
-              les plus adaptées au territoire : camion biogaz pour la massification, cyclo-cargo électrique pour les zones urbaines denses, 
+              compostage des biodéchets des <span className="font-bold">particuliers</span>, des <span className="font-bold">professionnels</span> et des <span className="font-bold">collectivités locales</span>.
+            </p>
+            <p>
+              Sur un rayon d’action optimal de 20 km, la collecte des biodéchets peut s’effectuer avec l’ensemble des <span className="font-bold">mobilités plurielles et douces</span> les 
+              plus adaptées au territoire : camion biogaz pour la massification, cyclo-cargo électrique pour les zones urbaines denses, 
               points d’apports volontaires connectés sur les espaces publics, fret fluvial sur les voies navigables.
-              Chaque plateforme permet ainsi de créer 5 postes à temps plein dédiés à des emplois inclusifs et locaux 
-              sur l’ensemble des métiers de la logistique et traitement des biodéchets des particuliers et professionnels.
+            </p>
+            <p>
+              Chaque plateforme permet ainsi de créer <span className="font-bold">5 postes à temps plein</span> dédiés à des emplois inclusifs et locaux 
+              sur l’ensemble des <span className="font-bold">métiers de la logistique et traitement des biodéchets</span>.
             </p>
           </div>
         </div>
-        <div className="my-auto basis-full md:basis-1/2">
-          <img className="w-full md:w-96 md:m-auto" src={rulesUrl}></img>
+        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${platformUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
       </div>
-      <div className="flex flex-col-reverse md:flex-row gap-6 mb-6">
-        <div className="my-auto basis-full md:basis-1/2">
-          <img className="w-full md:w-96 md:m-auto" src={userUrl}></img>
+      <div className="flex flex-col-reverse gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
+        <div className="basis-full rounded-2xl md:h-auto md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${dialogUrl})` }}>
+          <div className="h-64 md:h-full"></div>
         </div>
         <div className="basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">Respecter la loi n'a jamais été aussi facile : nous nous occupons de tout.</h2>
+          <h2 className="text-xl md:text-3xl text-black font-bold">Pour une nouvelle économie organique.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              Au 1er janvier 2024, la loi sur la Transition Ecologique pour la Croissance Verte s’appliquera à l’ensemble du territoire national du professionnel au particulier.
-              2024, c’est demain finalement. Heureusement, chez Les DETRITIVORES on a déjà la solution : n’attendez plus et rejoignez le mouvement !
+              Avec près de 6 millions d’habitants répartis sur 84 000 km2, la région <span className="font-bold">Nouvelle-Aquitaine</span> est la 3ème région de France en terme
+              de population et la 1ère en terme de superficie. 
+              Les ménages, les restaurateurs et les commerces de ce territoire représentent un potentiel de <span className="font-bold">450 000 tonnes par an</span> de matières organiques à traiter.
             </p>
-            <ol className="space-y-3">
-              <li>
-                <span className="font-bold">Etude des besoins :</span> ensemble, évaluons les volumes de biodéchets générés par votre entité et définissons un rythme de collecte. Installés par nos équipes, nos contenants s’adaptent à vos besoins et votre espace.
-              </li>
-              <li>
-                <span className="font-bold">Collectes et nettoyage :</span> la collecte s’adapte à votre activité. A chaque passage, notre équipe de Collectivores échangera votre bac plein contre un bac propre et désinfecté : simple et efficace !
-              </li>
-              <li>
-                <span className="font-bold">Suivi réglementaire :</span> la pesée systématique des restes alimentaires, lors des collectes et sur notre plateforme de compostage, vous permet d’obtenir des données chiffrées des volumes collectées.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-6 mb-6">
-        <div className="space-y-3 basis-full md:basis-1/2">
-          <h2 className="text-xl md:text-3xl text-black font-bold">La logistique des biodéchets : notre expertise depuis 2015.</h2>
-          <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              Ils s’appellent Maud, Alien, Christophe, Ziarmal, Salih, Izak, Zine-Eddine et ils parcourent les rues de Bordeaux et ses alentours en camions, à vélos ou grâce à l'installation de Bornes d'Apport Volontaire, pour collecter l'ensemble de vos restes alimentaires !
+              D'ici 2027, notre ambition est de couvrir <span className="font-bold">5% des besoins de la région</span> et de créer <span className="font-bold">175 nouveaux emplois inclusifs</span>.
             </p>
-            <ul className="space-y-3 my-auto">
-              <li><span className="font-bold">Camions :</span> utilisés pour les collectes en périphérie, nos camions roulent au biogaz afin de limiter leur impact environnemental.</li>
-              <li><span className="font-bold">Vélos-cargos :</span> rapides et légers pour l’environnement, leur utilisation permet de fluidifier et de faciliter le retrait des restes alimentaires de façon régulière au cœur des centres piétons. Nos vélos participent aussi à la diminution de la présence de nos camions de collecte en centre-ville.</li>
-              <li><span className="font-bold">Bornes d’Apport Volontaire :</span> déployées au sein de quartiers de la ville, la collecte mise en place permet de fluidifier le retrait de vos restes alimentaires de façon régulière. Actuellement, vous pouvez retrouver des Bornes d’Apport Volontaire à Eysines, Bouliac et Mérignac.</li>
-            </ul>
+            <p>
+              Investir dans la société coopérative LES DETRITIVORES vous assure de contribuer à l'émergence d'une économie pleinement <span className="font-bold">responsable</span>, 
+              créateur d'<span className="font-bold">emplois locaux</span> et acteur de la <span className="font-bold">transition écologique</span>. 
+            </p>
           </div>
-        </div>
-        <div className="my-auto basis-full md:basis-1/2">
-          <img className="w-full md:w-96 md:m-auto" src={logisticUrl}></img>
         </div>
       </div>
     </>

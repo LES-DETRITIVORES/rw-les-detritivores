@@ -33,7 +33,7 @@ const TrainingPage = () => {
           <div className="h-64 md:h-full"></div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
+      <div className="flex flex-col-reverse gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
         <div className="basis-full rounded-2xl md:basis-1/2 bg-cover bg-center" style={{ backgroundImage: `url(${logisticUrl})` }}>
           <div className="h-64 md:h-full"></div>
         </div>
