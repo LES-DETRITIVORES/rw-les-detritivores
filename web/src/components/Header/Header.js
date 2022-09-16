@@ -42,9 +42,9 @@ const Header = (props) => {
           </div>
           <div className="my-3 inline-block">
             <a href="/"><IoGlobe size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
-            <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
-            <a href="/linkedin"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
-            <a href="/instagram"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
+            <a href="http://facebook.com/lesdetritivores"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
+            <a href="https://fr.linkedin.com/company/les-d%C3%A9tritivores"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
+            <a href="https://www.instagram.com/lesdetritivores/?hl=fr"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-700 hover:scale-110"/></a>
           </div>
           <a href="#contact" className="rounded-md inline-block ml-3 px-2 py-1 -rotate-1 font-semi-bold text-lg shadow-xl bg-orange-700 text-white hover:scale-105">
             <IoChatbox className="inline mr-2 align-middle h-6 w-6"/>

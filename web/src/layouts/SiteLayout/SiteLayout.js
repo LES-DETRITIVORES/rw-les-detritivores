@@ -97,17 +97,17 @@ const navList = [
       {
         icon: <IoLogoFacebook/>,
         label: "Facebook",
-        to: "/facebook"
+        to: "http://facebook.com/lesdetritivores"
       },
       {
         icon: <IoLogoLinkedin/>,
         label: "LinkedIn",
-        to: "/linkedin"
+        to: "https://fr.linkedin.com/company/les-d%C3%A9tritivores"
       },
       {
         icon: <IoLogoInstagram/>,
         label: "Instagram",
-        to: "/instagram"
+        to: "https://www.instagram.com/lesdetritivores/?hl=fr"
       }
     ]
   },

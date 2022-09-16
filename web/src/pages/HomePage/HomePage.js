@@ -9,7 +9,7 @@ const HomePage = () => {
 
   return (
     <>
-      <MetaTags title="Accueil" description="Home page" />
+      <MetaTags title="LES DETRITIVORES" description="Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. #TousDETRITIVORES" />
       <div className="flex flex-col rounded-r-2xl overflow-hidden m-3 md:flex-row md:m-6">
         <div className="basis-full p-8 sm:p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${organicUrl})` }}>
           <div className="-rotate-6 mt-16">

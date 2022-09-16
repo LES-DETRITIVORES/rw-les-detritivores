@@ -12,9 +12,9 @@ function Footer(props) {
         </div>
       ))}
       <div className="text-sm text-gray-700 space-x-3 text-center md:col-span-2 lg:col-span-3">
-        <a href="https://www.inoxia.com/mentions-legales" className="hover:underline">Mentions légales</a>
+        <a href="/legal" className="hover:underline">Mentions légales</a>
         <span>-</span>
-        <a href="https://www.inoxia.com/donnees-personnelles" className="hover:underline">Données personnelles</a>
+        <a href="/donnees" className="hover:underline">Données personnelles</a>
         <span>-</span>
         <a href="/press" className="hover:underline">Presse</a>
       </div>
