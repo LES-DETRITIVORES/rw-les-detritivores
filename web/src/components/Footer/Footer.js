@@ -16,7 +16,7 @@ function Footer(props) {
         <span>-</span>
         <a href="/donnees" className="hover:underline">Données personnelles</a>
         <span>-</span>
-        <a href="/press" className="hover:underline">Presse</a>
+        <a href="/presse" className="hover:underline">Presse</a>
       </div>
     </div>
   )
