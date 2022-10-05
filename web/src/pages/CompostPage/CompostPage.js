@@ -48,9 +48,12 @@ const CompostPage = () => {
             <p>
               Il s’utilise pour :
             </p>
-            <ul className="list-disc list-inside space-y-2">
-              <li className="font-bold">Rempoter vos plantes</li>
-              <p className="block">Mélangez votre compost à du terreau en respectant les quantités suivantes (2/3 de terreau et 1/3 de compost)</p>
+            <ul className="list-disc list-outside space-y-2 ml-6">
+              <li>
+                <span className="font-bold">Rempoter vos plantes</span>
+                <p className="block">Mélangez votre compost à du terreau en respectant les quantités suivantes (2/3 de terreau et 1/3 de compost)</p>
+              </li>
+              
               <li className="font-bold">Nourrir votre jardin</li>
               <p className="block">Ajoutez 2 à 3 centimètres de compost directement sur la surface plantée.</p>
               <li className="font-bold">Cultiver en agriculture biologique</li>

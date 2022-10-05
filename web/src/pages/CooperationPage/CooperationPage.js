@@ -24,11 +24,19 @@ const CooperationPage = () => {
               En 2019, une nouvelle page de LES DETRITIVORES a commencé à s’écrire : 
               nous avons quitté le monde associatif auquel nous étions attachés depuis notre création en 2015 et sommes devenus une <span className="font-bold">SCIC : Société Coopérative d'Intérêt Collectif</span>.
             </p>
-            <p className="font-extralight px-6">
+            <p className="font-extralight px-6 hidden">
               « Les Sociétés Coopératives d'Intérêt Collectif ont pour objet la <span className="font-bold">production ou la fourniture de biens et de services d’intérêt collectif</span> qui présentent un caractère d’<span className="font-bold">utilité sociale</span>.» <span className="align-right italic text-sm">- Loi n°2001-624 du 17 juillet 2001</span> 
             </p>
             <p>
-              Elles encouragent un <span className="font-bold">meilleur partage de la gouvernance</span> ainsi qu’une <span className="font-bold">répartition plus juste des bénéfices</span> : au moins 57,5% des bénéfices doivent être réinjectés dans l’entreprise et les sociétaires ont le pouvoir de porter ce taux à 100%.
+              Acteurs du <span class="font-bold">développement durable</span>, les SCIC s’inscrivent sur le long terme en prenant soin des intérêts des parties prenantes et de son territoire :
+            </p>
+            <p>
+              <ul className="list-disc list-inside">
+                <li>Coopérer pour <span class="font-bold">répondre collectivement</span> à un besoin auquel des entités seules ne peuvent répondre que partiellement.</li>
+                <li>Innover socialement pour <span class="font-bold">créer de nouvelles chaînes de valeurs</span> qui ne sont plus seulement monétaires.</li> 
+                <li>Intégrer l’activité de nos entreprises dans une <span class="font-bold">économie locale</span>.</li>
+                <li>Faire corps pour transformer nos modèles concurrentiels en <span class="font-bold">modèles coopératifs et compétitifs</span> qui soient capables de gérer durablement et de la manière la plus juste les ressources du territoire.</li>
+              </ul>
             </p>
           </div>
         </div>
@@ -46,10 +54,33 @@ const CooperationPage = () => {
             <p>
               Nous œuvrons au quotidien pour que notre activité de collecte et de valorisation des biodéchets soit <span className="font-bold">une réelle plus-value 
               pour notre territoire et ses acteurs</span>. 
-              Dans cet objectif, nous vous invitons à participer à la vie de notre coopérative en devenant <span className="font-bold">sociétaire</span> !
+              Dans cet objectif, nous vous invitons à participer à la vie de notre coopérative en devenant <span className="font-bold">sociétaire</span> :
             </p>
             <p>
-              Nous proposons également à l'ensemble de nos clients-usagers de s’engager en tant que sociétaire dans notre coopérative en prenant au minimum une <span className="font-bold">part sociale</span>.
+              <ol className="list-none space-y-3">
+                <li>
+                  <span className="font-bold">Vous participez au développement de notre activité :</span>
+                  <ul className="list-disc list-inside">
+                    <li>
+                      En prenant part aux grandes décisions et à la <span className="font-bold">stratégie</span> de la coopérative 
+                    </li>
+                    <li>
+                      En faisant remonter vos <span className="font-bold">besoins</span> et ceux du territoire
+                    </li>
+                    <li>
+                      En participant à la définition de nos <span className="font-bold">services</span> 
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span className="font-bold">Vous contribuez au développement de notre territoire :</span>
+                  <ul className="list-disc list-inside">
+                    <li>En soutenant une activité qui œuvre pour une <span className="font-bold">transition écologique et sociale</span></li> 
+                    <li>En favorisant la création d’<span className="font-bold">emplois inclusifs</span></li>
+                    <li>En devenant des acteurs engagés dans la co-construction d’une <span className="font-bold">économie sociale et solidaire</span></li>
+                  </ul>
+                </li>
+              </ol>
             </p>
           </div>
         </div>
