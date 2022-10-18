@@ -1,3 +1,4 @@
+import { Link } from '@redwoodjs/router'
 const Manifesto = () => {
   const logoUrl =
     'https://ik.imagekit.io/dttv/DETRITIVORES_-_Logo_blanc_D9gS55ZaO.png?ik-sdk-version=javascript-1.4.3&updatedAt=1655210481453'
@@ -36,13 +37,13 @@ const Manifesto = () => {
             et coopératifs&nbsp;!
           </p>
         </div>
-        <a href="/">
+        <Link to="/">
           <img
             className="transition mx-auto w-36 mt-6 lg:mt-12 lg:w-48 hover:scale-105 hover:drop-shadow-md"
             src={logoUrl}
             alt="LES DETRITIVORES"
           />
-        </a>
+        </Link>
       </div>
     </>
   )

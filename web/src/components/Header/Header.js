@@ -66,12 +66,12 @@ const Header = (props) => {
             <br />
           </div>
           <div className="my-3 inline-block">
-            <a href="/">
+            <Link to="/">
               <IoGlobe
                 size="1.5em"
                 className="inline mr-3 hover:text-orange-700 hover:scale-110"
               />
-            </a>
+            </Link>
             <a href="http://facebook.com/lesdetritivores">
               <IoLogoFacebook
                 size="1.5em"

@@ -100,30 +100,30 @@ const Navigation = () => {
             <br />
           </span>
           <br />
-          <a href="/">
+          <Link to="/">
             <IoGlobe
               size="1.5em"
               className="inline mr-3 hover:text-orange-700"
             />
-          </a>
-          <a href="/facebook">
+          </Link>
+          <Link to="/facebook">
             <IoLogoFacebook
               size="1.5em"
               className="inline mr-3 hover:text-orange-700"
             />
-          </a>
-          <a href="/linkedin">
+          </Link>
+          <Link to="/linkedin">
             <IoLogoLinkedin
               size="1.5em"
               className="inline mr-3 hover:text-orange-700"
             />
-          </a>
-          <a href="/instagram">
+          </Link>
+          <Link to="/instagram">
             <IoLogoInstagram
               size="1.5em"
               className="inline mr-3 hover:text-orange-700"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </>
