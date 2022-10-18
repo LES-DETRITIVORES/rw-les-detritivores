@@ -1,10 +1,18 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import { IoServer } from "react-icons/io5"
-
+import {motion} from "framer-motion"
 const RgpdPage = () => {
   return (
-    <>
+      <>
+                <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        exit={{ opacity: 0, y: 20 }}
+          >
+
+
       <MetaTags title="Données personnelles" description="Politique de confidentialité du site LES DETRITIVORES" />
       <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
@@ -14,14 +22,14 @@ const RgpdPage = () => {
       </h1>
       <div>
         <h2 className="text-xl md:text-3xl text-black font-bold">Traitement des données personnelles du site LES DETRITIVORES</h2>
-        <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">              
+        <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
           <h3 className="font-bold uppercase underline">ARTICLE 1 : PRÉAMBULE</h3>
               <div class="paragraph">
               Cette politique de confidentialité s'applique au site internet <a href="https://www.les-detritivores.co" title="Site internet de la coopérative LES DETRITIVORES">https://www.les-detritivores.co</a>.
               La présente politique de confidentialité a pour but d'exposer aux utilisateurs du site :
                   <ul>
-                  <li>La manière dont sont collectées et traitées leurs données à caractère personnel. 
-                    Doivent être considérées comme données personnelles toutes les données étant susceptibles d'identifier un utilisateur. 
+                  <li>La manière dont sont collectées et traitées leurs données à caractère personnel.
+                    Doivent être considérées comme données personnelles toutes les données étant susceptibles d'identifier un utilisateur.
                     Il s'agit notamment du prénom et du nom, de l'âge, de l'adresse postale, l'adresse mail, la localisation de l'utilisateur ou encore son adresse IP ;</li>
                   <li>Quels sont les droits des utilisateurs concernant ces données ;</li>
                   <li>Qui est responsable du traitement des données à caractère personnel collectées et traitées ;</li>
@@ -130,13 +138,13 @@ const RgpdPage = () => {
               </div>
 
               <h3 className="font-bold uppercase underline">ARTICLE 5 : DROITS DE L'UTILISATEUR</h3>
-                Conformément à la réglementation concernant le traitement des données à caractère personnel, l'utilisateur possède les droits ci-après énumérés. 
-                Afin que le responsable du traitement des données fasse droit à sa demande, l'utilisateur est tenu de lui communiquer : ses prénom et nom ainsi que son adresse e-mail. 
-                Dans l'hypothèse où votre demande est susceptible d'avoir des conséquences importantes sur vos données 
-                ou en cas de doute sur l'identité de la personne formulant une demande relative à l'un des droits ci-après énumérés, 
+                Conformément à la réglementation concernant le traitement des données à caractère personnel, l'utilisateur possède les droits ci-après énumérés.
+                Afin que le responsable du traitement des données fasse droit à sa demande, l'utilisateur est tenu de lui communiquer : ses prénom et nom ainsi que son adresse e-mail.
+                Dans l'hypothèse où votre demande est susceptible d'avoir des conséquences importantes sur vos données
+                ou en cas de doute sur l'identité de la personne formulant une demande relative à l'un des droits ci-après énumérés,
                 LES DETRITIVORES se réserve le droit de solliciter la communication de la copie du recto en noir et blanc d'un document d'identité.<br />
                 LES DETRITIVORES apportera à l'utilisateur une réponse dans un délai d'un mois à compter de la réception de votre demande.
-              
+
               <h4 className="font-semibold uppercase underline">A. PRÉSENTATION DES DROITS DE L'UTILISATEUR EN MATIÈRE DE COLLECTE ET TRAITEMENT DE DONNÉES</h4>
 
               <div class="paragraph">
@@ -150,7 +158,7 @@ const RgpdPage = () => {
                   <ul>
                   <li>les  données à  caractère personnel ne  sont  plus  nécessaires au  regard des  finalités énoncées à l'article 3,</li>
                   <li>l'utilisateur  retire  le  consentement sur  lequel est  fondé  le  traitement, </li>
-                  <li>l'utilisateur s'oppose au  traitement  de ses données à caractère personnel à des fins de prospection, 
+                  <li>l'utilisateur s'oppose au  traitement  de ses données à caractère personnel à des fins de prospection,
                   y compris au profilage dans la mesure où il est lié à une telle prospection,</li>
                   <li>les données personnelles ont fait l'objet d'un traitement illicite,</li>
                   <li>les données personnelles doivent être effacées pour respecter une obligation légale.</li>
@@ -159,10 +167,10 @@ const RgpdPage = () => {
                <li>à l'exercice du droit à la liberté d'expression et d'information;</li>
               <li>au respect d'une obligation légale qui nous incombe et qui requiert le traitement de ces données à caractère personnel,</li>
               <li>à la constatation, à l'exercice ou à la défense de droits en justice,</li>
-              <li>pendant la vérification portant sur le point de savoir si les motifs légitimes poursuivis prévalent sur celles de l'utilisateur 
+              <li>pendant la vérification portant sur le point de savoir si les motifs légitimes poursuivis prévalent sur celles de l'utilisateur
                 lorsqu'il s'est opposé, pour des raisons tenant à sa situation particulière, au traitement de ses données à caractère personnel fondé sur nos intérêts légitimes.</li>
               </div>
-    
+
               <div class="paragraph">
                   <span class="h4">c. Droit à la portabilité des données</span><br />
                   L'utilisateur a le droit de demander la portabilité de ses données personnelles, détenues par le site, vers un autre site.
@@ -200,7 +208,7 @@ const RgpdPage = () => {
       <li>Par courrier postal à l'adresse suivante : LES DETRITIVORES "protection des données" 65 QUAI DE BRAZZA, 33100 BORDEAUX</li>
       <li>Par e-mail : bonjour@les-detritivores.co avec pour objet "protection des données".</li>
       </ul>
-      
+
               </div>
 
               <div class="paragraph">
@@ -264,6 +272,7 @@ const RgpdPage = () => {
               </div>
             </div>
           </div>
+      </motion.div>
     </>
   )
 }

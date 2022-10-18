@@ -1,13 +1,20 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import { IoSchool } from "react-icons/io5"
-
+import {motion} from "framer-motion"
 const TrainingPage = () => {
   const professionalUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_220516_0555_0ALCg4wdb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655423311951"
   const logisticUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_795_WGpL5BuFeI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843538856"
 
   return (
     <>
+          <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        exit={{ opacity: 0, y: 20 }}
+      >
+
       <MetaTags title="Formation professionnelle" description="Conducteur de camion, logisticien à vélo, technicien de plateforme, agent de compostage, etc... nos équipes développent de nombreuses compétences techniques et humaines pour la société et l'économie locale de demain." />
       <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
@@ -21,10 +28,10 @@ const TrainingPage = () => {
           <h2 className="text-xl md:text-3xl text-black font-bold">Exigeant, comme vous.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              LES DETRITIVORES investissent fortement dans une <span className="font-bold">politique de formation, prévention, hygiène et sécurité</span> afin de valoriser les déchets 
-              en toute sécurité et de maintenir la propreté conformément à la réglementation en vigueur. 
-              Travaillant avec des usagers très exigeants telles que les institutions, les grand groupes de restauration, 
-              les hôtels, nous garantissons le <span className="font-bold">respect de la réglementation</span> : installations respectant la 
+              LES DETRITIVORES investissent fortement dans une <span className="font-bold">politique de formation, prévention, hygiène et sécurité</span> afin de valoriser les déchets
+              en toute sécurité et de maintenir la propreté conformément à la réglementation en vigueur.
+              Travaillant avec des usagers très exigeants telles que les institutions, les grand groupes de restauration,
+              les hôtels, nous garantissons le <span className="font-bold">respect de la réglementation</span> : installations respectant la
               Réglementation Sanitaire Départementale SPAn C3, activités de transport de déchets non dangereux déclarés en préfecture.
             </p>
           </div>
@@ -45,11 +52,11 @@ const TrainingPage = () => {
             </p>
             <ul className="space-y-3 my-auto">
               <li>
-                <h3 className="font-bold block">Camions :</h3> 
+                <h3 className="font-bold block">Camions :</h3>
                 <p>Utilisés pour les collectes en périphérie, nos camions roulent au biogaz afin de limiter leur impact environnemental.</p>
               </li>
               <li>
-                <h3 className="font-bold block">Vélos-cargos :</h3> 
+                <h3 className="font-bold block">Vélos-cargos :</h3>
                 <p>Rapides et légers pour l’environnement, leur utilisation permet de fluidifier et de faciliter le retrait des restes alimentaires de façon régulière au cœur des centres piétons. Nos vélos participent aussi à la diminution de la présence de nos camions de collecte en centre-ville.</p>
               </li>
               <li>
@@ -60,6 +67,7 @@ const TrainingPage = () => {
           </div>
         </div>
       </div>
+      </motion.div>
     </>
   )
 }

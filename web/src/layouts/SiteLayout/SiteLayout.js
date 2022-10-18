@@ -1,6 +1,4 @@
-import { Transition } from '@headlessui/react'
-import { useState, useEffect } from 'react'
-import { IoLeaf, IoGlobe, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet, IoHome, IoRestaurant, IoBusiness } from "react-icons/io5"
+import { IoLeaf, IoGlobe, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet } from "react-icons/io5"
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 import { IoLocation, IoMail, IoCall } from "react-icons/io5";
 
@@ -8,7 +6,6 @@ import Header from 'src/components/Header'
 import Manifesto from 'src/components/Manifesto/Manifesto'
 import Footer from 'src/components/Footer'
 import SiteForm from 'src/components/SiteForm/SiteForm';
-
 const defaultStyle = "bg-orange-700 text-white rounded-full p-3 w-12 h-12 mx-auto mb-1"
 const navList = [
   {
@@ -134,49 +131,33 @@ const navList = [
 ]
 
 const SiteLayout = ({ children }) => {
-  let [isShowing, setIsShowing] = useState(false)
-
-  useEffect(() => {
-  // Update the transition state after component mounting
-      setIsShowing(true)
-  });
-
-  return <>
-    <Transition
-          appear={true}
-          show={isShowing}
-          enter="transition-opacity duration-[1000ms] ease-in-out"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-[1000ms] ease-in-out"
-          leaveFrom="opacity-100"
-          leaveTo="opacity-0"
-      >
+  return (
+    <>
       <div className="flex flex-col">
-        {/*<div className="basis-full fixed top-0 left-0 right-0 bg-white/95 backdrop-grayscale z-50">*/}
-        <div className="basis-full p-3 text-center w-screen mx-auto">
-          <Header navList={navList}/>
-        </div>
-        {/*<div className="basis-full mt-[100px] md:mt-[180px]">*/}
-        <div className="basis-full w-screen max-w-7xl mx-auto">
-          {children}
-        </div>
-        <div className="bg-green-900 text-white text-lg md:text-xl">
-          <div className="p-6 mx-auto flex flex-col gap-6 md:flex-row">
-            <div className="basis-full md:basis-1/2">
-              <Manifesto/>
+            {/*<div className="basis-full fixed top-0 left-0 right-0 bg-white/95 backdrop-grayscale z-50">*/}
+            <div className="basis-full p-3 text-center w-screen mx-auto">
+              <Header navList={navList}/>
             </div>
-            <div id="contact" className="basis-full md:basis-1/2">
-              <SiteForm/>
+            {/*<div className="basis-full mt-[100px] md:mt-[180px]">*/}
+            <div className="basis-full w-screen max-w-7xl mx-auto">
+              {children}
             </div>
-          </div>
+            <div className="bg-green-900 text-white text-lg md:text-xl">
+              <div className="p-6 mx-auto flex flex-col gap-6 md:flex-row">
+                <div className="basis-full md:basis-1/2">
+                  <Manifesto/>
+                </div>
+                <div id="contact" className="basis-full md:basis-1/2">
+                  <SiteForm/>
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
-      <div className="basis-full p-6 w-screen mx-auto bg-white text-black">
-        <Footer navList={navList} />
-      </div>
-    </Transition>
-  </>
+        <div className="basis-full p-6 w-screen mx-auto bg-white text-black">
+          <Footer navList={navList} />
+        </div>
+    </>
+    )
 }
 
 export default SiteLayout

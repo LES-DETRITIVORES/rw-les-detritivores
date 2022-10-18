@@ -1,7 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import { IoLeaf, IoTrailSign, IoSync, IoBag, IoPeople, IoFootsteps, IoSchool, IoChatbubbles, IoHandLeft, IoWallet, IoHome } from "react-icons/io5"
-
+import {motion} from "framer-motion"
 const HomePage = () => {
   const organicUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_223_qNNb-iKOBh.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843524959"
   const inclusiveUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211007_725_aGTFOEFP5.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651843630508"
@@ -9,6 +9,13 @@ const HomePage = () => {
 
   return (
     <>
+          <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        exit={{ opacity: 0, y: 20 }}
+      >
+
       <MetaTags title="LES DETRITIVORES" description="Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. #TousDETRITIVORES" />
       <div className="flex flex-col rounded-r-2xl overflow-hidden m-3 md:flex-row md:m-6">
         <div className="basis-full p-8 sm:p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${organicUrl})` }}>
@@ -143,6 +150,7 @@ const HomePage = () => {
           </a>
         </div>
       </div>
+      </motion.div>
     </>
   )
 }

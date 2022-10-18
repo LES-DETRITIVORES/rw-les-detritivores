@@ -1,13 +1,20 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import { IoFootsteps } from "react-icons/io5"
-
+import {motion} from "framer-motion"
 const IntegrationPage = () => {
   const workUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_220516_0516_MgiSISfUR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655423311749"
   const inclusionUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_220516_0006_KhJB0AFwQ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655423300412"
 
   return (
     <>
+            <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        exit={{ opacity: 0, y: 20 }}
+      >
+
       <MetaTags title="Entreprise d'insertion" description="Nous recrutons en priorité des personnes éloignées de l'emploi qui bénéficient tout au long de leur parcours d'un accompagnement professionnel sur mesure." />
       <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
@@ -20,12 +27,12 @@ const IntegrationPage = () => {
           <h2 className="text-xl md:text-3xl text-black font-bold">Un travail à la mesure de chacun.</h2>
           <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
             <p>
-              En tant qu’Entreprise d’Insertion, nous nous engageons à favoriser l’acquisition par nos salariés de nouvelles compétences. 
-              Notre objectif ? Leur permettre d’intégrer le monde du travail avec de solides outils professionnels 
+              En tant qu’Entreprise d’Insertion, nous nous engageons à favoriser l’acquisition par nos salariés de nouvelles compétences.
+              Notre objectif ? Leur permettre d’intégrer le monde du travail avec de solides outils professionnels
               afin qu’ils puissent poursuivre leur chemin sereinement et avec confiance.
             </p>
             <p>
-              Nous veillons à accompagner nos salariés dans la co-construction de leur projet professionnel 
+              Nous veillons à accompagner nos salariés dans la co-construction de leur projet professionnel
               grâce à la mise en place de parcours professionnels durables et répondant à leurs besoins.
             </p>
           </div>
@@ -61,6 +68,7 @@ const IntegrationPage = () => {
           </div>
         </div>
       </div>
+      </motion.div>
     </>
   )
 }

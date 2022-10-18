@@ -1,14 +1,22 @@
 import { Link, routes } from '@redwoodjs/router'
 import { MetaTags } from '@redwoodjs/web'
 import { IoTrailSign } from "react-icons/io5"
-
+import React from 'react'
+import { motion } from "framer-motion"
 const CollectPage = () => {
   //const rulesUrl = "https://ik.imagekit.io/dttv/CONSIGNES_TRI_BIODECHETS_A4_OhrCcMbK1.png?updatedAt=1658956423391&tr=w-563,h-632,fo-custom,cm-extract"
   const rulesUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_220516_0434_qCjL95E8A.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655423310248"
   const userUrl = "https://ik.imagekit.io/dttv/SHOOTING/DETRI_211202_506_ZtSlv6ubQ.jpg?updatedAt=1658958887856&tr=w-1646,h-1700,fo-custom,cm-extract"
-  
+
   return (
     <>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        exit={{ opacity: 0, y: 20 }}
+      >
+
       <MetaTags title="Tri des restes alimentaires" description="En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez." />
       <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
@@ -53,11 +61,11 @@ const CollectPage = () => {
                   <li>Emballages non compostables</li>
                   <li>Pots de yaourt</li>
                   <li>Opercules</li>
-                  <li>Serviettes</li> 
-                  <li>Canettes</li> 
-                  <li>Bouchons</li> 
-                  <li>Plastique</li> 
-                  <li>Déchets verts</li> 
+                  <li>Serviettes</li>
+                  <li>Canettes</li>
+                  <li>Bouchons</li>
+                  <li>Plastique</li>
+                  <li>Déchets verts</li>
                   <li>Bois</li>
                   <li>Journaux</li>
                   <li>Huile de friture</li>
@@ -98,6 +106,7 @@ const CollectPage = () => {
           </div>
         </div>
       </div>
+      </motion.div>
     </>
   )
 }
