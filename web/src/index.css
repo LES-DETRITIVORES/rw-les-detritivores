@@ -12,6 +12,7 @@
  * END --- SETUP TAILWINDCSS EDIT
  */
 
-body, html {
+body,
+html {
   @apply overflow-x-hidden;
 }

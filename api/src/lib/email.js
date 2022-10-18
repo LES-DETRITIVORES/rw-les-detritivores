@@ -1,15 +1,6 @@
 import * as nodemailer from 'nodemailer'
 
-interface Options {
-  to: string | string[]
-  cc: string | string[]
-  bcc: string | string[]
-  subject: string
-  text: string
-  html: string
-}
-
-export async function sendEmail({ to, cc, bcc, subject, text, html }: Options) {
+export async function sendEmail({ to, cc, bcc, subject, text, html }) {
   console.log('Sending email to:', to)
 
   // create reusable transporter object using office365 for SMTP
@@ -21,7 +12,7 @@ export async function sendEmail({ to, cc, bcc, subject, text, html }: Options) {
       pass: process.env.OFFICE365_PWD,
     },
     secureConnection: false,
-    tls: { ciphers: 'SSLv3' }
+    tls: { ciphers: 'SSLv3' },
   })
 
   // send mail with defined transport object
@@ -34,7 +25,5 @@ export async function sendEmail({ to, cc, bcc, subject, text, html }: Options) {
     text, // plain text body
     html, // html body
   })
-
-  // console.log(email)
   return email
 }
