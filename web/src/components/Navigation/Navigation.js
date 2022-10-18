@@ -1,7 +1,7 @@
 import { Link, routes } from '@redwoodjs/router'
 import { IoGlobe, IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io5";
 
-const Navigation = () => {    
+const Navigation = () => {
   const navList = [
     {
       image:'https://ik.imagekit.io/dttv/logo_k7opAuX3K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652281391081',
@@ -57,7 +57,7 @@ const Navigation = () => {
       <div className="grid grid-cols-3 p-3 w-screen sm:grid-cols-4 md:grid-cols-5">
       <Link to={navList[0].to} className="m-auto">
         <img
-          className="w-28 md:w-36 hover:scale-105 hover:drop-shadow-md"
+          className="w-28 md:w-36 transition hover:scale-105 hover:drop-shadow-md"
           src={navList[0].image}
           alt={navList[0].alt}
         />
@@ -68,7 +68,7 @@ const Navigation = () => {
             {nav.type === 'menu' && (
               <Link
                 to={nav.to}
-                className="m-auto hidden sm:inline text-white font-bold uppercase -rotate-6 hover:scale-105 hover:drop-shadow-md"
+                className="m-auto hidden sm:inline transition text-white font-bold uppercase -rotate-6 hover:scale-105 hover:drop-shadow-md"
               >
                 <img
                   src={nav.image}
@@ -89,7 +89,7 @@ const Navigation = () => {
           <a href="/facebook"><IoLogoFacebook size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
           <a href="/linkedin"><IoLogoLinkedin size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
           <a href="/instagram"><IoLogoInstagram size="1.5em" className="inline mr-3 hover:text-orange-700"/></a>
-        </div>  
+        </div>
       </div>
     </>
   )

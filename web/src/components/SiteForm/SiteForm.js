@@ -2,6 +2,7 @@ import { Form, FormError, Label, TextField, EmailField, TelField, SelectField, T
 import { useState } from 'react'
 import { useMutation } from '@redwoodjs/web'
 import { Dialog } from '@headlessui/react'
+import { Transition } from '@headlessui/react'
 
 const options = [
   { label: 'Choisir un sujet...' },
@@ -55,6 +56,15 @@ const SiteForm = () => {
 
   return (
     <div className="md:pt-3 lg:pt-12">
+         <Transition
+        show={isOpen}
+        enter="transition ease-out duration-100"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-75"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+      >
       <Dialog as="div" className="relative z-10" open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="fixed inset-0 bg-black bg-opacity-50" />
         <div className="fixed inset-0 overflow-y-auto">
@@ -78,6 +88,8 @@ const SiteForm = () => {
         </div>
       </Dialog>
 
+      </Transition>
+
       <h1 className="mb-3 text-3xl font-semibold text-center">Contactez-nous</h1>
       <p className="text-center max-w-lg mx-auto mb-3">
         Partagez votre projet via ce formulaire :
@@ -86,12 +98,12 @@ const SiteForm = () => {
         <FormError error={error}/>
         <div className={`border border-white p-8 mt-3 space-y-3 ${isSubject ? "rounded-t-lg border-b-0" : "rounded-lg"}`}>
           <div>
-            <Label 
+            <Label
               name="subject"
-              className="block"> 
+              className="block">
               Votre projet
             </Label>
-            <SelectField 
+            <SelectField
               name="subject"
               className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
               errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
@@ -105,7 +117,7 @@ const SiteForm = () => {
                     )
                   },
                 },
-              }}              
+              }}
             >
               {options.map((option, optionIdx) => (
                 <option
@@ -129,82 +141,82 @@ const SiteForm = () => {
                   className="block w-full h-24 bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"/>
               </div>
               <div>
-                <Label 
+                <Label
                   name="company"
                   className="block">
                   Société
                 </Label>
-                <TextField 
-                  name="company" 
+                <TextField
+                  name="company"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
                 />
               </div>
               <div>
-                <Label 
-                  name="firstname" 
+                <Label
+                  name="firstname"
                   className="block">
                     Prénom*
                 </Label>
-                <TextField 
-                  name="firstname" 
+                <TextField
+                  name="firstname"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
                   errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
                   validation={{ required: true }}
                 />
               </div>
               <div>
-                <Label 
+                <Label
                   name="lastname"
                   className="block">
                   Nom*
                 </Label>
-                <TextField 
-                  name="lastname" 
-                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-                  validation={{ required: true }}  
-                />
-              </div>
-              <div>
-                <Label 
-                  name="location"
-                  className="block">
-                  Adresse
-                </Label>
-                <TextField 
-                  name="location" 
-                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
-                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
-                />
-              </div>                    
-              <div>
-                <Label 
-                  name="email"
-                  className="block">
-                  Email*
-                </Label>
-                <EmailField 
-                  name="email" 
+                <TextField
+                  name="lastname"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
                   errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
                   validation={{ required: true }}
                 />
               </div>
               <div>
-                <Label 
+                <Label
+                  name="location"
+                  className="block">
+                  Adresse
+                </Label>
+                <TextField
+                  name="location"
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+                />
+              </div>
+              <div>
+                <Label
+                  name="email"
+                  className="block">
+                  Email*
+                </Label>
+                <EmailField
+                  name="email"
+                  className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+                  validation={{ required: true }}
+                />
+              </div>
+              <div>
+                <Label
                   name="phone"
                   className="block">
                   Téléphone*
                 </Label>
-                <TelField 
-                  name="phone" 
+                <TelField
+                  name="phone"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none"
                   errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
                   validation={{ required: true }}
                 />
               </div>
               <div className="leading-none">
-                <CheckboxField 
+                <CheckboxField
                   name="rgpd"
                   className="bg-green-900 border-white rounded-sm mr-1 outline-none"
                   errorClassName="bg-green-900 border border-red-600 rounded-sm mr-1 outline-none"
