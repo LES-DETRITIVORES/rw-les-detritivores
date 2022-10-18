@@ -43,7 +43,13 @@ const Header = (props) => {
                       {({ active }) => (
                         <Link
                           to={link.to}
-                          className="rounded-md transition hover:bg-orange-700 hover:text-white block p-2 text-left"
+                          key={itemIdx}
+                          aria-current={active ? 'page' : undefined}
+                          className={`${
+                            active
+                              ? 'bg-orange-700 text-white'
+                              : 'text-orange-700'
+                          } block p-2 text-left transition rounded-md`}
                         >
                           <span className="inline-block my-auto mr-1">
                             {link.icon}
@@ -117,15 +123,21 @@ const Header = (props) => {
                     {nav.links.map((link, idx) => (
                       <Menu.Item key={idx}>
                         {({ active }) => (
-                          <a
-                            href={link.to}
-                            className="rounded-md transition hover:bg-orange-700 hover:text-white block p-2 text-left"
+                          <Link
+                            to={link.to}
+                            key={itemIdx}
+                            aria-current={active ? 'page' : undefined}
+                            className={`${
+                              active
+                                ? 'bg-orange-700 text-white'
+                                : 'text-orange-700'
+                            } block p-2 text-left transition rounded-md`}
                           >
                             <span className="inline-block mr-1">
                               {link.icon}
                             </span>
                             {link.label}
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                     ))}
