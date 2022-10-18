@@ -14,6 +14,9 @@ import PageLayout from 'src/layouts/PageLayout'
 const Routes = () => {
   return (
     <Router>
+      <Route path="/call" page={CallPage} name="call" />
+      <Route path="/mail" page={MailPage} name="mail" />
+      <Route path="/map" page={LocationPage} name="location" />
       <Set wrap={SiteLayout}>
         <Route path="/" page={HomePage} name="home" />
         <Set wrap={PageLayout}>
