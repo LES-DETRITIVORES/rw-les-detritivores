@@ -12,10 +12,23 @@ const PressPage = () => {
         exit={{ opacity: 0, y: 20 }}
       >
         <MetaTags title="Espace presse" description="Espace presse" />
-        <div className="font-light">
-          &lt;{' '}
+        <div className="font-light inline-flex space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M11 17l-5-5m0 0l5-5m-5 5h12"
+            />
+          </svg>
           <Link to="/" className="underline">
-            retour accueil
+            Retour à l'acceuil
           </Link>
         </div>
         <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
