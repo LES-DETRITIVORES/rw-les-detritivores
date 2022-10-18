@@ -41,10 +41,10 @@ const HomePage = () => {
           <p className="my-3">
             En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez.
           </p>
-          <a href="/collecte" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100">
+          <Link to="/collecte" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100">
             <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>
             Organiser le tri des biodéchets
-          </a>
+          </Link>
           <hr className="my-6 -rotate-1"/>
           <div className="block text-xl text-white font-bold uppercase mt-6">
             Compostage des biodéchets
@@ -52,10 +52,10 @@ const HomePage = () => {
           <p className="my-3">
             En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète tout en limitant les nuisances du transport.
           </p>
-          <a href="/traitement" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100">
+          <Link to="/traitement" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100">
             <IoSync className="inline mr-2 align-middle h-6 w-6"/>
             Installer un site de compostage
-          </a>
+          </Link>
           <hr className="my-6 rotate-1"/>
           <div className="block text-xl text-white font-bold uppercase mt-6">
             Vente de compost
@@ -63,10 +63,10 @@ const HomePage = () => {
           <p className="my-3" >
             Fini les produits chimiques, le compost 100% naturel et normé (NF U 44-051 amendements organiques) nourrit aussi bien les grandes terres agricoles, les petits potagers ou les jolies fleurs sur le balcon.
           </p>
-          <a href="/compost" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100">
+          <Link to="/compost" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100">
             <IoBag className="inline mr-2 align-middle h-6 w-6"/>
             Acheter du compost
-          </a>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col-reverse rounded-l-2xl overflow-hidden md:flex-row m-3 md:m-6">
@@ -86,10 +86,10 @@ const HomePage = () => {
           <p className="my-3">
             Nous recrutons en priorité des personnes éloignées de l'emploi qui bénéficient tout au long de leur parcours d'un accompagnement professionnel sur mesure.
           </p>
-          <a href="/insertion" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-orange-700 hover:bg-orange-100">
+          <Link to="/insertion" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-orange-700 hover:bg-orange-100">
             <IoFootsteps className="inline mr-2 align-middle h-6 w-6"/>
             Postuler à une offre d'emploi
-          </a>
+          </Link>
           <hr className="my-6 -rotate-1"/>
           <h2 className="block text-xl text-white font-bold uppercase mt-6">
             Formation professionnelle
@@ -97,10 +97,10 @@ const HomePage = () => {
           <p className="my-3">
             Conducteur de camion, logisticien à vélo, technicien de plateforme, agent de compostage, etc... nos équipes développent de nombreuses compétences techniques et humaines pour la société et l'économie locale de demain.
           </p>
-          <a href="/formation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-orange-700 hover:bg-orange-100">
+          <Link to="/formation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-orange-700 hover:bg-orange-100">
             <IoSchool className="inline mr-2 align-middle h-6 w-6"/>
             Recruter nos talents
-          </a>
+          </Link>
         </div>
         <div className="basis-full p-8 sm:p-16 md:basis-1/2 lg:basis-3/5 xl:basis-2/3 bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${inclusiveUrl})` }}>
           <div className="-rotate-6 mt-24">
@@ -133,10 +133,10 @@ const HomePage = () => {
           <p className="my-3">
             Notre projet coopératif rassemble les particuliers, les professionnels, les financeurs, les institutions, les collectivités autour d'un projet commun de transition organique, inclusive et coopérative des territoires.
           </p>
-          <a href="/cooperation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-black hover:bg-yellow-100">
+          <Link to="/cooperation" className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-black hover:bg-yellow-100">
             <IoHandLeft className="inline mr-2 align-middle h-6 w-6"/>
             Rejoindre la coopérative
-          </a>
+          </Link>
           <hr className="my-6 border-black -rotate-1"/>
           <h2 className="block text-xl font-bold uppercase mt-6">
             Investissement responsable
@@ -144,10 +144,10 @@ const HomePage = () => {
           <p className="my-3">
              Que vous soyez plutôt part sociale, compte courant d'associé ou encore titres participatifs, notre coopérative vous propose des opportunités d'investissement social, écologique et responsable adapté à vos capacités.
           </p>
-          <a href="/investissement" className="rounded-md inline-block p-3 font-semi-bold text-lg  bg-white shadow-xl text-black hover:bg-yellow-100">
+          <Link to="/investissement" className="rounded-md inline-block p-3 font-semi-bold text-lg  bg-white shadow-xl text-black hover:bg-yellow-100">
             <IoWallet className="inline mr-2 align-middle h-6 w-6"/>
             Investir dans la transition
-          </a>
+          </Link>
         </div>
       </div>
       </motion.div>
