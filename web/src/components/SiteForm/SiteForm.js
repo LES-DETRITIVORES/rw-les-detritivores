@@ -131,10 +131,11 @@ const SiteForm = () => {
             <Label name="subject" className="block">
               Votre projet
             </Label>
+
             <SelectField
               name="subject"
               className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
-              errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none"
+              errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none"
               onChange={(e) => {
                 setSubject(e.target.value != options[0].label ? true : false)
               }}
@@ -168,6 +169,9 @@ const SiteForm = () => {
                 <TextAreaField
                   name="message"
                   className="block w-full h-24 bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  rows={4}
+                  validation={{ required: true }}
                 />
               </div>
               <div>
@@ -177,6 +181,8 @@ const SiteForm = () => {
                 <TextField
                   name="company"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  validation={{ required: true }}
                 />
               </div>
               <div>
@@ -186,7 +192,7 @@ const SiteForm = () => {
                 <TextField
                   name="firstname"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
-                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
                   validation={{ required: true }}
                 />
               </div>
@@ -197,7 +203,7 @@ const SiteForm = () => {
                 <TextField
                   name="lastname"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
-                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
                   validation={{ required: true }}
                 />
               </div>
@@ -208,7 +214,8 @@ const SiteForm = () => {
                 <TextField
                   name="location"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
-                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  validation={{ required: true }}
                 />
               </div>
               <div>
@@ -218,7 +225,7 @@ const SiteForm = () => {
                 <EmailField
                   name="email"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
-                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
                   validation={{ required: true }}
                 />
               </div>
@@ -229,7 +236,7 @@ const SiteForm = () => {
                 <TelField
                   name="phone"
                   className="block w-full bg-green-900 border-2 border-white rounded-md p-2 text-sm outline-none transition focus:ring-green-200 focus:border-green-200"
-                  errorClassName="block w-full bg-green-900 border-2 border-red-600 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
+                  errorClassName="block w-full bg-green-900 border-2 border-red-200 rounded-md p-2 text-sm outline-none transition focus:ring-red-200 focus:border-red-200"
                   validation={{ required: true }}
                 />
               </div>
@@ -237,7 +244,7 @@ const SiteForm = () => {
                 <CheckboxField
                   name="rgpd"
                   className="bg-green-900 border-white text-green-500 rounded-sm mr-1 outline-none transition focus:ring-green-200 focus:border-green-200"
-                  errorClassName="bg-green-900 border border-red-600 rounded-sm mr-1 outline-none transition focus:ring-red-200 focus:border-red-200"
+                  errorClassName="bg-green-900 border border-red-200 rounded-sm mr-1 outline-none transition focus:ring-red-200 focus:border-red-200"
                   validation={{ required: true }}
                 ></CheckboxField>
                 <p className="inline text-xs">
