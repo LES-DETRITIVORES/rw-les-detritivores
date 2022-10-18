@@ -10,7 +10,7 @@ const CollectPage = () => {
   return (
     <>
       <MetaTags title="Tri des restes alimentaires" description="En camion, à vélos ou en apport volontaire, il y a toujours une solution pour trier vos restes alimentaires. Simple, efficace et économique car vous ne payez que ce que vous produisez." />
-      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>
           <IoTrailSign className="inline mr-2 align-middle h-6 w-6"/>Tri des restes alimentaires

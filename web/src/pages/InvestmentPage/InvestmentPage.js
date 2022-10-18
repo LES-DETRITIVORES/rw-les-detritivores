@@ -9,7 +9,7 @@ const InvestmentPage = () => {
   return (
     <>
       <MetaTags title="Investissement Responsable (IR)" description="Que vous soyez plutôt part sociale, compte courant d'associé ou encore titres participatifs, notre coopérative vous propose des opportunités d'investissement social, écologique et responsable adapté à vos capacités." />
-      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>
           <IoWallet className="inline mr-2 align-middle h-6 w-6"/>Investissement Responsable (IR)

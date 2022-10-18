@@ -10,7 +10,7 @@ const CompostPage = () => {
   return (
     <>
       <MetaTags title="Vente de compost" description="Fini les produits chimiques, le compost 100% naturel et normé (NF U 44-051 amendements organiques) nourrit aussi bien les grandes terres agricoles, les petits potagers ou les jolies fleurs sur le balcon." />
-      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>
           <IoBag className="inline mr-2 align-middle h-6 w-6"/>Vente de compost

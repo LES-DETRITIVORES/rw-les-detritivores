@@ -9,7 +9,7 @@ const TreatmentPage = () => {
   return (
     <>
       <MetaTags title="Compostage des biodéchets" description="En valorisant les biodéchets sur une plateforme locale de compostage, vous évitez le gaspillage d'une ressource précieuse pour la planète tout en limitant les nuisances du transport." />
-      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>
         <IoSync className="inline mr-2 align-middle h-6 w-6"/>Compostage des biodéchets

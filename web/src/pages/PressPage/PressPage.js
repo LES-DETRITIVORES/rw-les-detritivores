@@ -6,7 +6,7 @@ const PressPage = () => {
   return (
     <>
       <MetaTags title="Espace presse" description="Espace presse" />
-      <div className="font-light">&lt; <a href="/" className="underline">retour accueil</a></div>
+      <div className="font-light">&lt; <Link to="/" className="underline">retour accueil</Link></div>
       <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
         <div>
           <IoNewspaper className="inline mr-2 align-middle h-6 w-6"/>Espace presse

@@ -27,7 +27,7 @@ const Header = (props) => {
                 {nav.links.map((link, itemIdx) => (
                   <Menu.Item key={itemIdx}>
                     {({ active }) => (
-                      <a href={link.to} className="rounded-md hover:bg-orange-700 hover:text-white block p-2 text-left"><span className="inline-block my-auto mr-1">{link.icon}</span>{link.label}</a>
+                      <Link to={link.to} className="rounded-md hover:bg-orange-700 hover:text-white block p-2 text-left"><span className="inline-block my-auto mr-1">{link.icon}</span>{link.label}</Link>
                     )}
                   </Menu.Item>
                 ))}
