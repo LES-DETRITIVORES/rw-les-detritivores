@@ -33,7 +33,7 @@ const MailPage = () => {
             puis vous allez être redirigé vers notre site.
           </p>
           <svg
-            className="animate-spin h-20 w-20 text-green-900 rounded-md"
+            className="animate-spin w-10 md:h-20 h-10 md:w-20 text-green-900 rounded-md"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
