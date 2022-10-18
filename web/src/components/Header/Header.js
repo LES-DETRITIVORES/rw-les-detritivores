@@ -7,12 +7,14 @@ import {
   IoLogoInstagram,
   IoChatbox,
 } from 'react-icons/io5'
-import { Menu } from '@headlessui/react'
+import { Menu, Transition } from '@headlessui/react'
+import { Fragment, useState } from 'react'
 
 const Header = (props) => {
   const logoUrl =
     'https://ik.imagekit.io/dttv/logo_k7opAuX3K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652281391081'
 
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <div className="grid gap-3 mt-3 grid-cols-2 md:grid-cols-6">
@@ -37,29 +39,39 @@ const Header = (props) => {
                     {nav.title}
                   </span>
                 </Menu.Button>
-                <Menu.Items className="absolute w-96 z-10 p-2 bg-white drop-shadow-lg rounded-lg text-orange-700">
-                  {nav.links.map((link, itemIdx) => (
-                    <Menu.Item key={itemIdx}>
-                      {({ active }) => (
-                        <Link
-                          to={link.to}
-                          key={itemIdx}
-                          aria-current={active ? 'page' : undefined}
-                          className={`${
-                            active
-                              ? 'bg-orange-700 text-white'
-                              : 'text-orange-700'
-                          } block p-2 text-left transition rounded-md`}
-                        >
-                          <span className="inline-block my-auto mr-1">
-                            {link.icon}
-                          </span>
-                          {link.label}
-                        </Link>
-                      )}
-                    </Menu.Item>
-                  ))}
-                </Menu.Items>
+                <Transition
+                  as={Fragment}
+                  enter="transition ease-out duration-100"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transition ease-in duration-75"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <Menu.Items className="absolute w-96 z-10 p-2 bg-white drop-shadow-lg rounded-lg text-orange-700">
+                    {nav.links.map((link, itemIdx) => (
+                      <Menu.Item key={itemIdx}>
+                        {({ active }) => (
+                          <Link
+                            to={link.to}
+                            key={itemIdx}
+                            aria-current={active ? 'page' : undefined}
+                            className={`${
+                              active
+                                ? 'bg-orange-700 text-white'
+                                : 'text-orange-700'
+                            } block p-2 text-left transition rounded-md`}
+                          >
+                            <span className="inline-block my-auto mr-1">
+                              {link.icon}
+                            </span>
+                            {link.label}
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    ))}
+                  </Menu.Items>
+                </Transition>
               </Menu>
             )}
           </>
@@ -105,47 +117,71 @@ const Header = (props) => {
             Nous contacter
           </a>
         </div>
-        <Menu as="div" className="fixed inline-block right-0 mr-3 md:hidden">
-          <Menu.Button className="transition mx-auto my-4 leading-3 md:hidden text-white rotate-3 font-bold uppercase hover:scale-105 hover:cursor-pointer">
+        <Menu
+          as="div"
+          className="fixed inline-block right-0 mr-3 md:hidden z-50"
+        >
+          <Menu.Button
+            onClick={() => {
+              if (!isOpen) {
+                setIsOpen(true)
+              } else {
+                setIsOpen(false)
+              }
+            }}
+            className="transition mx-auto my-4 leading-3 md:hidden text-white rotate-3 font-bold uppercase hover:scale-105 hover:cursor-pointer"
+          >
             <IoMenu className="bg-orange-700 text-white rounded-full p-3 w-12 h-12 mx-auto mb-1" />
             <span className="text-orange-700 bg-white rounded-lg p-1 text-sm md:text-md">
               Menu
             </span>
           </Menu.Button>
-          <Menu.Items className="absolute w-screen z-10 right-0 -mr-3 bg-white drop-shadow-lg rounded-lg text-orange-700 divide-y divide-orange-700">
-            {props.navList.map((nav, idx) => (
-              <>
-                {nav.icon && (
-                  <div className="p-3" key={idx}>
-                    <div className="uppercase font-bold text-left">
-                      {nav.title}
+          <Transition
+            as={Fragment}
+            show={isOpen}
+            enter="transition ease-out duration-100"
+            enterFrom="transform opacity-0 scale-95"
+            enterTo="transform opacity-100 scale-100"
+            leave="transition ease-in duration-75"
+            leaveFrom="transform opacity-100 scale-100"
+            leaveTo="transform opacity-0 scale-95"
+          >
+            <Menu.Items className="absolute w-screen !z-50 right-0 -mr-3 bg-white drop-shadow-lg rounded-lg text-orange-700 divide-y divide-orange-700">
+              {props.navList.map((nav, idx) => (
+                <>
+                  {nav.icon && (
+                    <div className="p-3" key={idx}>
+                      <div className="uppercase font-bold text-left">
+                        {nav.title}
+                      </div>
+                      {nav.links.map((link, idx) => (
+                        <Menu.Item key={idx}>
+                          {({ active }) => (
+                            <Link
+                              to={link.to}
+                              key={idx}
+                              onClick={() => setIsOpen(false)}
+                              aria-current={active ? 'page' : undefined}
+                              className={`${
+                                active
+                                  ? 'bg-orange-700 text-white'
+                                  : 'text-orange-700'
+                              } block p-2 text-left transition rounded-md`}
+                            >
+                              <span className="inline-block mr-1">
+                                {link.icon}
+                              </span>
+                              {link.label}
+                            </Link>
+                          )}
+                        </Menu.Item>
+                      ))}
                     </div>
-                    {nav.links.map((link, idx) => (
-                      <Menu.Item key={idx}>
-                        {({ active }) => (
-                          <Link
-                            to={link.to}
-                            key={itemIdx}
-                            aria-current={active ? 'page' : undefined}
-                            className={`${
-                              active
-                                ? 'bg-orange-700 text-white'
-                                : 'text-orange-700'
-                            } block p-2 text-left transition rounded-md`}
-                          >
-                            <span className="inline-block mr-1">
-                              {link.icon}
-                            </span>
-                            {link.label}
-                          </Link>
-                        )}
-                      </Menu.Item>
-                    ))}
-                  </div>
-                )}
-              </>
-            ))}
-          </Menu.Items>
+                  )}
+                </>
+              ))}
+            </Menu.Items>
+          </Transition>
         </Menu>
       </div>
     </>
