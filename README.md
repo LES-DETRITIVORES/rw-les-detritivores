@@ -27,9 +27,11 @@ Your browser should automatically open to http://localhost:8910 where you'll see
 > Congratulations on running your first Redwood CLI command!
 > From dev to deploy, the CLI is with you the whole way.
 > And there's quite a few commands at your disposal:
+>
 > ```
 > yarn redwood --help
 > ```
+>
 > For all the details, see the [CLI reference](https://redwoodjs.com/docs/cli-commands).
 
 ## Prisma and the database
@@ -69,53 +71,20 @@ Navigate to http://localhost:8910/posts/new, fill in the title and body, and cli
 
 Did we just create a post in the database? Yup! With `yarn rw g scaffold <model>`, Redwood created all the pages, components, and services necessary to perform all CRUD actions on our posts table.
 
-## Frontend first with Storybook
+## References
 
-Don't know what your data models look like?
-That's more than ok—Redwood integrates Storybook so that you can work on design without worrying about data.
-Mockup, build, and verify your React components, even in complete isolation from the backend:
+## Horizontal scrolling :
 
-```
-yarn rw storybook
-```
+https://momentomultimedia.com/en/
 
-Before you start, see if the CLI's `setup ui` command has your favorite styling library:
+## Menu
 
-```
-yarn rw setup ui --help
-```
+https://mcbridedesign.com/
 
-## Testing with Jest
+## Square design
 
-It'd be hard to scale from side project to startup without a few tests.
-Redwood fully integrates Jest with the front and the backends and makes it easy to keep your whole app covered by generating test files with all your components and services:
+https://carnival.withspotify.com/
 
-```
-yarn rw test
-```
+## Militant design
 
-To make the integration even more seamless, Redwood augments Jest with database [scenarios](https://redwoodjs.com/docs/testing.md#scenarios)  and [GraphQL mocking](https://redwoodjs.com/docs/testing.md#mocking-graphql-calls).
-
-## Ship it
-
-Redwood is designed for both serverless deploy targets like Netlify and Vercel and serverful deploy targets like Render and AWS:
-
-```
-yarn rw setup deploy --help
-```
-
-Don't go live without auth!
-Lock down your front and backends with Redwood's built-in, database-backed authentication system ([dbAuth](https://redwoodjs.com/docs/authentication#self-hosted-auth-installation-and-setup)), or integrate with nearly a dozen third party auth providers:
-
-```
-yarn rw setup auth --help
-```
-
-## Next Steps
-
-The best way to learn Redwood is by going through the comprehensive [tutorial](https://redwoodjs.com/docs/tutorial/foreword) and joining the community (via the [Discourse forum](https://community.redwoodjs.com) or the [Discord server](https://discord.gg/redwoodjs)).
-
-## Quick Links
-
-- Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/redwoodjs), and subscribe to the [newsletter](https://redwoodjs.com/newsletter)
-- [Learn how to contribute](https://redwoodjs.com/docs/contributing)
+https://floramedia.fr/art-de-protester-design-militant/
