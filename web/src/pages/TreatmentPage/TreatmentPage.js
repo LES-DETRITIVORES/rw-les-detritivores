@@ -40,7 +40,7 @@ const TreatmentPage = () => {
           </Link>
         </div>
         <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
-          <div>
+          <div className="flex items-center">
             <IoSync className="inline mr-2 align-middle h-6 w-6" />
             Compostage des biodéchets
           </div>
