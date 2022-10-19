@@ -15,6 +15,7 @@ const Header = (props) => {
     'https://ik.imagekit.io/dttv/logo_k7opAuX3K.png?ik-sdk-version=javascript-1.4.3&updatedAt=1652281391081'
 
   const [isOpen, setIsOpen] = useState(false)
+  const [openDropdown, setOpenDropdown] = useState(false)
   return (
     <>
       <div className="grid gap-3 mt-3 grid-cols-2 md:grid-cols-6">
@@ -32,8 +33,18 @@ const Header = (props) => {
                 as="div"
                 key={menuIdx}
                 className="relative hidden md:inline-block"
+                onMouseLeave={() => setOpenDropdown(false)}
               >
-                <Menu.Button className="transition mx-auto my-4 leading-6 text-white font-bold uppercase -rotate-6 hover:scale-105 hover:cursor-pointer">
+                <Menu.Button
+                  onClick={() => {
+                    if (openDropdown === menuIdx) {
+                      setOpenDropdown(false)
+                    } else {
+                      setOpenDropdown(menuIdx)
+                    }
+                  }}
+                  className="transition mx-auto my-4 leading-6 text-white font-bold uppercase -rotate-6 hover:scale-105 hover:cursor-pointer"
+                >
                   {nav.icon}
                   <span className="bg-orange-700 transition leading-6 p-1 text-sm md:text-md">
                     {nav.title}
@@ -41,6 +52,7 @@ const Header = (props) => {
                 </Menu.Button>
                 <Transition
                   as={Fragment}
+                  show={openDropdown === menuIdx}
                   enter="transition ease-out duration-100"
                   enterFrom="transform opacity-0 scale-95"
                   enterTo="transform opacity-100 scale-100"
@@ -60,7 +72,7 @@ const Header = (props) => {
                               active
                                 ? 'bg-orange-700 text-white'
                                 : 'text-orange-700'
-                            } block p-2 text-left transition rounded-md`}
+                            } flex items-center p-2 text-left transition rounded-md`}
                           >
                             <span className="inline-block my-auto mr-1">
                               {link.icon}
@@ -120,6 +132,7 @@ const Header = (props) => {
         <Menu
           as="div"
           className="fixed inline-block right-0 mr-3 md:hidden z-50"
+          onMouseLeave={() => setIsOpen(false)}
         >
           <Menu.Button
             onClick={() => {
@@ -166,7 +179,7 @@ const Header = (props) => {
                                 active
                                   ? 'bg-orange-700 text-white'
                                   : 'text-orange-700'
-                              } block p-2 text-left transition rounded-md`}
+                              } flex items-center p-2 text-left transition rounded-md`}
                             >
                               <span className="inline-block mr-1">
                                 {link.icon}
