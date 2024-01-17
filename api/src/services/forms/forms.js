@@ -71,7 +71,7 @@ export const emailForm = async ({ id }) => {
     "N'hésitez pas à nous contacter pour toutes autres questions :\n" +
     'LES DETRITIVORES\n' +
     '65 quai de Brazza 33100 Bordeaux\n' +
-    'bonjour@les-detritivores.co | 05 56 67 14 47\n' +
+    'bonjour@les-detritivores.co | 05 57 99 50 99\n' +
     'https://les-detritivores.co'
 
   const html =
