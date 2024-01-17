@@ -39,12 +39,12 @@ const PressPage = () => {
         </h1>
         <p>
           Pour toutes demandes concernant la presse, merci d'écrire à notre
-          service de communication :{' '}
+          adresse de contact :{' '}
           <a
-            href="mailto:communication@actes-atlantique.fr"
+            href="mailto:bonjour@les-detritivores.co"
             className="underline"
           >
-            communication@actes-atlantique.fr
+            bonjour@les-detritivores.co
           </a>
         </p>
       </motion.div>
