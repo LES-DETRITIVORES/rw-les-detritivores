@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const CallPage = () => {
   useEffect(() => {
     setTimeout(() => {
-      window.location.href = 'tel:0556671447'
+      window.location.href = 'tel:0557995099'
       setTimeout(() => {
         window.location.href = routes.home()
       }, 1000)
