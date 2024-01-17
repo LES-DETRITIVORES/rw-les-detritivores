@@ -79,26 +79,19 @@ const LegalPage = () => {
               33100 BORDEAUX, et immatriculée au numéro suivant : 812 924 538
               RCS BORDEAUX.
             </p>
-            <p>Téléphone : +33(0)5 56 67 14 47</p>
+            <p>Téléphone : +33(0)5 57 99 50 99</p>
             <p>Adresse e-mail : bonjour@les-detritivores.co</p>
             <p>ci-après "l'Éditeur"</p>
 
             <h4 className="font-semibold uppercase underline">
-              B. DIRECTEUR DE PUBLICATION
-            </h4>
-            <p>Le Directeur de publication est : Monsieur Frédéric PETIT</p>
-            <p>Adresse e-mail de contact : bonjour@les-detritivores.co</p>
-            <p>ci-après "le Directeur de publication"</p>
-
-            <h4 className="font-semibold uppercase underline">
-              C. HÉBERGEUR DU SITE
+              B. HÉBERGEUR DU SITE
             </h4>
             <p>Le site LES DETRITIVORES est hébergé par : VERCEL INC.</p>
             <p>Adresse e-mail : legal@vercel.com</p>
             <p>ci-après "l'Hébergeur"</p>
 
             <h4 className="font-semibold uppercase underline">
-              D. UTILISATEURS
+              C. UTILISATEURS
             </h4>
             <p>
               Sont considérés comme utilisateurs tous les internautes qui
