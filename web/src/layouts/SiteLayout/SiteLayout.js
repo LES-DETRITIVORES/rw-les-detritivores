@@ -140,8 +140,8 @@ const navList = [
       },
       {
         icon: <IoCall />,
-        label: '05 56 67 14 47',
-        to: '/call',
+        label: '05 57 99 50 99',
+        /*to: '/call',*/
       },
     ],
   },
