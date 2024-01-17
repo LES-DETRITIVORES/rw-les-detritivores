@@ -257,7 +257,7 @@ const RgpdPage = () => {
               la société LES DETRITIVORES, SCIC SA au capital de 83 100,00 €,
               dont le siège social est 65 QUAI DE BRAZZA, 33100 BORDEAUX,
               immatriculée au numéro suivant : 812 924 538 RCS BORDEAUX,
-              Téléphone : +33(0)5 56 67 14 47, adresse e-mail :
+              Téléphone : +33(0)5 57 99 50 99, adresse e-mail :
               bonjour@les-detritivores.co
             </div>
             <div class="paragraph">
