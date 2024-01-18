@@ -40,13 +40,10 @@ const PressPage = () => {
         <p>
           Pour toutes demandes concernant la presse, merci d'écrire à notre
           adresse de contact :{' '}
-          <a
-            href="mailto:bonjour@les-detritivores.co"
-            className="underline"
-          >
-            bonjour@les-detritivores.co
-          </a>
         </p>
+        <p>
+          <a href="mailto:bonjour@les-detritivores.co" className="underline">bonjour@les-detritivores.co</a>
+         </p>
       </motion.div>
     </>
   )
