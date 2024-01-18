@@ -17,8 +17,8 @@ const CooperationPage = () => {
         exit={{ opacity: 0, y: 20 }}
       >
         <MetaTags
-          title="Société Coopérative d'Intérêt Collectif (SCIC)"
-          description="Notre projet coopératif rassemble les particuliers, les professionnels, les financeurs, les institutions, les collectivités autour d'un projet commun de transition organique, inclusive et coopérative des territoires."
+          title="Association Loi 1901"
+          description="Notre projet associatif rassemble les particuliers, les professionnels, les financeurs, les institutions, les collectivités autour d'un projet commun de transition organique, inclusive et coopérative des territoires."
         />
         <div className="font-light inline-flex space-x-2">
           <svg
@@ -42,7 +42,7 @@ const CooperationPage = () => {
         <h1 className="text-md md:text-lg text-green-900 font-semibold mt-3 mb-6">
           <div className="flex items-center">
             <IoHandLeft className="inline mr-2 align-middle h-6 w-6" />
-            Société Coopérative d'Intérêt Collectif (SCIC)
+            Association Loi 1901
           </div>
         </h1>
         <div className="flex flex-col gap-6 mb-8 md:flex-row md:gap-24 md:mb-24">
@@ -52,18 +52,18 @@ const CooperationPage = () => {
             </h2>
             <div className="my-3 space-y-3 text-sm md:text-md lg:text-lg font-light">
               <p>
-                En 2019, une nouvelle page de LES DETRITIVORES a commencé à
-                s’écrire : nous avons quitté le monde associatif auquel nous
-                étions attachés depuis notre création en 2015 et sommes devenus
+                En 2023, une nouvelle page a commencé à s’écrire 
+                pour LES DETRITIVORES : nous sommes retournés dans le monde associatif auquel
+                nous étions attachés lors de notre création en 2015 et sommes redevenus
                 une{' '}
                 <span className="font-bold">
-                  SCIC : Société Coopérative d'Intérêt Collectif
+                  Association Loi 1901
                 </span>
                 .
               </p>
+              /*
               <p className="font-extralight px-6 hidden">
-                « Les Sociétés Coopératives d'Intérêt Collectif ont pour objet
-                la{' '}
+                « L'objet de l'association{' '}
                 <span className="font-bold">
                   production ou la fourniture de biens et de services d’intérêt
                   collectif
@@ -74,9 +74,10 @@ const CooperationPage = () => {
                   - Loi n°2001-624 du 17 juillet 2001
                 </span>
               </p>
+              */
               <p>
                 Acteurs du <span class="font-bold">développement durable</span>,
-                les SCIC s’inscrivent sur le long terme en prenant soin des
+                la démarche des DETRITIVORES s’inscrit sur le long terme en prenant soin des
                 intérêts des parties prenantes et de son territoire :
               </p>
               <p>
@@ -101,9 +102,9 @@ const CooperationPage = () => {
                   <li>
                     Faire corps pour transformer nos modèles concurrentiels en{' '}
                     <span class="font-bold">
-                      modèles coopératifs et compétitifs
+                      modèle associatif
                     </span>{' '}
-                    qui soient capables de gérer durablement et de la manière la
+                    capable de gérer durablement et de la manière la
                     plus juste les ressources du territoire.
                   </li>
                 </ul>
@@ -136,8 +137,7 @@ const CooperationPage = () => {
                   une réelle plus-value pour notre territoire et ses acteurs
                 </span>
                 . Dans cet objectif, nous vous invitons à participer à la vie de
-                notre coopérative en devenant{' '}
-                <span className="font-bold">sociétaire</span> :
+                notre association.
               </p>
               <p>
                 <ol className="list-none space-y-3">
@@ -178,8 +178,7 @@ const CooperationPage = () => {
                         <span className="font-bold">emplois inclusifs</span>
                       </li>
                       <li>
-                        En devenant des acteurs engagés dans la co-construction
-                        d’une{' '}
+                        En devenant des acteurs engagés d’une{' '}
                         <span className="font-bold">
                           économie sociale et solidaire
                         </span>
