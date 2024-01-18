@@ -32,7 +32,7 @@ const HomePage = () => {
       >
         <MetaTags
           title="LES DETRITIVORES"
-          description="Coopérative inclusive de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. #TousDETRITIVORES"
+          description="Association Loi 1901 de gestion des biodéchets pour les particuliers, les professionnels et les collectivités. #TousDETRITIVORES"
         />
         <div className="flex flex-col rounded-r-2xl overflow-hidden m-3 md:flex-row md:m-6">
           <div
@@ -119,7 +119,7 @@ const HomePage = () => {
             </h1>
             <hr className="my-6 -rotate-1" />
             <p className="text-center">
-              Coopérative d'insertion reconnue par l'Etat, nous accompagnons des
+              Association d'insertion reconnue par l'Etat, nous accompagnons des
               parcours professionnels accessibles, utiles et durables au coeur
               des territoires urbains et ruraux.
             </p>
@@ -190,7 +190,7 @@ const HomePage = () => {
           <div className="bg-yellow-500 text-black basis-full p-6 md:basis-1/2 lg:basis-2/5 xl:basis-1/3">
             <h1 className="mb-3 text-3xl font-semibold text-center">
               <IoChatbubbles className="rounded-full text-yellow-500 bg-black p-2 w-14 h-14 mx-auto mb-2" />
-              Vie coopérative
+              Vie associative
             </h1>
             <hr className="my-6 border-black -rotate-1" />
             <p className="text-center ">
@@ -199,10 +199,10 @@ const HomePage = () => {
             </p>
             <hr className="my-6 border-black rotate-1" />
             <h2 className="block text-xl font-bold uppercase">
-              Société Coopérative d'Intérêt Collectif (SCIC)
+              Association Loi 1901
             </h2>
             <p className="my-3">
-              Notre projet coopératif rassemble les particuliers, les
+              Notre projet associatif rassemble les particuliers, les
               professionnels, les financeurs, les institutions, les
               collectivités autour d'un projet commun de transition organique,
               inclusive et coopérative des territoires.
@@ -212,7 +212,7 @@ const HomePage = () => {
               className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-black hover:bg-yellow-100"
             >
               <IoHandLeft className="inline mr-2 align-middle h-6 w-6" />
-              Rejoindre la coopérative
+              Rejoindre l'association
             </Link>
             <hr className="my-6 border-black -rotate-1" />
             <h2 className="block text-xl font-bold uppercase mt-6">
