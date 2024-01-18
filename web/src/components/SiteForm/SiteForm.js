@@ -20,7 +20,7 @@ const options = [
   { label: 'Tri et traitement des biodéchets' },
   { label: 'Achat de compost' },
   { label: 'Emploi et formation' },
-  { label: 'Soutien à la coopérative' },
+  { label: 'Soutien à l'association' },
   { label: 'Autre demande' },
 ]
 
