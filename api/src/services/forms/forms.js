@@ -40,7 +40,7 @@ export const emailForm = async ({ id }) => {
     'Bonjour ' +
     form.firstname +
     ' !\n\n' +
-    'La coopérative inclusive LES DETRITIVORES vous confirme la bonne réception de votre demande. ' +
+    'LES DETRITIVORES vous confirment la bonne réception de votre demande. ' +
     "Nous ne manquerons pas d'y répondre au plus vite.\n\n" +
     '------------------------------------------------------\n' +
     'Numéro de demande : ' +
@@ -78,7 +78,7 @@ export const emailForm = async ({ id }) => {
     'Bonjour ' +
     form.firstname +
     ' !<br/><br/>' +
-    'La coopérative inclusive LES DETRITIVORES vous confirme la bonne réception de votre demande. ' +
+    'LES DETRITIVORES vous confirment la bonne réception de votre demande. ' +
     "Nous ne manquerons pas d'y répondre au plus vite.<br/><br/>" +
     '<hr/>' +
     'Numéro de demande : ' +
