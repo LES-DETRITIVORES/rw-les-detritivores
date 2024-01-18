@@ -43,7 +43,7 @@ const PressPage = () => {
         </p>
         <p>
           <a href="mailto:bonjour@les-detritivores.co" className="underline">bonjour@les-detritivores.co</a>
-         </p>
+        </p>
       </motion.div>
     </>
   )
