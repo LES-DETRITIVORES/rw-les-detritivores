@@ -52,7 +52,7 @@ const RgpdPage = () => {
               Cette politique de confidentialité s'applique au site internet{' '}
               <a
                 href="https://www.les-detritivores.co"
-                title="Site internet de la coopérative LES DETRITIVORES"
+                title="Site internet LES DETRITIVORES"
               >
                 https://www.les-detritivores.co
               </a>
