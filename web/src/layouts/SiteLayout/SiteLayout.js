@@ -64,11 +64,11 @@ const navList = [
   },
   {
     icon: <IoChatbubbles className={defaultStyle} />,
-    title: 'Vie coopérative',
+    title: 'Vie associative',
     links: [
       {
         icon: <IoHandLeft />,
-        label: "Société Coopérative d'Intérêt Collectif (SCIC)",
+        label: "Association Loi 1901",
         to: '/cooperation',
       },
       {
