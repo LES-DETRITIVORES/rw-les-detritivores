@@ -29,7 +29,7 @@ const MailPage = () => {
             </span>
           </div>
           <p className="text-2xl text-center -rotate-6">
-            Vous allez être redirigé vers l'envoie d'un mail une fois la requête
+            Vous allez être redirigé vers l'envoi d'un mail une fois la requête
             puis vous allez être redirigé vers notre site.
           </p>
           <svg
