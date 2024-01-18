@@ -115,8 +115,10 @@ const SiteForm = () => {
         Contactez-nous
       </h1>
       <p className="text-center max-w-lg mx-auto mb-3">
-        Partagez votre projet via ce formulaire :
+        Partagez votre projet en nous écrivant à l'adresse :
       </p>
+      <a href="mailto:bonjour@les-detritivores.co">bonjour@les-detritivores.co</a>
+        /*
       <Form
         onSubmit={formSubmit}
         className="max-w-lg mx-auto text-md font-normal mt-3"
@@ -275,6 +277,7 @@ const SiteForm = () => {
           </div>
         )}
       </Form>
+      */
     </div>
   )
 }
