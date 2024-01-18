@@ -73,10 +73,10 @@ const LegalPage = () => {
               A. EDITEUR DU SITE
             </h4>
             <p>Le site LES DETRITIVORES est édité par :</p>
-            <p>LES DETRITIVORES, SCIC SA au capital de 83 100,00 €</p>
+            <p>LES DETRITIVORES, membre de l'association EDEA</p>
             <p>
               ayant son siège social à l'adresse suivante : 65 QUAI DE BRAZZA,
-              33100 BORDEAUX, et immatriculée au numéro suivant : 812 924 538
+              33100 BORDEAUX, et immatriculée au numéro suivant : 782 030 811
               RCS BORDEAUX.
             </p>
             <p>Téléphone : +33(0)5 57 99 50 99</p>
