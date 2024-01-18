@@ -61,20 +61,6 @@ const CooperationPage = () => {
                 </span>
                 .
               </p>
-              /*
-              <p className="font-extralight px-6 hidden">
-                « L'objet de l'association{' '}
-                <span className="font-bold">
-                  production ou la fourniture de biens et de services d’intérêt
-                  collectif
-                </span>{' '}
-                qui présentent un caractère d’
-                <span className="font-bold">utilité sociale</span>.»{' '}
-                <span className="align-right italic text-sm">
-                  - Loi n°2001-624 du 17 juillet 2001
-                </span>
-              </p>
-              */
               <p>
                 Acteurs du <span class="font-bold">développement durable</span>,
                 la démarche des DETRITIVORES s’inscrit sur le long terme en prenant soin des
