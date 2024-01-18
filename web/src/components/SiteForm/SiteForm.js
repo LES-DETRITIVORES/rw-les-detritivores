@@ -118,6 +118,7 @@ const SiteForm = () => {
         Partagez votre projet en nous écrivant à l'adresse :
         <a href="mailto:bonjour@les-detritivores.co" className="underline">
             bonjour@les-detritivores.co
+        </a>
       </p>
 
     </div>
