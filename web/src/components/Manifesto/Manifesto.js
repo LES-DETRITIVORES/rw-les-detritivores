@@ -19,7 +19,7 @@ const Manifesto = () => {
             compost nutritif et local.
           </p>
           <p>
-            Coopérative d'insertion reconnue par l'Etat, nous accompagnons des
+            Association d'insertion reconnue par l'Etat, nous accompagnons des
             parcours professionnels accessibles, utiles et durables au coeur des
             territoires urbains et ruraux.
           </p>
@@ -34,7 +34,7 @@ const Manifesto = () => {
             Citoyens, professionnels, collectivités,
             <br />
             rejoignez notre mouvement pour des territoires organiques, inclusifs
-            et coopératifs&nbsp;!
+            et associatifs&nbsp;!
           </p>
         </div>
         <Link to="/">
