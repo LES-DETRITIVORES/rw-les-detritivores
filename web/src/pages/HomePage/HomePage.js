@@ -85,7 +85,7 @@ const HomePage = () => {
               compostage, vous évitez le gaspillage d'une ressource précieuse
               pour la planète tout en limitant les nuisances du transport.
             </p>
-            <Link
+            /*<Link
               to="/traitement"
               className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-green-900 hover:bg-green-100"
             >
@@ -108,7 +108,7 @@ const HomePage = () => {
             >
               <IoBag className="inline mr-2 align-middle h-6 w-6" />
               Acheter du compost
-            </Link>
+            </Link>*/
           </div>
         </div>
         <div className="flex flex-col-reverse rounded-l-2xl overflow-hidden md:flex-row m-3 md:m-6">
@@ -137,24 +137,24 @@ const HomePage = () => {
               className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-orange-700 hover:bg-orange-100"
             >
               <IoFootsteps className="inline mr-2 align-middle h-6 w-6" />
-              Postuler à une offre d'emploi
+              Qu'est-ce qu'une entreprise d'insertion
             </Link>
             <hr className="my-6 -rotate-1" />
             <h2 className="block text-xl text-white font-bold uppercase mt-6">
-              Formation professionnelle
+              Nous recrutons
             </h2>
-            <p className="my-3">
+            /*<p className="my-3">
               Conducteur de camion, logisticien à vélo, technicien de
               plateforme, agent de compostage, etc... nos équipes développent de
               nombreuses compétences techniques et humaines pour la société et
               l'économie locale de demain.
-            </p>
+            </p>*/
             <Link
-              to="/formation"
+              to="https://emplois.inclusion.beta.gouv.fr/company/12028/card?back_url=/search/employers/results%3Fcompany%3D12028%26city%3Dbordeaux-33%26distance%3D25#metiers"
               className="rounded-md inline-block p-3 font-semi-bold text-lg bg-white shadow-xl text-orange-700 hover:bg-orange-100"
             >
               <IoSchool className="inline mr-2 align-middle h-6 w-6" />
-              Recruter nos talents
+              Voir nos offres d'emploi
             </Link>
           </div>
           <div
@@ -216,20 +216,19 @@ const HomePage = () => {
             </Link>
             <hr className="my-6 border-black -rotate-1" />
             <h2 className="block text-xl font-bold uppercase mt-6">
-              Investissement responsable
+              Et bien plus encore
             </h2>
             <p className="my-3">
-              Que vous soyez plutôt part sociale, compte courant d'associé ou
-              encore titres participatifs, notre coopérative vous propose des
-              opportunités d'investissement social, écologique et responsable
-              adapté à vos capacités.
+              Avec EDÉA découvrez la puissance d'une organisation forte de 550
+              professionnels en situation de handicap qui vous propose toute
+              une palette de services opérationnels, locaux et responsables.
             </p>
             <Link
-              to="/investissement"
+              to="https://edea-asso.fr/etablissements/inclusion-professionnelle/"
               className="rounded-md inline-block p-3 font-semi-bold text-lg  bg-white shadow-xl text-black hover:bg-yellow-100"
             >
               <IoWallet className="inline mr-2 align-middle h-6 w-6" />
-              Investir dans la transition
+              Voir l'offre EDÉA
             </Link>
           </div>
         </div>
